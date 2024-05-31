@@ -136,3 +136,7 @@ button {
   border: none;
   font-family: inherit;
 }
+
+a {
+  text-decoration: none;
+}
