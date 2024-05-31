@@ -1,0 +1,9 @@
+.logo {
+  display: flex;
+  text-decoration: none;
+  color: var(--gray-700);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  transition: background-color 0.3s ease;
+}
