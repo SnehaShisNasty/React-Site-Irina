@@ -14,6 +14,13 @@ const Features = () => {
         <li>{content.belief}</li>
         <li>{content.benefits}</li>
       </ul>
+      <button>More info</button>
+      <div>
+        <p>image</p>
+        <p>image</p>
+        <p>image</p>
+        <p>image</p>
+      </div>
     </div>
   )
 }
