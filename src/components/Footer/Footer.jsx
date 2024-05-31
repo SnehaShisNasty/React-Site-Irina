@@ -40,10 +40,10 @@ const Footer = () => {
           <li>{info.email}</li>
         </ul>
         <ul>
-          <li>insta</li>
-          <li>youtube</li>
-          <li>facebook</li>
-          <li>watsup</li>
+          <li><a href="">insta</a></li>
+          <li><a href="">youtube</a></li>
+          <li><a href="">facebook</a></li>
+          <li><a href="">watsup</a></li>
         </ul>
       </div>
     </div>
