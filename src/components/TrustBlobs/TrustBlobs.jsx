@@ -3,16 +3,16 @@ import styles from "./trustBlobs.module.css"
 
 const TrustBlobs = () => {
   return (
-    <div>
-      <h1>Why can you trust us ?</h1>
-      <ul>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Why can you trust us ?</h1>
+      <ul className={styles.list}>
         {items.map(item => (
-          <li key={item.id}>
-            {item.id} {item.text}
+          <li key={item.id} className={styles.listItem}>
+            {item.text}
           </li>
         ))}
       </ul>
-      <button>Check why you can rely on us</button>
+      <button className={styles.btn}>Check why you can rely on us</button>
     </div>
   )
 }
