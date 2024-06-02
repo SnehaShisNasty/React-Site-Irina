@@ -7,7 +7,7 @@ const NavMenu = () => {
     <ul className={styles.menu}>
       <li className={styles.item}>
         <NavLink className={styles.link} to="/">
-          Home page
+          Home Page
         </NavLink>
       </li>
       <li className={styles.item}>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
-import './Search.css';
+import styles from './Search.module.css';
 
 const INITIAL_STATE = {
   search: '',
 };
 
-const Search = ({ onSubmit }) => {
+const Search = ({ onSubmit, onBlur, onFocus }) => {
   const [state, setState] = useState({ ...INITIAL_STATE });
 
   const handleChange = ({ target }) => {
@@ -15,7 +15,6 @@ const Search = ({ onSubmit }) => {
       ...state,
       [name]: value,
     });
-    onSubmit({ ...state });
   };
 
   const handleSubmit = e => {
@@ -27,21 +26,34 @@ const Search = ({ onSubmit }) => {
   const reset = () => {
     setState({ search: '' });
   };
-
+  const handleBlur = event => {
+    if (onBlur) {
+      console.log(event);
+      onBlur(event);
+    }
+  };
+  const handleFocus = event => {
+    if (onBlur) {
+      console.log(event);
+      onFocus(event);
+    }
+  };
   const searchId = nanoid();
 
   return (
-    <form className="search-form" onSubmit={handleSubmit}>
+    <form className={styles.searchForm} onSubmit={handleSubmit}>
       <input
         type="text"
         name="search"
-        className="search-input"
+        className={styles.searchInput}
         value={state.search}
         onChange={handleChange}
         id={searchId}
         placeholder="Search..."
+        onFocus={handleFocus}
+        onBlur={handleBlur}
       />
-      <button type="submit" className="search-button"></button>
+      <button type="submit" className={styles.searchButton}></button>
     </form>
   );
 };

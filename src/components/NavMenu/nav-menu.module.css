@@ -14,9 +14,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, text-transform 0.3s ease;
 }
 
+.link:hover {
+  color: rgb(255, 24, 24);
+}
 .link:global(.active) {
-  color: red;
+  color: rgb(255, 24, 24);
 }
