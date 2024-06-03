@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
   padding: 40px 0;
   background-color: var(--gray-900);
   background-image: radial-gradient(
@@ -45,13 +46,13 @@
 
 /*effect-underline*/
 
-a {
+.link {
   position: relative;
   display: inline-block;
   color: inherit;
   text-decoration: none;
 }
-a:after {
+.link:after {
   content: '';
   position: absolute;
   left: 0;
@@ -67,7 +68,7 @@ a:after {
   transform: scale(0, 1);
 }
 
-a:hover:after {
+.link:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -106,5 +107,30 @@ a:hover:after {
 .social {
   display: flex;
   justify-content: end;
-  gap: 10px;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.iconSvg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  fill: var(--gray-400);
+  stroke: var(--gray-400);
+}
+
+.icon,
+.iconSvg {
+  transition: all 300ms ease;
+}
+
+.linkSocial:hover .iconSvg {
+  scale: 1.1;
+}
+
+.linkSocial:hover .icon {
+  stroke: var(--primary-500);
+  fill: var(--primary-500);
 }
