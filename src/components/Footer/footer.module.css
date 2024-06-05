@@ -104,6 +104,12 @@
   background-color: #23a352;
 }
 
+.inputForm:focus {
+  outline: none;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px var(--primary-500);
+  background: var(--white-900);
+}
+
 .social {
   display: flex;
   justify-content: end;
