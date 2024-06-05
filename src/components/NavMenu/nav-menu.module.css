@@ -18,8 +18,8 @@
 }
 
 .link:hover {
-  color: rgb(255, 24, 24);
+  color: var(--primary-500);
 }
 .link:global(.active) {
-  color: rgb(255, 24, 24);
+  color: var(--primary-500);
 }

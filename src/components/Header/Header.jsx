@@ -7,7 +7,7 @@ import { Search } from './Search/Search';
 import { items } from '../../data/servies';
 import { ChangeClass } from '../../helpers/ChangeClass';
 
-const Header = ({ onBlur, onFocus }) => {
+const Header = () => {
   const [filteredItems, setFilteredItems] = useState([]);
   const filteredList = useRef(null);
 
@@ -30,22 +30,26 @@ const Header = ({ onBlur, onFocus }) => {
     ChangeClass(filteredList, styles.active, true);
   };
   return (
-    <div className={styles.header}>
-      <Logo />
-      <NavMenu />
-      <div className={styles.searchBox}>
-        <Search
-          onSubmit={handleSearch}
-          onBlur={handleBlur}
-          onFocus={handleFocus}
-        />
-        <ul ref={filteredList} className={`${styles.filteredList} `}>
-          {filteredItems.map(item => (
-            <li key={item.id} className={styles.item}>
-              <NavLink to={item.address}> {item.name}</NavLink>
-            </li>
-          ))}
-        </ul>
+    <div className={styles.overlay}>
+      <div className={styles.header}>
+        <Logo />
+        <NavMenu />
+        <div className={styles.searchBox}>
+          <button className={styles.btn}>Free Consult</button>
+          <Search
+            onSubmit={handleSearch}
+            onBlur={handleBlur}
+            onFocus={handleFocus}
+          />
+          <ul ref={filteredList} className={`${styles.filteredList} `}>
+            {filteredItems.map(item => (
+              <li key={item.id} className={styles.item}>
+                <NavLink to={item.address}> {item.name}</NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div></div>
       </div>
     </div>
   );

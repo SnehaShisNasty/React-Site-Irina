@@ -1,10 +1,22 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 80px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(247, 248, 249) 0%,
+    rgb(247, 248, 249) 100%
+  );
 }
 .searchBox {
+  display: flex;
+  flex-direction: row;
 }
 
 .filteredList {
@@ -27,4 +39,19 @@
 
 .item:last-child {
   border-bottom: none;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: var(--white-900);
+  background-color: var(--primary-500);
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #23a352;
 }
