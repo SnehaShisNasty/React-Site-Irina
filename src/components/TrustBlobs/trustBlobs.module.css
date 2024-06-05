@@ -5,6 +5,12 @@
   align-items: center;
   text-align: center;
   margin: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container.visible {
+  opacity: 1;
 }
 
 .title {

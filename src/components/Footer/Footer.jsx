@@ -19,12 +19,13 @@ const Footer = () => {
           <li><a href="" className={styles.link}>About Us</a></li>
           <li><a href="" className={styles.link}>Privacy Policy and Cookies</a></li>
         </ul>
-        <div className={styles.inputContainer}>
+        <form className={styles.inputContainer}>
           <input
+            className={styles.inputForm}
             type="email"
             placeholder='example@mail.com'/>
           <button>Join us</button>
-        </div>
+        </form>
       </div>
       {/**********************Services**********************/}
       <div className={styles.column}>

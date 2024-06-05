@@ -1,26 +1,14 @@
-import { useState, useEffect } from "react"
-import content from "./featuresContent"
-import styles from "./features.module.css"
+import { useRef } from 'react';
+import useVisibility from 'customeHooks/useVisivility';
+import content from "./featuresContent";
+import styles from "./features.module.css";
 
 const Features = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const container = document.querySelector(`.${styles.container}`);
-      const top = container.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-      setIsVisible(top < windowHeight && top > -container.clientHeight);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
+  const containerRef = useRef(null);
+  const isVisible = useVisibility(containerRef);
 
   return (
-     <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
+    <div ref={containerRef} className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
       <h1 className={styles.title}>Why {content.companyName} ?</h1>
       <ul>
         <li className={styles.item}>{content.reputation}</li>
@@ -32,11 +20,34 @@ const Features = () => {
         <li className={styles.item}>{content.benefits}</li>
       </ul>
       <button className={styles.btn}>More info</button>
-      <div className={styles.logoContainer}>
-        <p>image</p>
-        <p>image</p>
-        <p>image</p>
-        <p>image</p>
+      <div>
+        <ul className={styles.logoContainer}>
+          <li>
+            <svg>
+            <use></use>
+            </svg>
+          </li>
+          <li>
+            <svg>
+            <use></use>
+            </svg>
+          </li>
+          <li>
+            <svg>
+            <use></use>
+            </svg>
+          </li>
+          <li>
+            <svg>
+            <use></use>
+            </svg>
+          </li>
+          <li>
+            <svg>
+            <use></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </div>
   )
