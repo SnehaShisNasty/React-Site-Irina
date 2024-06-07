@@ -14,7 +14,9 @@ const TrustBlobs = () => {
       <ul className={styles.list}>
         {items.map((item, index) => (
           <li key={item.id} className={`${ styles.listItem } ${index === items.length - 1 ? styles.lastItem : ''}`}>
-            {item.text}
+            <p className={styles.text}>
+              {item.text}
+            </p>
           </li>
         ))}
       </ul>
