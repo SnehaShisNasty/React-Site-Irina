@@ -30,11 +30,14 @@
   align-items: center;
   flex-basis: calc(33.33% - 20px);
   margin-bottom: 10px;
-  padding: 0 0px;
   border: 1px solid var(--gray-900);
   border-radius: 10px;
   transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease,
     background-color 0.3s ease;
+}
+
+.text {
+  padding: 10px;
 }
 
 .listItem:hover {
@@ -55,7 +58,7 @@
 
 .btn {
   width: 250px;
-  height: 40px;
+  height: 60px;
   margin: 10px 0;
   border-radius: 10px;
   color: var(--white-900);
