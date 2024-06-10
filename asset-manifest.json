@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/React-Site-Irina/static/css/main.55c95e09.css",
-    "main.js": "/React-Site-Irina/static/js/main.fe673dba.js",
-    "static/css/369.fa25d460.chunk.css": "/React-Site-Irina/static/css/369.fa25d460.chunk.css",
-    "static/js/369.a5a6caa1.chunk.js": "/React-Site-Irina/static/js/369.a5a6caa1.chunk.js",
+    "main.js": "/React-Site-Irina/static/js/main.228923c0.js",
+    "static/css/369.23162317.chunk.css": "/React-Site-Irina/static/css/369.23162317.chunk.css",
+    "static/js/369.cada6084.chunk.js": "/React-Site-Irina/static/js/369.cada6084.chunk.js",
     "static/js/794.f294d738.chunk.js": "/React-Site-Irina/static/js/794.f294d738.chunk.js",
     "static/media/pexels-pixabay-257856.jpg": "/React-Site-Irina/static/media/pexels-pixabay-257856.53229c4501081612d883.jpg",
     "static/media/xero-logo.png": "/React-Site-Irina/static/media/xero-logo.7084e0addb2e41ec76ee.png",
@@ -16,13 +16,13 @@
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "main.55c95e09.css.map": "/React-Site-Irina/static/css/main.55c95e09.css.map",
-    "main.fe673dba.js.map": "/React-Site-Irina/static/js/main.fe673dba.js.map",
-    "369.fa25d460.chunk.css.map": "/React-Site-Irina/static/css/369.fa25d460.chunk.css.map",
-    "369.a5a6caa1.chunk.js.map": "/React-Site-Irina/static/js/369.a5a6caa1.chunk.js.map",
+    "main.228923c0.js.map": "/React-Site-Irina/static/js/main.228923c0.js.map",
+    "369.23162317.chunk.css.map": "/React-Site-Irina/static/css/369.23162317.chunk.css.map",
+    "369.cada6084.chunk.js.map": "/React-Site-Irina/static/js/369.cada6084.chunk.js.map",
     "794.f294d738.chunk.js.map": "/React-Site-Irina/static/js/794.f294d738.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55c95e09.css",
-    "static/js/main.fe673dba.js"
+    "static/js/main.228923c0.js"
   ]
 }
