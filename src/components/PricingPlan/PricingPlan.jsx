@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import useVisibility from 'customeHooks/useVisivility';
-import PriceCard from "./Card/PriceCard"
+import PriceCard from './Card/PriceCard';
 import styles from "./pricingPlan.module.css"
 
 const PricingPlan = () => {
