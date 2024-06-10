@@ -1,18 +1,19 @@
+
 import { NavLink } from "react-router-dom"
 import info from "../../data/contactInfo"
 import sprite from "../../img/symbol-defs.svg"
 import styles from './footer.module.css'
 
 const Footer = () => {
-
-    const openMap = (address) => {
-    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  const openMap = address => {
+    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      address
+    )}`;
     window.open(mapUrl, '_blank');
-    };
+  };
 
   return (
     <div className={styles.container}>
-      {/**********************Additional**********************/}
       <div className={styles.column}>
         <h1>Additional</h1>
         <ul className={styles.list}>
@@ -24,11 +25,11 @@ const Footer = () => {
           <input
             className={styles.inputForm}
             type="email"
-            placeholder='example@mail.com'/>
+            placeholder="example@mail.com"
+          />
           <button>Join us</button>
         </form>
       </div>
-      {/**********************Services**********************/}
       <div className={styles.column}>
         <h1>Services</h1>
         <ul className={styles.list}>
@@ -39,48 +40,53 @@ const Footer = () => {
           <li><NavLink to="/" className={styles.link}>Self-Assessment Tax Return</NavLink></li>
         </ul>
       </div>
-      {/**********************Questions**********************/}
       <div className={styles.column}>
         <h1>Questions</h1>
         <ul className={styles.list}>
           <li >
             <p
               className={styles.link}
-              onClick={() => openMap(info.location)}>
+              onClick={() => openMap(info.location)}
+            >
               {info.location}
             </p>
           </li>
           <li>
-            <a href={`tel:${info.tel}`} className={styles.link}>{info.tel}</a>
+            <a href={`tel:${info.tel}`} className={styles.link}>
+              {info.tel}
+            </a>
           </li>
           <li>
-            <a href={`mailto:${info.email}`} className={styles.link}>{info.email}</a>
+            <a href={`mailto:${info.email}`} className={styles.link}>
+              {info.email}
+            </a>
           </li>
         </ul>
         <ul className={styles.social}>
           <li>
-            <a href="/" className={styles.linkSocial}>
+            <a href="#" className={styles.linkSocial}>
               <svg className={styles.iconSvg}>
-                <use href={`${sprite}#instagram`} className={styles.icon}/>
+                <use href={`${sprite}#instagram`} className={styles.icon} />
               </svg>
             </a>
           </li>
           <li>
-            <a href="/" className={styles.linkSocial}>
+            <a href="#" className={styles.linkSocial}>
               <svg className={styles.iconSvg}>
                 <use href={`${sprite}#whatsapp`} className={styles.icon} />
               </svg>
             </a>
           </li>
           <li>
-            <a href="/" className={styles.linkSocial}>
+            <a href="#" className={styles.linkSocial}>
               <svg className={styles.iconSvg}>
                 <use href={`${sprite}#youtube`} className={styles.icon} />
               </svg>
             </a>
           </li>
           <li>
-            <a href="/" className={styles.linkSocial}>
+            <a href="#" className={styles.linkSocial}>
+
               <svg className={styles.iconSvg}>
                 <use href={`${sprite}#twitter`} className={styles.icon} />
               </svg>
@@ -89,7 +95,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
