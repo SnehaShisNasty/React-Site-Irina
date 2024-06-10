@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/React-Site-Irina/static/css/main.55c95e09.css",
+    "main.js": "/React-Site-Irina/static/js/main.fe673dba.js",
+    "static/css/369.fa25d460.chunk.css": "/React-Site-Irina/static/css/369.fa25d460.chunk.css",
+    "static/js/369.a5a6caa1.chunk.js": "/React-Site-Irina/static/js/369.a5a6caa1.chunk.js",
+    "static/js/794.f294d738.chunk.js": "/React-Site-Irina/static/js/794.f294d738.chunk.js",
+    "static/media/pexels-pixabay-257856.jpg": "/React-Site-Irina/static/media/pexels-pixabay-257856.53229c4501081612d883.jpg",
+    "static/media/xero-logo.png": "/React-Site-Irina/static/media/xero-logo.7084e0addb2e41ec76ee.png",
+    "static/media/laptop-3196481_1280.jpg": "/React-Site-Irina/static/media/laptop-3196481_1280.32f7ba7ef39e3d7dfd4a.jpg",
+    "static/media/dext-logo.jpg": "/React-Site-Irina/static/media/dext-logo.d5e5f3d37db461d580d9.jpg",
+    "static/media/sage-logo.jpg": "/React-Site-Irina/static/media/sage-logo.3f9ff2ae864fbfb2c7d0.jpg",
+    "static/media/att-logo.jpg": "/React-Site-Irina/static/media/att-logo.ff4ac2333db178fd7f6b.jpg",
+    "static/media/acca-logo.jpg": "/React-Site-Irina/static/media/acca-logo.cb4019314572ce8c8155.jpg",
+    "static/media/symbol-defs.svg": "/React-Site-Irina/static/media/symbol-defs.6e633f9d5fdc73871d1602b94cf0dcc4.svg",
+    "index.html": "/React-Site-Irina/index.html",
+    "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
+    "main.55c95e09.css.map": "/React-Site-Irina/static/css/main.55c95e09.css.map",
+    "main.fe673dba.js.map": "/React-Site-Irina/static/js/main.fe673dba.js.map",
+    "369.fa25d460.chunk.css.map": "/React-Site-Irina/static/css/369.fa25d460.chunk.css.map",
+    "369.a5a6caa1.chunk.js.map": "/React-Site-Irina/static/js/369.a5a6caa1.chunk.js.map",
+    "794.f294d738.chunk.js.map": "/React-Site-Irina/static/js/794.f294d738.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55c95e09.css",
+    "static/js/main.fe673dba.js"
+  ]
+}
