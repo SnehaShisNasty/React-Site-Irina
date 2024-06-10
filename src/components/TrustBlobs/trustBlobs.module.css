@@ -55,17 +55,3 @@
     rgba(0, 212, 255, 1) 56%
   );
 }
-
-.btn {
-  width: 250px;
-  height: 60px;
-  margin: 10px 0;
-  border-radius: 10px;
-  color: var(--white-900);
-  background-color: var(--primary-500);
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #23a352;
-}
