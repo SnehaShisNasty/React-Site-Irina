@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './nav-menu.module.css';
-import Dropdown from '../DropDown/DropDown.jsx';
+// import Dropdown from '../DropDown/DropDown.jsx';
 
 const NavMenu = () => {
   return (
