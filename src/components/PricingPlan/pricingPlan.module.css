@@ -18,6 +18,8 @@
 .title {
   font-size: 36px;
   font-weight: 800;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.339);
+  padding-bottom: 5px;
 }
 
 .title_span {

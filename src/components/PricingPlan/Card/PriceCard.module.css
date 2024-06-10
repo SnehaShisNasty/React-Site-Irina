@@ -21,6 +21,7 @@
 
 .card_title {
   padding: 0 0 10px;
+  font-weight: 600;
 }
 
 .card_bill {
@@ -30,14 +31,14 @@
 
 .card_price {
   font-size: 36px;
-  padding: 10px 0;
+  padding: 10px 0 0;
   color: var(--primary-600);
 }
 
 .card_list {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 .list_item {
@@ -83,7 +84,7 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   padding: 5px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.242);
 }
 
 .ribbon_text {

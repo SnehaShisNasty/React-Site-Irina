@@ -51,6 +51,7 @@
   display: inline-block;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 .link:after {
   content: '';
@@ -112,7 +113,7 @@
 
 .social {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 10px;
   gap: 20px;
 }
