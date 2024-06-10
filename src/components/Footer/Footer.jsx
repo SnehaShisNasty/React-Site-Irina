@@ -1,6 +1,8 @@
-import info from '../../data/contactInfo';
-import sprite from '../../img/symbol-defs.svg';
-import styles from './footer.module.css';
+
+import { NavLink } from "react-router-dom"
+import info from "../../data/contactInfo"
+import sprite from "../../img/symbol-defs.svg"
+import styles from './footer.module.css'
 
 const Footer = () => {
   const openMap = address => {
@@ -15,21 +17,9 @@ const Footer = () => {
       <div className={styles.column}>
         <h1>Additional</h1>
         <ul className={styles.list}>
-          <li>
-            <a href="#" className={styles.link}>
-              Contact Us
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.link}>
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.link}>
-              Privacy Policy and Cookies
-            </a>
-          </li>
+          <li><NavLink to="/" className={styles.link}>Contact Us</NavLink></li>
+          <li><NavLink to="/" className={styles.link}>About Us</NavLink></li>
+          <li><NavLink to="/" className={styles.link}>Privacy Policy and Cookies</NavLink></li>
         </ul>
         <form className={styles.inputContainer}>
           <input
@@ -43,44 +33,23 @@ const Footer = () => {
       <div className={styles.column}>
         <h1>Services</h1>
         <ul className={styles.list}>
-          <li>
-            <a href="#" className={styles.link}>
-              Business Consulting
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.link}>
-              Company Formation Service
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.link}>
-              Full Accounting And Tax Support
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.link}>
-              Self-employment registration (UTR)
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.link}>
-              Self-Assessment Tax Return
-            </a>
-          </li>
+          <li><NavLink to="/" className={styles.link}>Business Consulting</NavLink></li>
+          <li><NavLink to="/" className={styles.link}>Company Formation Service</NavLink></li>
+          <li><NavLink to="/" className={styles.link}>Full Accounting And Tax Support</NavLink></li>
+          <li><NavLink to="/" className={styles.link}>Self-employment registration (UTR)</NavLink></li>
+          <li><NavLink to="/" className={styles.link}>Self-Assessment Tax Return</NavLink></li>
         </ul>
       </div>
       <div className={styles.column}>
         <h1>Questions</h1>
         <ul className={styles.list}>
-          <li>
-            <a
-              href="#"
+          <li >
+            <p
               className={styles.link}
               onClick={() => openMap(info.location)}
             >
               {info.location}
-            </a>
+            </p>
           </li>
           <li>
             <a href={`tel:${info.tel}`} className={styles.link}>
@@ -117,6 +86,7 @@ const Footer = () => {
           </li>
           <li>
             <a href="#" className={styles.linkSocial}>
+
               <svg className={styles.iconSvg}>
                 <use href={`${sprite}#twitter`} className={styles.icon} />
               </svg>
