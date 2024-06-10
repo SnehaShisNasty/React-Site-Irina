@@ -6,11 +6,15 @@ import { NavMenu } from 'components/NavMenu/NavMenu';
 import { Search } from './Search/Search';
 import { items } from '../../data/servies';
 import { ChangeClass } from '../../helpers/ChangeClass';
+import { Modal } from '../Modal/Modal';
 
 const Header = () => {
+  const [showModal, setShowModal] = useState(false);
   const [filteredItems, setFilteredItems] = useState([]);
   const filteredList = useRef(null);
 
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
   const handleSearch = ({ search }) => {
     if (search !== '') {
       const filtered = items.filter(item =>
@@ -35,7 +39,10 @@ const Header = () => {
         <Logo />
         <NavMenu />
         <div className={styles.searchBox}>
-          <button className={styles.btn}>Free Consult</button>
+          <button onClick={handleShow} className={styles.btn}>
+            Free Consult
+          </button>
+          <Modal show={showModal} handleClose={handleClose}></Modal>
           <Search
             onSubmit={handleSearch}
             onBlur={handleBlur}

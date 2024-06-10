@@ -15,10 +15,7 @@ const Hero = () => {
         <button onClick={handleShow} className={styles.btn}>
           Get your fist free consultation
         </button>
-        <Modal show={showModal} handleClose={handleClose}>
-          <h2>Modal Content</h2>
-          <p>This is the content inside the modal.</p>
-        </Modal>
+        <Modal show={showModal} handleClose={handleClose}></Modal>
       </div>
     </div>
   );
