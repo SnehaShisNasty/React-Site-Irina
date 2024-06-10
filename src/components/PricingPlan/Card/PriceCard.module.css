@@ -1,0 +1,94 @@
+.price_card {
+  position: relative;
+  top: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, top 0.3s ease, border 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.price_card:hover {
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.card_title {
+  padding: 0 0 10px;
+}
+
+.card_bill {
+  font-size: 16px;
+  color: var(--gray-400);
+}
+
+.card_price {
+  font-size: 36px;
+  padding: 10px 0;
+  color: var(--primary-600);
+}
+
+.card_list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.list_item {
+  margin: 5px 0;
+  text-align: start;
+}
+
+.iconSvg {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.icon {
+  fill: var(--primary-600);
+}
+
+.sub_btn {
+  width: 200px;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  color: var(--white-900);
+  background-color: var(--primary-500);
+  transition: background-color 0.3s ease;
+}
+
+.sub_btn:hover {
+  background-color: #23a352;
+}
+
+.ribbon {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 100px;
+  text-align: center;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-weight: bold;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  padding: 5px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ribbon_text {
+  font-size: 10px;
+  -webkit-text-stroke: 0.5px black;
+  text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black,
+    0.5px 0.5px 0 black;
+}
