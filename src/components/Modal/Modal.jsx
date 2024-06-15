@@ -7,11 +7,11 @@ const Modal = ({ show, handleClose, children }) => {
       className={`${styles.modal} ${show ? styles.show : ''}`}
       onClick={handleClose}
     >
-      <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+      <div className={styles.modalBox} onClick={e => e.stopPropagation()}>
         <span className={styles.close} onClick={handleClose}>
           &times;
         </span>
-        {children}
+        <div className={styles.children}>{children}</div>
       </div>
     </div>
   );

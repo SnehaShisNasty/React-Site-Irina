@@ -1,96 +1,77 @@
 import React, { useState } from 'react';
-import { nanoid } from 'nanoid';
-import css from './Form.module.css';
-import { getFiltered } from '../../../redux/selctors';
-import { useSelector, useDispatch } from 'react-redux';
-import { addContact } from '../../../redux/contacts/contacts-slice';
+import styles from './Form.module.css';
+const Form = ({ onSubmit }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-const INITIAL_STATE = {
-  name: '',
-  number: '',
-};
-const Form = () => {
-  const [state, setState] = useState({ ...INITIAL_STATE });
-
-  const contacts = useSelector(getFiltered);
-  const dispatch = useDispatch();
-
-  const handleChange = ({ target }) => {
-    const { name, value } = target;
-    setState({
-      ...state,
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
       [name]: value,
     });
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    onAddContact({ ...state });
-  };
-
-  const isDublicate = ({ name, number }) => {
-    const normalizedName = name.toLowerCase();
-    const normalizedNumber = number.toLowerCase();
-
-    const dublicate = contacts.find(item => {
-      const normalizedCurrentName = item.name.toLowerCase();
-      const normalizedCurrentNumber = item.number.toLowerCase();
-      return (
-        normalizedCurrentName === normalizedName ||
-        normalizedCurrentNumber === normalizedNumber
-      );
-    });
-
-    return Boolean(dublicate);
-  };
-  const onAddContact = data => {
-    if (isDublicate(data)) {
-      return alert(`Book with ${data.number} and ${data.name} already in list`);
-    }
-
-    dispatch(addContact(data));
+    onSubmit({ ...formData });
     reset();
   };
 
   const reset = () => {
-    setState({ name: '', number: '' });
+    setFormData({ name: '', email: '', message: '' });
   };
-
-  const nameInputId = nanoid();
-  const numberInputId = nanoid();
   return (
-    <form onSubmit={handleSubmit} className={css.form}>
-      <label htmlFor={nameInputId} className={css.label}>
-        Name
-        <input
-          className={css.input}
-          type="text"
-          name="name"
-          value={state.name}
-          onChange={handleChange}
-          id={nameInputId}
-          required
-        />
-      </label>
-      <label htmlFor={numberInputId} className={css.label}>
-        Number
-        <input
-          className={css.input}
-          type="tel"
-          name="number"
-          value={state.number}
-          onChange={handleChange}
-          id={numberInputId}
-          required
-        />
-      </label>
-
-      <button type="submit" className={css.submit}>
-        Add Contact
-      </button>
-    </form>
+    <div className={styles.container}>
+      <div className={`${styles.form} ${styles['form--signup']}`}>
+        <p className={styles['form--heading']}>AUDIT CONSULTING Welcome You!</p>
+        <form autoComplete="off" onSubmit={handleSubmit}>
+          <div className={styles.divInput}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              className={styles.input}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              className={styles.input}
+            />
+            <input
+              type="tex"
+              name="message"
+              placeholder="Your Number"
+              value={formData.message}
+              onChange={handleChange}
+              className={styles.input}
+            />
+            <input
+              type="text"
+              name="message"
+              placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
+              className={styles.input}
+            />
+          </div>
+          <div className={styles.divButton}>
+            <button className={styles.button} type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 };
 
-export default Form;
+export { Form };

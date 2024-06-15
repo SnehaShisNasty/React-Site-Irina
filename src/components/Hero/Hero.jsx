@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Hero.module.css';
 import { Modal } from '../Modal/Modal';
+import { Form } from '../Form/Form';
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -15,7 +16,9 @@ const Hero = () => {
         <button onClick={handleShow} className={styles.btn}>
           Get your fist free consultation
         </button>
-        <Modal show={showModal} handleClose={handleClose}></Modal>
+        <Modal show={showModal} handleClose={handleClose}>
+          <Form></Form>
+        </Modal>
       </div>
     </div>
   );
