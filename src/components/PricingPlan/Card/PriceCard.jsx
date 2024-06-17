@@ -1,21 +1,24 @@
 import sprite from "../../../img/symbol-defs.svg"
 import styles from "./PriceCard.module.css"
 
-const PriceCard = ({ title, price, features, ribbonColor, ribbonText }) => {
+const PriceCard = ({ title, description, price, turnover, multipleCurrencies, services, ribbonColor, ribbonText }) => {
   return (
     <div className={styles.price_card}>
       <h2 className={styles.card_title}>{title}</h2>
+      <p className={styles.card_description}>{description}</p>
       <p className={styles.card_price}>{price}$/mth</p>
-      <p className={styles.card_bill}>Billed annualy</p>
+      <p className={styles.card_turnover}>Turnover for the last 12 months - {turnover}</p>
+      <p className={styles.card_currencies}>Multiple Currencies Operation - {multipleCurrencies}</p>
+      <h3>Services:</h3>
       <ul className={styles.card_list}>
-        {features.map((feature, index) => (
+        {services.map((service, index) => (
           <li
             key={index}
             className={styles.list_item}>
             <svg className={styles.iconSvg}>
               <use href={`${sprite}#checkbox`} className={styles.icon}/>
             </svg>
-            {feature}
+            {service}
           </li>
         ))}
       </ul>

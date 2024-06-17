@@ -9,25 +9,40 @@ const PricingPlan = () => {
 
   const subPlans = [
     {
-      title: "Basic",
-      price: "50",
-      features: ["Complete documentation", "Working materiasl in Figma", "100GB cloud storage", "500 team members"],
-      ribbonColor: "blue",
+      title: "PLAN STANDARD",
+      description: "Good for sole traders and new businesses.",
+      price: "150.00",
+      turnover: "up to £85k",
+      multipleCurrencies: "not included",
+      services: [
+        "Payroll",
+        "Pension",
+        "VAT",
+        "Confirmation Statement",
+        "Annual Accounts",
+        "Corporation Tax Return",
+        "Self-assessment Tax Returns for Director",
+      ],
+      ribbonColor: "silver",
       ribbonText: "Best Value"
     },
     {
-      title: "Plus",
-      price: "99",
-      features: ["Complete documentation","Working materiasl in Figma","100GB cloud storage","500 team members"],
-      ribbonColor: "silver",
-      ribbonText: "Most Popular"
-    },
-    {
-      title: "Gold",
-      price: "299",
-      features: ["Complete documentation","Working materiasl in Figma","100GB cloud storage","500 team members"],
+      title: "PLAN PREMIUM",
+      description: "Good for growing small businesses.",
+      price: "250.00",
+      turnover: "£85k - £400k",
+      multipleCurrencies: "included",
+      services: [
+        "Payroll",
+        "Pension",
+        "VAT",
+        "Confirmation Statement",
+        "Annual Accounts",
+        "Corporation Tax Return",
+        "Self-assessment Tax Returns for Director",
+      ],
       ribbonColor: "gold",
-      ribbonText: "Top Choice"
+      ribbonText: "Most Popular"
     },
   ]
   return (
@@ -41,8 +56,11 @@ const PricingPlan = () => {
         <PriceCard
           key={index}
           title={plan.title}
+          description={plan.description}
+          turnover={plan.turnover}
+          multipleCurrencies={plan.multipleCurrencies}
           price={plan.price}
-          features={plan.features}
+          services={plan.services}
           ribbonColor={plan.ribbonColor}
           ribbonText={plan.ribbonText}
         />
