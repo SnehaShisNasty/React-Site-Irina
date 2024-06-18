@@ -1,4 +1,4 @@
-import sprite from "../../../img/symbol-defs.svg"
+//import sprite from "../../../img/symbol-defs.svg"
 import styles from "./PriceCard.module.css"
 
 const PriceCard = ({ title, description, price, turnover, multipleCurrencies, services, ribbonColor, ribbonText }) => {
@@ -9,15 +9,15 @@ const PriceCard = ({ title, description, price, turnover, multipleCurrencies, se
       <p className={styles.card_price}>{price}$/mth</p>
       <p className={styles.card_turnover}>Turnover for the last 12 months - {turnover}</p>
       <p className={styles.card_currencies}>Multiple Currencies Operation - {multipleCurrencies}</p>
-      <h3>Services:</h3>
+      <h3 className={styles.services_title} >Services:</h3>
       <ul className={styles.card_list}>
         {services.map((service, index) => (
           <li
             key={index}
             className={styles.list_item}>
-            <svg className={styles.iconSvg}>
+            {/* <svg className={styles.iconSvg}>
               <use href={`${sprite}#checkbox`} className={styles.icon}/>
-            </svg>
+            </svg> */}
             {service}
           </li>
         ))}

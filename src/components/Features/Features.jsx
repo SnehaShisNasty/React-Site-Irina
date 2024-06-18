@@ -32,7 +32,7 @@ const Features = () => {
       <div>
         <ul className={styles.logoContainer}>
           {images.map((image, index) => (
-            <li key={index}>
+            <li key={index} className={styles.logo_item}>
                 <img src={image.src} alt={image.alt} className={styles.logoImg} />
             </li>
           ))}
