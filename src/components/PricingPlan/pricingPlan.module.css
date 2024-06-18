@@ -1,3 +1,4 @@
+/* Стили для экранов 325px и больше */
 .container {
   margin: 140px 0 80px;
   opacity: 0;
@@ -12,30 +13,116 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 15px;
   padding-bottom: 48px;
 }
 
 .title {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 800;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.339);
   padding-bottom: 5px;
+  text-align: center;
 }
 
 .title_span {
   font-size: 16px;
   color: var(--gray-400);
+  text-align: center;
 }
 
 .pricing_plan {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   align-items: center;
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .pricing_plan {
-    flex-direction: column;
+.card {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 0 300px;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardTitle {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: var(--primary-500);
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.cardLink:hover {
+  color: #23a352;
+}
+
+.iconSvg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  fill: var(--primary-500);
+}
+
+/* Медиа-запрос для экранов шириной от 768px до 1439px */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 32px; /* Уменьшаем размер заголовка для средних экранов */
+  }
+
+  .card {
+    flex: 1 0 250px; /* Размер карточек для средних экранов */
+  }
+
+  .iconSvg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Медиа-запрос для экранов шириной 1440px и больше */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    margin: 100px auto 80px;
+  }
+
+  .title {
+    font-size: 40px; /* Увеличиваем размер заголовка для больших экранов */
+  }
+
+  .card {
+    flex: 1 0 350px; /* Размер карточек для больших экранов */
+  }
+
+  .iconSvg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
   }
 }
