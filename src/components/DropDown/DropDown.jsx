@@ -1,33 +1,21 @@
 import React, { useState } from 'react';
 import styles from './DropDown.module.css';
-
+import { NavLink } from 'react-router-dom';
 const Dropdown = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <div className={styles.dropdown}>
-      <button onClick={toggleDropdown} className={styles.dropdownButton}>
-        Dropdown
-      </button>{' '}
-      {isOpen && (
-        <div className={styles.dropdownMenu}>
-          <a a href="#item1" className={styles.dropdownItem}>
-            Item 1
-          </a>
-          <a href="#item2" className={styles.dropdownItem}>
-            Item 2
-          </a>
-          <a href="#item3" className={styles.dropdownItem}>
-            Item 3
-          </a>
-        </div>
-      )}
-    </div>
+    <ul className={styles.dropdown}>
+      <li className={styles.dropdownItem}>
+        <NavLink className={styles.dropdownLink} to="/individual/service1">
+          Service 1
+        </NavLink>
+      </li>
+      <li className={styles.dropdownItem}>
+        <NavLink className={styles.dropdownLink} to="/individual/service2">
+          Service 2
+        </NavLink>
+      </li>
+    </ul>
   );
 };
 
-export default Dropdown;
+export { Dropdown };
