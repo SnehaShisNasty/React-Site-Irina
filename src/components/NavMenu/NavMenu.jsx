@@ -23,7 +23,7 @@ const NavMenu = () => {
         <NavLink className={styles.link} to="/individual">
           Individual Services
         </NavLink>
-        <ul className={styles.dropdown}>
+        <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           {corporateServices.map(renderServiceCard)}
         </ul>
       </li>
@@ -31,7 +31,7 @@ const NavMenu = () => {
         <NavLink className={styles.link} to="/corporate">
           Corporate Services
         </NavLink>
-        <ul className={styles.dropdown}>
+        <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           <li className={styles.dropdownItem}>
             <NavLink className={styles.dropdownLink} to="/corporate/service1">
               Service 1
