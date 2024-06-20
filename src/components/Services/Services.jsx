@@ -13,8 +13,8 @@ const Services = () => {
 
   const renderServiceCard = (item) => (
     <div key={item.id} className={styles.card}>
-      <svg className={styles.iconSvg}>
-        <use xlinkHref={`${sprite}#${item.icon}`} className={styles.icon} />
+      <svg  className={styles.iconSvg}>
+        <use xlinkHref={`${sprite}#${item.icon}`} className={styles.icon}/>
       </svg>
       <h3 className={styles.cardTitle}>{item.name}</h3>
       <a href={item.address} className={styles.cardLink}>Learn More</a>
