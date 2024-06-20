@@ -1,7 +1,14 @@
-import React from 'react';
+import { useEffect } from 'react';
 import styles from './Modal.module.css';
 
 const Modal = ({ show, handleClose, children }) => {
+  useEffect(() => {
+    if (show) {
+      document.body.style.overflow="hidden"
+    } else {
+      document.body.style.overflow="auto"
+    }
+  },[show])
   return (
     <div
       className={`${styles.modal} ${show ? styles.show : ''}`}
