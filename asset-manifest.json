@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/React-Site-Irina/static/css/main.1f357b90.css",
-    "main.js": "/React-Site-Irina/static/js/main.3118569a.js",
-    "static/css/978.a8d20897.chunk.css": "/React-Site-Irina/static/css/978.a8d20897.chunk.css",
-    "static/js/978.85a681ec.chunk.js": "/React-Site-Irina/static/js/978.85a681ec.chunk.js",
+    "main.css": "/React-Site-Irina/static/css/main.2d2e3603.css",
+    "main.js": "/React-Site-Irina/static/js/main.e6eeca1e.js",
+    "static/css/978.eee73631.chunk.css": "/React-Site-Irina/static/css/978.eee73631.chunk.css",
+    "static/js/978.e09643ae.chunk.js": "/React-Site-Irina/static/js/978.e09643ae.chunk.js",
     "static/js/794.f294d738.chunk.js": "/React-Site-Irina/static/js/794.f294d738.chunk.js",
+    "static/js/694.74ffb705.chunk.js": "/React-Site-Irina/static/js/694.74ffb705.chunk.js",
     "static/media/pexels-pixabay-257856.jpg": "/React-Site-Irina/static/media/pexels-pixabay-257856.53229c4501081612d883.jpg",
     "static/media/xero-logo.png": "/React-Site-Irina/static/media/xero-logo.7084e0addb2e41ec76ee.png",
     "static/media/dext-logo.jpg": "/React-Site-Irina/static/media/dext-logo.d5e5f3d37db461d580d9.jpg",
@@ -15,14 +16,15 @@
     "static/media/symbol-defs.svg": "/React-Site-Irina/static/media/symbol-defs.6e633f9d5fdc73871d1602b94cf0dcc4.svg",
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
-    "main.1f357b90.css.map": "/React-Site-Irina/static/css/main.1f357b90.css.map",
-    "main.3118569a.js.map": "/React-Site-Irina/static/js/main.3118569a.js.map",
-    "978.a8d20897.chunk.css.map": "/React-Site-Irina/static/css/978.a8d20897.chunk.css.map",
-    "978.85a681ec.chunk.js.map": "/React-Site-Irina/static/js/978.85a681ec.chunk.js.map",
-    "794.f294d738.chunk.js.map": "/React-Site-Irina/static/js/794.f294d738.chunk.js.map"
+    "main.2d2e3603.css.map": "/React-Site-Irina/static/css/main.2d2e3603.css.map",
+    "main.e6eeca1e.js.map": "/React-Site-Irina/static/js/main.e6eeca1e.js.map",
+    "978.eee73631.chunk.css.map": "/React-Site-Irina/static/css/978.eee73631.chunk.css.map",
+    "978.e09643ae.chunk.js.map": "/React-Site-Irina/static/js/978.e09643ae.chunk.js.map",
+    "794.f294d738.chunk.js.map": "/React-Site-Irina/static/js/794.f294d738.chunk.js.map",
+    "694.74ffb705.chunk.js.map": "/React-Site-Irina/static/js/694.74ffb705.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f357b90.css",
-    "static/js/main.3118569a.js"
+    "static/css/main.2d2e3603.css",
+    "static/js/main.e6eeca1e.js"
   ]
 }
