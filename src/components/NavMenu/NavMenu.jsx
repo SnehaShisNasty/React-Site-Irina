@@ -32,16 +32,9 @@ const NavMenu = () => {
           Corporate Services
         </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
-          <li className={styles.dropdownItem}>
-            <NavLink className={styles.dropdownLink} to="/corporate/service1">
-              Service 1
-            </NavLink>
-          </li>
-          <li className={styles.dropdownItem}>
-            <NavLink className={styles.dropdownLink} to="/corporate/service2">
-              Service 2
-            </NavLink>
-          </li>
+          <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
+            {individualServices.map(renderServiceCard)}
+          </ul>
         </ul>
       </li>
       <li className={styles.item}>
