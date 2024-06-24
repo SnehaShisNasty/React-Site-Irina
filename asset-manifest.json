@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-Site-Irina/static/css/main.4b21453d.css",
-    "main.js": "/React-Site-Irina/static/js/main.2a2de447.js",
-    "static/css/359.b50223f4.chunk.css": "/React-Site-Irina/static/css/359.b50223f4.chunk.css",
+    "main.css": "/React-Site-Irina/static/css/main.9ec1177a.css",
+    "main.js": "/React-Site-Irina/static/js/main.27ee6c74.js",
+    "static/css/359.b638647a.chunk.css": "/React-Site-Irina/static/css/359.b638647a.chunk.css",
     "static/js/359.c9637e9f.chunk.js": "/React-Site-Irina/static/js/359.c9637e9f.chunk.js",
     "static/js/794.f294d738.chunk.js": "/React-Site-Irina/static/js/794.f294d738.chunk.js",
     "static/media/pexels-pixabay-257856.jpg": "/React-Site-Irina/static/media/pexels-pixabay-257856.53229c4501081612d883.jpg",
@@ -16,14 +16,14 @@
     "static/media/symbol-defs.svg": "/React-Site-Irina/static/media/symbol-defs.42f0c1bea8852e1d5802a41cae78be20.svg",
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
-    "main.4b21453d.css.map": "/React-Site-Irina/static/css/main.4b21453d.css.map",
-    "main.2a2de447.js.map": "/React-Site-Irina/static/js/main.2a2de447.js.map",
-    "359.b50223f4.chunk.css.map": "/React-Site-Irina/static/css/359.b50223f4.chunk.css.map",
+    "main.9ec1177a.css.map": "/React-Site-Irina/static/css/main.9ec1177a.css.map",
+    "main.27ee6c74.js.map": "/React-Site-Irina/static/js/main.27ee6c74.js.map",
+    "359.b638647a.chunk.css.map": "/React-Site-Irina/static/css/359.b638647a.chunk.css.map",
     "359.c9637e9f.chunk.js.map": "/React-Site-Irina/static/js/359.c9637e9f.chunk.js.map",
     "794.f294d738.chunk.js.map": "/React-Site-Irina/static/js/794.f294d738.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b21453d.css",
-    "static/js/main.2a2de447.js"
+    "static/css/main.9ec1177a.css",
+    "static/js/main.27ee6c74.js"
   ]
 }
