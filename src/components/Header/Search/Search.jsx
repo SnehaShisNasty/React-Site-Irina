@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   search: '',
 };
 
-const Search = ({ onSubmit, onBlur, onFocus }) => {
+const Search = ({ onSubmit, onClick, onFocus }) => {
   const [state, setState] = useState({ ...INITIAL_STATE });
 
   const handleChange = ({ target }) => {
@@ -26,22 +26,25 @@ const Search = ({ onSubmit, onBlur, onFocus }) => {
   const reset = () => {
     setState({ search: '' });
   };
-  const handleBlur = event => {
-    if (onBlur) {
-      console.log(event);
-      onBlur(event);
+  const handleClick = event => {
+    if (onClick) {
+      onClick(event);
     }
   };
   const handleFocus = event => {
-    if (onBlur) {
-      console.log(event);
+    if (onFocus) {
       onFocus(event);
     }
   };
   const searchId = nanoid();
 
   return (
-    <form className={styles.searchForm} onSubmit={handleSubmit}>
+    <form
+      className={styles.searchForm}
+      onSubmit={handleSubmit}
+      autoComplete="off"
+      onClick={handleClick}
+    >
       <input
         type="text"
         name="search"
@@ -51,7 +54,6 @@ const Search = ({ onSubmit, onBlur, onFocus }) => {
         id={searchId}
         placeholder="Search..."
         onFocus={handleFocus}
-        onBlur={handleBlur}
       />
       <button type="submit" className={styles.searchButton}></button>
     </form>

@@ -14,7 +14,7 @@ const Hero = () => {
           AUDIT CONSULTING: Expert UK Accounting & Tax Services
         </h1>
         <button onClick={handleShow} className={styles.btn}>
-          Get your fist free consultation
+          Get your first free consultation
         </button>
         <Modal show={showModal} handleClose={handleClose}>
           <Form></Form>

@@ -4,9 +4,9 @@ import { items } from '../../data/servies';
 const NavMenu = () => {
   const corporateServices = items.filter(item => item.type === 'corporate');
   const individualServices = items.filter(item => item.type === 'individual');
-  console.log(corporateServices.map);
+
   const renderServiceCard = item => (
-    <li className={styles.dropdownItem}>
+    <li className={styles.dropdownItem} key={item.id}>
       <NavLink className={styles.dropdownLink} to={item.address}>
         {item.name}
       </NavLink>

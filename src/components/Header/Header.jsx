@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 import { Logo } from './Logo/Logo';
@@ -8,14 +8,16 @@ import { items } from '../../data/servies';
 import { ChangeClass } from '../../helpers/ChangeClass';
 import { Modal } from '../Modal/Modal';
 import { Form } from '../Form/Form';
+
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const [filteredItems, setFilteredItems] = useState([]);
+  const [filter, setFilter] = useState([]);
   const filteredList = useRef(null);
+  const link = useRef(null);
 
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
   const handleSearch = ({ search }) => {
+    setFilter(search);
     if (search !== '') {
       const filtered = items.filter(item =>
         item.name.toLowerCase().includes(search.toLowerCase())
@@ -24,39 +26,58 @@ const Header = () => {
       ChangeClass(filteredList, styles.active, true);
     } else {
       setFilteredItems([]);
-      ChangeClass(filteredList, styles.inActive, true);
+      ChangeClass(filteredList, styles.active);
     }
   };
-  const handleBlur = event => {
-    ChangeClass(filteredList, styles.active);
-  };
-  const handleFocus = event => {
-    ChangeClass(filteredList, styles.active, true);
-  };
+
+  useEffect(() => {
+    const handleClick = event => {
+      if (link.current === event.currentTarget) {
+        ChangeClass(filteredList, styles.active);
+      } else if (
+        event.target.className === 'Search_searchInput__fMAqM' ||
+        filter === false
+      ) {
+        ChangeClass(filteredList, styles.active, true);
+      } else {
+        ChangeClass(filteredList, styles.active);
+      }
+    };
+
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+  }, []);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   return (
     <div className={styles.overlay}>
       <div className={styles.header}>
         <Logo />
         <NavMenu />
-        <div className={styles.searchBox}>
+        <div className={styles.content}>
           <button onClick={handleShow} className={styles.btn}>
             Free Consult
           </button>
           <Modal show={showModal} handleClose={handleClose}>
-            <Form></Form>
+            <Form />
           </Modal>
-          <Search
-            onSubmit={handleSearch}
-            onBlur={handleBlur}
-            onFocus={handleFocus}
-          />
-          <ul ref={filteredList} className={`${styles.filteredList} `}>
-            {filteredItems.map(item => (
-              <li key={item.id} className={styles.item}>
-                <NavLink to={item.address}> {item.name}</NavLink>
-              </li>
-            ))}
-          </ul>
+          <div className={styles.searchBox}>
+            <Search onSubmit={handleSearch} />
+            <ul ref={filteredList} className={`${styles.filteredList}`}>
+              {filteredItems.map(item => (
+                <li key={item.id} className={styles.item}>
+                  <NavLink to={item.address} ref={link}>
+                    {item.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
