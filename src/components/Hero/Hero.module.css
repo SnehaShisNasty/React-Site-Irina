@@ -27,6 +27,7 @@
   text-align: center;
   color: var(--white-900);
   margin-bottom: 25px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.339);
 }
 .btn {
   display: block;

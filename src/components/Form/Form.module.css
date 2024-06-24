@@ -64,6 +64,7 @@
 [id='message'] {
   border: 1px solid var(--dark-gray-400);
   border-radius: 5px;
+  resize: none;
 }
 
 [id='message']:focus,
