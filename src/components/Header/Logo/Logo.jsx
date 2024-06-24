@@ -2,9 +2,9 @@
 import styles from './Logo.module.css';
 const Logo = () => {
   return (
-    <>
-      <p className={styles.logo}>Logo</p>
-    </>
+    <div>
+      <p className={styles.logo}>AUDIT CONSULTING</p>
+    </div>
   );
 };
 

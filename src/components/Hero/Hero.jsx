@@ -11,7 +11,7 @@ const Hero = () => {
     <div className={styles.overlay}>
       <div className={styles.hero}>
         <h1 className={styles.title}>
-          Faros Capital: Expert UK Accounting & Tax Services
+          AUDIT CONSULTING: Expert UK Accounting & Tax Services
         </h1>
         <button onClick={handleShow} className={styles.btn}>
           Get your fist free consultation

@@ -7,7 +7,7 @@ import { Search } from './Search/Search';
 import { items } from '../../data/servies';
 import { ChangeClass } from '../../helpers/ChangeClass';
 import { Modal } from '../Modal/Modal';
-
+import { Form } from '../Form/Form';
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const [filteredItems, setFilteredItems] = useState([]);
@@ -42,7 +42,9 @@ const Header = () => {
           <button onClick={handleShow} className={styles.btn}>
             Free Consult
           </button>
-          <Modal show={showModal} handleClose={handleClose}></Modal>
+          <Modal show={showModal} handleClose={handleClose}>
+            <Form></Form>
+          </Modal>
           <Search
             onSubmit={handleSearch}
             onBlur={handleBlur}
@@ -56,7 +58,6 @@ const Header = () => {
             ))}
           </ul>
         </div>
-        <div></div>
       </div>
     </div>
   );
