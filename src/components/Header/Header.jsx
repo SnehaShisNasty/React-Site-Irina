@@ -49,7 +49,7 @@ const Header = () => {
     return () => {
       document.removeEventListener('click', handleClick);
     };
-  }, []);
+  }, [filter]);
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
