@@ -1,54 +1,54 @@
 {
-  "header":{
-    "search":"Search...",
-    "freeConsult":"Free Consult",
-    "navMenu":{
-      "homePage":"Home Page",
-      "individualServices":"Individual Services",
-      "corporateServices":"Corporate Services",
-      "aboutUs":"About Us"
+  "header": {
+    "search": "Search...",
+    "freeConsult": "Free Consult",
+    "navMenu": {
+      "homePage": "Home Page",
+      "individualServices": "Individual Services",
+      "corporateServices": "Corporate Services",
+      "aboutUs": "About Us"
     }
   },
   "services": {
-      "title":"Services",
-      "learMore":"Lear more",
-      "businessConsulting": "Business Consulting",
-      "companyFormationService": "Company formation service",
-      "fullAccountingAndTaxSupport": "Full accounting and tax support",
-      "separateServicesVATReturnsAnnual": "Separate services - VAT returns, Annual",
-      "accountsCT600": "Accounts, CT600",
-      "consulting": "Consulting",
-      "selfEmploymentRegistrationUTR": "Self-employment registration (UTR)",
-      "selfAssessmentTaxReturn": "Self-Assessment Tax Return",
-      "cisRegistration": "20% CIS Registration",
-      "payeRefundRequest": "PAYE Refund Request"
+    "title": "Services",
+    "learMore": "Lear more",
+    "businessConsulting": "Business Consulting",
+    "companyFormationService": "Company formation service",
+    "fullAccountingAndTaxSupport": "Full accounting and tax support",
+    "separateServicesVATReturnsAnnual": "Separate services - VAT returns, Annual",
+    "accountsCT600": "Accounts, CT600",
+    "consulting": "Consulting",
+    "selfEmploymentRegistrationUTR": "Self-employment registration (UTR)",
+    "selfAssessmentTaxReturn": "Self-Assessment Tax Return",
+    "cisRegistration": "20% CIS Registration",
+    "payeRefundRequest": "PAYE Refund Request"
   },
-  "hero":{
-    "title":"AUDIT CONSULTING: Expert UK Accounting & Tax Services",
-    "getConsulting":"Get your first free consultation"
+  "hero": {
+    "title": "AUDIT CONSULTING: Expert UK Accounting & Tax Services",
+    "getConsulting": "Get your first free consultation"
   },
-  "modal":{
-    "title":"Welcome!",
-    "name":"Name",
-    "namePH":"Enter your name",
-    "email":"Email",
-    "emailPH":"Enter your email",
-    "phone":"Phone Number",
-    "phonePH":"Enter your phone number",
-    "message":"Message",
-    "messagePH":"Enter your message",
-    "submit":"Submit"
+  "modal": {
+    "title": "Welcome!",
+    "name": "Name",
+    "namePH": "Enter your name",
+    "email": "Email",
+    "emailPH": "Enter your email",
+    "phone": "Phone Number",
+    "phonePH": "Enter your phone number",
+    "message": "Message",
+    "messagePH": "Enter your message",
+    "submit": "Submit"
   },
-  "features":{
-    "title":"Why AUDIT CONSULTING ?",
-    "reputation":"AUDIT CONSULTING has a reputation as one of the most reliable and effective accountancy companies.",
-    "packages":"Our accountancy packages are ideal for contractors and freelancers, individual clients and businesses, large or small.",
-    "expertise":"Our company expertly attends to all your taxation and business needs. Due to the expertise of our staff, our dedication and many years of experience in accounting, consulting and assessment, we can offer you the support that you can rely on.",
-    "services":"We provide a wide range of accountancy services London and nationwide including personal self-assessment tax returns, annual accounts, payroll and bookkeeping to a large variety of different clients.",
-    "businessesType":"We help a diverse range of businesses including start-ups, sole traders, limited companies, contractors, freelancers and landlords.",
-    "belief":"We believe that in today's complex financial and business world, everyone needs reliable, professional accountancy advice and help in managing their personal and business finances.",
-    "benefits":"Our highly regarded accounting includes a dedicated accountant, unlimited phone, email and chat support, annual accountants and much more.",
-    "moreInfo":"More info"
+  "features": {
+    "title": "Why AUDIT CONSULTING ?",
+    "reputation": "AUDIT CONSULTING has a reputation as one of the most reliable and effective accountancy companies.",
+    "packages": "Our accountancy packages are ideal for contractors and freelancers, individual clients and businesses, large or small.",
+    "expertise": "Our company expertly attends to all your taxation and business needs. Due to the expertise of our staff, our dedication and many years of experience in accounting, consulting and assessment, we can offer you the support that you can rely on.",
+    "services": "We provide a wide range of accountancy services London and nationwide including personal self-assessment tax returns, annual accounts, payroll and bookkeeping to a large variety of different clients.",
+    "businessesType": "We help a diverse range of businesses including start-ups, sole traders, limited companies, contractors, freelancers and landlords.",
+    "belief": "We believe that in today's complex financial and business world, everyone needs reliable, professional accountancy advice and help in managing their personal and business finances.",
+    "benefits": "Our highly regarded accounting includes a dedicated accountant, unlimited phone, email and chat support, annual accountants and much more.",
+    "moreInfo": "More info"
   },
   "pricingPlan": {
     "title": "Flexible pricing plans for you and your business",
@@ -73,12 +73,12 @@
     },
     "ribbonBestValue": "Best Value",
     "ribbonMostPopular": "Most Popular",
-    "priceCard":{
-      "mth":"mth",
-      "turnover":"Turnover for the last 12 months - ",
-      "currencies":"Multiple Currencies Operation - ",
-      "services":"Services:",
-      "subscribe":"Subscribe"
+    "priceCard": {
+      "mth": "mth",
+      "turnover": "Turnover for the last 12 months - ",
+      "currencies": "Multiple Currencies Operation - ",
+      "services": "Services:",
+      "subscribe": "Subscribe"
     }
   },
   "trustBlobs": {
@@ -92,11 +92,14 @@
       "We are from Ukraine, so we understand your peculiarities and values."
     ]
   },
-  "footer":{
+  "footer": {
     "additional": "Additional",
+    "homePage": "Home Page",
+    "individualServices": "Individual Services",
+    "corporateServices": "Corporate Services",
     "contactUs": "Contact Us",
     "aboutUs": "About Us",
-    "services": "Services",
+    "services": "Popular Services",
     "businessConsulting": "Business Consulting",
     "companyFormation": "Company Formation Service",
     "accountingSupport": "Full Accounting And Tax Support",
@@ -108,10 +111,9 @@
     "email": "Email",
     "socialMedia": "Follow us on",
     "socialLinks": [
-      {"name": "Telegram", "icon": "telegram"},
-      {"name": "Instagram", "icon": "instagram"},
-      {"name": "WhatsApp", "icon": "whatsapp"}
+      { "name": "Telegram", "icon": "telegram" },
+      { "name": "Instagram", "icon": "instagram" },
+      { "name": "WhatsApp", "icon": "whatsapp" }
     ]
   }
 }
-
