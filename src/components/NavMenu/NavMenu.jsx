@@ -1,14 +1,18 @@
 import { NavLink } from 'react-router-dom';
 import styles from './nav-menu.module.css';
 import { items } from '../../data/servies';
+import { useTranslation } from 'react-i18next';
+
 const NavMenu = () => {
+  const { t } = useTranslation()
+
   const corporateServices = items.filter(item => item.type === 'corporate');
   const individualServices = items.filter(item => item.type === 'individual');
 
   const renderServiceCard = item => (
     <li className={styles.dropdownItem} key={item.id}>
       <NavLink className={styles.dropdownLink} to={item.address}>
-        {item.name}
+        {t(`services.${item.name}`)}
       </NavLink>
     </li>
   );
@@ -16,12 +20,12 @@ const NavMenu = () => {
     <ul className={styles.menu}>
       <li className={styles.item}>
         <NavLink className={styles.link} to="/">
-          Home Page
+          {t('header.navMenu.homePage')}
         </NavLink>
       </li>
       <li className={styles.item}>
         <NavLink className={styles.link} to="/individual">
-          Individual Services
+          {t('header.navMenu.individualServices')}
         </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           {corporateServices.map(renderServiceCard)}
@@ -29,7 +33,7 @@ const NavMenu = () => {
       </li>
       <li className={styles.item}>
         <NavLink className={styles.link} to="/corporate">
-          Corporate Services
+          {t('header.navMenu.corporateServices')}
         </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
@@ -39,7 +43,7 @@ const NavMenu = () => {
       </li>
       <li className={styles.item}>
         <NavLink className={styles.link} to="/about-us">
-          About Us
+          {t('header.navMenu.aboutUs')}
         </NavLink>
       </li>
     </ul>

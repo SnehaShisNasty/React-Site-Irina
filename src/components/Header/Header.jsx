@@ -8,6 +8,8 @@ import { items } from '../../data/servies';
 import { ChangeClass } from '../../helpers/ChangeClass';
 import { Modal } from '../Modal/Modal';
 import { Form } from '../Form/Form';
+import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,6 +17,7 @@ const Header = () => {
   const [filter, setFilter] = useState([]);
   const filteredList = useRef(null);
   const link = useRef(null);
+  const { t } = useTranslation()
 
   const handleSearch = ({ search }) => {
     setFilter(search);
@@ -61,7 +64,7 @@ const Header = () => {
         <NavMenu />
         <div className={styles.content}>
           <button onClick={handleShow} className={styles.btn}>
-            Free Consult
+            {t('header.freeConsult')}
           </button>
           <Modal show={showModal} handleClose={handleClose}>
             <Form />
@@ -77,6 +80,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            <LanguageSwitcher/>
           </div>
         </div>
       </div>

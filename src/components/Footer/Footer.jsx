@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import info from '../../data/contactInfo';
+import { useTranslation } from 'react-i18next';
 import sprite from '../../img/symbol-defs.svg';
 import styles from './footer.module.css';
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   const openMap = address => {
     const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
       address
@@ -11,100 +14,81 @@ const Footer = () => {
     window.open(mapUrl, '_blank');
   };
 
+  const additionalLinks = [
+    { path: '/', label: t('footer.contactUs') },
+    { path: '/', label: t('footer.aboutUs') }
+  ];
+
+  const servicesLinks = [
+    { path: '/', label: t('footer.businessConsulting') },
+    { path: '/', label: t('footer.companyFormation') },
+    { path: '/', label: t('footer.accountingSupport') },
+    { path: '/', label: t('footer.selfEmployment') },
+    { path: '/', label: t('footer.taxReturn') }
+  ];
+
+  const contactInfo = [
+    { type: 'location', value: info.location, action: () => openMap(info.location) },
+    { type: 'tel', value: info.tel, action: () => `tel:${info.tel}` },
+    { type: 'email', value: info.email, action: () => `mailto:${info.email}` }
+  ];
+
+  const socialLinks = t('footer.socialLinks', { returnObjects: true });
+
+
   return (
     <div className={styles.container}>
       <div className={styles.column}>
-        <h1>Additional</h1>
+        <h1>{t('footer.additional')}</h1>
         <ul className={styles.list}>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Contact Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Privacy Policy and Cookies
-            </NavLink>
-          </li>
-        </ul>
-        <form className={styles.inputContainer}>
-          <input
-            className={styles.inputForm}
-            type="email"
-            placeholder="example@mail.com"
-          />
-          <button>Join us</button>
-        </form>
-      </div>
-      <div className={styles.column}>
-        <h1>Services</h1>
-        <ul className={styles.list}>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Business Consulting
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Company Formation Service
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Full Accounting And Tax Support
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Self-employment registration (UTR)
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Self-Assessment Tax Return
-            </NavLink>
-          </li>
+          {additionalLinks.map((link, index) => (
+            <li key={index}>
+              <NavLink to={link.path} className={styles.link}>
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
       <div className={styles.column}>
-        <h1>Questions</h1>
+        <h1>{t('footer.services')}</h1>
         <ul className={styles.list}>
-          <li>
-            <p className={styles.link} onClick={() => openMap(info.location)}>
-              {info.location}
-            </p>
-          </li>
-          <li>
-            <a href={`tel:${info.tel}`} className={styles.link}>
-              {info.tel}
-            </a>
-          </li>
-          <li>
-            <a href={`mailto:${info.email}`} className={styles.link}>
-              {info.email}
-            </a>
-          </li>
+          {servicesLinks.map((link, index) => (
+            <li key={index}>
+              <NavLink to={link.path} className={styles.link}>
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={styles.column}>
+        <h1>{t('footer.questions')}</h1>
+        <ul className={styles.list}>
+          {contactInfo.map((info, index) => (
+            <li key={index}>
+              {info.type === 'location' ? (
+                <p className={styles.link} onClick={info.action}>
+                  {info.value}
+                </p>
+              ) : (
+                <a href={info.action()} className={styles.link}>
+                  {info.value}
+                </a>
+              )}
+            </li>
+          ))}
         </ul>
         <ul className={styles.social}>
-          <li>
-            <a href="/" className={styles.linkSocial}>
-              <svg className={styles.iconSvg}>
-                <use href={`${sprite}#instagram`} className={styles.icon} />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="/" className={styles.linkSocial}>
-              <svg className={styles.iconSvg}>
-                <use href={`${sprite}#whatsapp`} className={styles.icon} />
-              </svg>
-            </a>
-          </li>
+          {socialLinks.map((link, index) => (
+            <li key={index}>
+              <a href="/" className={styles.linkSocial}>
+                <svg className={styles.iconSvg}>
+                  <use href={`${sprite}#${link.icon}`} className={styles.icon} />
+                </svg>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Notiflix from 'notiflix';
 import styles from './Form.module.css';
 
@@ -9,6 +10,8 @@ const Form = ({ onSubmit }) => {
     phone: '',
     message: '',
   });
+
+  const { t } = useTranslation()
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -55,50 +58,50 @@ const Form = ({ onSubmit }) => {
   return (
     <div className={styles.container}>
       <div className={`${styles.form} ${styles['form--signup']}`}>
-        <p className={styles['form--heading']}>Welcome!</p>
+        <p className={styles['form--heading']}>{t('modal.title')}</p>
         <form autoComplete="off" onSubmit={handleSubmit}>
           <div className={styles.inputGroup}>
-            <label htmlFor="name" className={styles.label}>Name</label>
+            <label htmlFor="name" className={styles.label}>{t('modal.name')}</label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Enter your name"
+              placeholder={t('modal.namePH')}
               value={formData.name}
               onChange={handleChange}
               className={styles.input}
             />
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor="email" className={styles.label}>Email</label>
+            <label htmlFor="email" className={styles.label}>{t('modal.email')}</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Enter your email"
+              placeholder={t('modal.emailPH')}
               value={formData.email}
               onChange={handleChange}
               className={styles.input}
             />
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor="phone" className={styles.label}>Phone Number</label>
+            <label htmlFor="phone" className={styles.label}>{t('modal.phone')}</label>
             <input
               type="text"
               id="phone"
               name="phone"
-              placeholder="Enter your phone number"
+              placeholder={t('modal.phonePH')}
               value={formData.phone}
               onChange={handleChange}
               className={styles.input}
             />
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor="message" className={styles.label}>Message</label>
+            <label htmlFor="message" className={styles.label}>{t('modal.message')}</label>
             <textarea
               id="message"
               name="message"
-              placeholder="Enter your message"
+              placeholder={t('modal.messagePH')}
               value={formData.message}
               onChange={handleChange}
               className={styles.input}
@@ -107,7 +110,7 @@ const Form = ({ onSubmit }) => {
           </div>
           <div className={styles.divButton}>
             <button className={styles.button} type="submit">
-              Submit
+              {t('modal.submit')}
             </button>
           </div>
         </form>

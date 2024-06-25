@@ -1,5 +1,5 @@
 const content = {
-  companyName: 'AUDIT CONSULTING',
+  companyName: 'Why AUDIT CONSULTING ?',
   reputation:
     'AUDIT CONSULTING has a reputation as one of the most reliable and effective accountancy companies.',
   packages:
