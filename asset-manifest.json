@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Site-Irina/static/css/main.43bbf6db.css",
-    "main.js": "/React-Site-Irina/static/js/main.3f7929b4.js",
+    "main.css": "/React-Site-Irina/static/css/main.87e24446.css",
+    "main.js": "/React-Site-Irina/static/js/main.769eead9.js",
     "static/css/361.b87f3845.chunk.css": "/React-Site-Irina/static/css/361.b87f3845.chunk.css",
     "static/js/361.8caa5be5.chunk.js": "/React-Site-Irina/static/js/361.8caa5be5.chunk.js",
     "static/js/794.ec5d7944.chunk.js": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js",
@@ -16,14 +16,14 @@
     "static/media/symbol-defs.svg": "/React-Site-Irina/static/media/symbol-defs.2282332dc2134923364603f13d7400c7.svg",
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
-    "main.43bbf6db.css.map": "/React-Site-Irina/static/css/main.43bbf6db.css.map",
-    "main.3f7929b4.js.map": "/React-Site-Irina/static/js/main.3f7929b4.js.map",
+    "main.87e24446.css.map": "/React-Site-Irina/static/css/main.87e24446.css.map",
+    "main.769eead9.js.map": "/React-Site-Irina/static/js/main.769eead9.js.map",
     "361.b87f3845.chunk.css.map": "/React-Site-Irina/static/css/361.b87f3845.chunk.css.map",
     "361.8caa5be5.chunk.js.map": "/React-Site-Irina/static/js/361.8caa5be5.chunk.js.map",
     "794.ec5d7944.chunk.js.map": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43bbf6db.css",
-    "static/js/main.3f7929b4.js"
+    "static/css/main.87e24446.css",
+    "static/js/main.769eead9.js"
   ]
 }
