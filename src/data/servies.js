@@ -1,72 +1,72 @@
 export const items = [
   {
     id: 1,
-    name: 'Business Consulting',
+    name: 'businessConsulting',
     type: 'corporate',
     address: 'business-consulting',
-    icon:'business-consulting'
+    icon: 'business-consulting'
   },
   {
     id: 2,
-    name: 'Company formation service',
+    name: 'companyFormationService',
     type: 'corporate',
     address: 'company-formation-service',
-    icon:'service'
+    icon: 'service'
   },
   {
     id: 3,
-    name: 'Full accounting and tax support',
+    name: 'fullAccountingAndTaxSupport',
     type: 'corporate',
-    address: 'full-accounting-and-tax-suppor',
-    icon:'accounting'
+    address: 'full-accounting-and-tax-support',
+    icon: 'accounting'
   },
   {
     id: 4,
-    name: 'Separate services - VAT returns, Annual ',
+    name: 'separateServicesVATReturnsAnnual',
     type: 'corporate',
     address: 'separate-services-VAT-returns-annual',
-    icon:'vat'
+    icon: 'vat'
   },
   {
     id: 5,
-    name: 'Accounts, CT600',
+    name: 'accountsCT600',
     type: 'corporate',
     address: 'accounts-CT600',
-    icon:'accounts'
+    icon: 'accounts'
   },
   {
     id: 6,
-    name: 'Consulting',
+    name: 'consulting',
     type: 'individual',
     address: 'consulting',
-    icon:'consulting'
+    icon: 'consulting'
   },
   {
     id: 7,
-    name: 'Self-employment registration (UTR)',
+    name: 'selfEmploymentRegistrationUTR',
     type: 'individual',
     address: 'self-employment-registration-(UTR)',
-    icon:'registration'
+    icon: 'registration'
   },
   {
     id: 8,
-    name: 'Self-Assessment Tax Return',
+    name: 'selfAssessmentTaxReturn',
     type: 'individual',
     address: 'self-assessment-tax-return',
-    icon:'self-assessment'
+    icon: 'self-assessment'
   },
   {
     id: 9,
-    name: '20% CIS Registration',
+    name: 'cisRegistration',
     type: 'individual',
     address: '20%-CIS-registration',
-    icon:'cis'
+    icon: 'cis'
   },
   {
     id: 10,
-    name: 'PAYE Refund Request',
+    name: 'payeRefundRequest',
     type: 'individual',
     address: 'PAYE-refund-request',
-    icon:'refund'
+    icon: 'refund'
   },
 ];

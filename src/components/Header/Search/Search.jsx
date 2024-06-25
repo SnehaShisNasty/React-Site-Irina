@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
+import { useTranslation } from 'react-i18next';
 import styles from './Search.module.css';
 
 const INITIAL_STATE = {
@@ -8,6 +9,7 @@ const INITIAL_STATE = {
 
 const Search = ({ onSubmit, onClick, onFocus }) => {
   const [state, setState] = useState({ ...INITIAL_STATE });
+  const { t } = useTranslation()
 
   const handleChange = ({ target }) => {
     const { name, value } = target;
@@ -52,7 +54,7 @@ const Search = ({ onSubmit, onClick, onFocus }) => {
         value={state.search}
         onChange={handleChange}
         id={searchId}
-        placeholder="Search..."
+        placeholder={t('header.search')}
         onFocus={handleFocus}
       />
       <button type="submit" className={styles.searchButton}></button>

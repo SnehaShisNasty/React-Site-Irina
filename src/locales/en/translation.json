@@ -1,0 +1,117 @@
+{
+  "header":{
+    "search":"Search...",
+    "freeConsult":"Free Consult",
+    "navMenu":{
+      "homePage":"Home Page",
+      "individualServices":"Individual Services",
+      "corporateServices":"Corporate Services",
+      "aboutUs":"About Us"
+    }
+  },
+  "services": {
+      "title":"Services",
+      "learMore":"Lear more",
+      "businessConsulting": "Business Consulting",
+      "companyFormationService": "Company formation service",
+      "fullAccountingAndTaxSupport": "Full accounting and tax support",
+      "separateServicesVATReturnsAnnual": "Separate services - VAT returns, Annual",
+      "accountsCT600": "Accounts, CT600",
+      "consulting": "Consulting",
+      "selfEmploymentRegistrationUTR": "Self-employment registration (UTR)",
+      "selfAssessmentTaxReturn": "Self-Assessment Tax Return",
+      "cisRegistration": "20% CIS Registration",
+      "payeRefundRequest": "PAYE Refund Request"
+  },
+  "hero":{
+    "title":"AUDIT CONSULTING: Expert UK Accounting & Tax Services",
+    "getConsulting":"Get your first free consultation"
+  },
+  "modal":{
+    "title":"Welcome!",
+    "name":"Name",
+    "namePH":"Enter your name",
+    "email":"Email",
+    "emailPH":"Enter your email",
+    "phone":"Phone Number",
+    "phonePH":"Enter your phone number",
+    "message":"Message",
+    "messagePH":"Enter your message",
+    "submit":"Submit"
+  },
+  "features":{
+    "title":"Why AUDIT CONSULTING ?",
+    "reputation":"AUDIT CONSULTING has a reputation as one of the most reliable and effective accountancy companies.",
+    "packages":"Our accountancy packages are ideal for contractors and freelancers, individual clients and businesses, large or small.",
+    "expertise":"Our company expertly attends to all your taxation and business needs. Due to the expertise of our staff, our dedication and many years of experience in accounting, consulting and assessment, we can offer you the support that you can rely on.",
+    "services":"We provide a wide range of accountancy services London and nationwide including personal self-assessment tax returns, annual accounts, payroll and bookkeeping to a large variety of different clients.",
+    "businessesType":"We help a diverse range of businesses including start-ups, sole traders, limited companies, contractors, freelancers and landlords.",
+    "belief":"We believe that in today's complex financial and business world, everyone needs reliable, professional accountancy advice and help in managing their personal and business finances.",
+    "benefits":"Our highly regarded accounting includes a dedicated accountant, unlimited phone, email and chat support, annual accountants and much more.",
+    "moreInfo":"More info"
+  },
+  "pricingPlan": {
+    "title": "Flexible pricing plans for you and your business",
+    "subtitle": "Pricing that scales with your business immediately",
+    "planStandard": "PLAN STANDARD",
+    "planPremium": "PLAN PREMIUM",
+    "goodForSoleTraders": "Good for sole traders and new businesses.",
+    "goodForGrowingSmallBusinesses": "Good for growing small businesses.",
+    "price": "Price",
+    "turnover": "Turnover",
+    "upTo": "up to £85k",
+    "multipleCurrenciesIncluded": "included",
+    "multipleCurrenciesNotIncluded": "not included",
+    "services": {
+      "payroll": "Payroll",
+      "pension": "Pension",
+      "vat": "VAT",
+      "confirmationStatement": "Confirmation Statement",
+      "annualAccounts": "Annual Accounts",
+      "corporationTaxReturn": "Corporation Tax Return",
+      "selfAssessmentTaxReturnsForDirector": "Self-assessment Tax Returns for Director"
+    },
+    "ribbonBestValue": "Best Value",
+    "ribbonMostPopular": "Most Popular",
+    "priceCard":{
+      "mth":"mth",
+      "turnover":"Turnover for the last 12 months - ",
+      "currencies":"Multiple Currencies Operation - ",
+      "services":"Services:",
+      "subscribe":"Subscribe"
+    }
+  },
+  "trustBlobs": {
+    "title": "Why can you trust us?",
+    "items": [
+      "You work directly with an accountant. Your case is handled by a specialist who has received qualifications and practical experience in Britain.",
+      "AUDIT CONSULTING is owner-managed, so you will work with one person throughout the entire collaboration.",
+      "The company is licensed and accredited. We are entitled to represent your interests before HMRC.",
+      "We handle your case from start to finish.",
+      "AUDIT CONSULTING is regulated by many authorities in order to protect the interests of users.",
+      "We are from Ukraine, so we understand your peculiarities and values."
+    ]
+  },
+  "footer":{
+    "additional": "Additional",
+    "contactUs": "Contact Us",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "businessConsulting": "Business Consulting",
+    "companyFormation": "Company Formation Service",
+    "accountingSupport": "Full Accounting And Tax Support",
+    "selfEmployment": "Self-employment registration (UTR)",
+    "taxReturn": "Self-Assessment Tax Return",
+    "questions": "Questions",
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "socialMedia": "Follow us on",
+    "socialLinks": [
+      {"name": "Telegram", "icon": "telegram"},
+      {"name": "Instagram", "icon": "instagram"},
+      {"name": "WhatsApp", "icon": "whatsapp"}
+    ]
+  }
+}
+

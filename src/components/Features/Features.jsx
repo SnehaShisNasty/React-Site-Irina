@@ -1,10 +1,12 @@
 import { useRef } from 'react';
 import useVisibility from 'customeHooks/useVisivility';
-import content from "./featuresContent";
+import { useTranslation } from 'react-i18next';
+// import content from "./featuresContent";
 import images from "../../img/brand/images"
 import styles from "./features.module.css";
 
 const Features = () => {
+  const { t } = useTranslation()
   const containerRef = useRef(null);
   const isVisible = useVisibility(containerRef);
 
@@ -20,15 +22,15 @@ const Features = () => {
 
   return (
     <div ref={containerRef} className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
-      <h1 className={styles.title}>Why {content.companyName} ?</h1>
+      <h1 className={styles.title}>{t('features.title')}</h1>
       <ul>
         {contentKeys.map((key, index)=>(
         <li key={key} className={styles.item}>
-            {index + 1}. {content[key]}
+            {index + 1}. {t(`features.${key}`)}
         </li>
         ))}
       </ul>
-      <button className={styles.btn}>More info</button>
+      <button className={styles.btn}>{t('features.moreInfo')}</button>
       <div>
         <ul className={styles.logoContainer}>
           {images.map((image, index) => (

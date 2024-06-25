@@ -1,0 +1,117 @@
+{
+  "header":{
+    "search":"Пошук...",
+    "freeConsult":"Безкоштовна консульація",
+    "navMenu":{
+      "homePage":"Головна",
+      "individualServices":"Індивідуальні послуги",
+      "corporateServices":"Корпоративні послуги",
+      "aboutUs":"Про нас"
+    }
+  },
+  "services": {
+      "title":"Послуги",
+      "learMore":"Дінатися більше",
+      "businessConsulting": "Бізнес Консалтинг",
+      "companyFormationService": "Послуги з формування компаній",
+      "fullAccountingAndTaxSupport": "Повна бухгалтерська та податкова підтримка",
+      "separateServicesVATReturnsAnnual": "Окремі послуги - ПДВ повернення, Річний звіт",
+      "accountsCT600": "Облікові записи, CT600",
+      "consulting": "Консалтинг",
+      "selfEmploymentRegistrationUTR": "Реєстрація самозайнятих (UTR)",
+      "selfAssessmentTaxReturn": "Самооцінка податкової декларації",
+      "cisRegistration": "20% Реєстрація CIS",
+      "payeRefundRequest": "Запит на повернення PAYE"
+    },
+  "hero": {
+    "title": "AUDIT CONSULTING: Експертні бухгалтерські та податкові послуги в UK",
+    "getConsulting": "Отримайте першу безкоштовну консультацію"
+  },
+  "modal": {
+    "title": "Ласкаво просимо!",
+    "name": "Ім'я",
+    "namePH": "Введіть ваше ім'я",
+    "email": "Email",
+    "emailPH": "Введіть ваш email",
+    "phone": "Номер телефону",
+    "phonePH": "Введіть ваш номер телефону",
+    "message": "Повідомлення",
+    "messagePH": "Введіть ваше повідомлення",
+    "submit": "Надіслати"
+  },
+  "features":{
+    "title":"Чому AUDIT CONSULTING ?",
+    "reputation":"AUDIT CONSULTING має солідну репутацію, сформовану протягом багатьох років.",
+    "packages":"Наші пакети адаптовані до ваших потреб.",
+    "expertise":"Ми надаємо експертні знання.",
+    "services":"Ми пропонуємо широкий спектр послуг.",
+    "businessesType":"Ми обслуговуємо різні типи бізнесу.",
+    "belief":"Ми віримо в якість та досконалість.",
+    "benefits":"Ми надаємо численні переваги нашим клієнтам.",
+    "moreInfo":"Детальніше"
+  },
+   "pricingPlan": {
+    "title": "Гнучкі цінові плани для вас та вашого бізнесу",
+    "subtitle": "Цінова політика, яка масштабується разом з вашим бізнесом негайно",
+    "planStandard": "ПЛАН СТАНДАРТ",
+    "planPremium": "ПРЕМІУМ ПЛАН",
+    "goodForSoleTraders": "Добре підходить для самозайнятих осіб та нових бізнесів.",
+    "goodForGrowingSmallBusinesses": "Добре підходить для зростаючих малих бізнесів.",
+    "price": "Ціна",
+    "turnover": "Оборот",
+    "upTo": "до £85k",
+    "multipleCurrenciesIncluded": "включено",
+    "multipleCurrenciesNotIncluded": "не включено",
+    "services": {
+      "payroll": "Виплата зарплати",
+      "pension": "Пенсія",
+      "vat": "ПДВ",
+      "confirmationStatement": "Заява про підтвердження",
+      "annualAccounts": "Річні звіти",
+      "corporationTaxReturn": "Податкова декларація юридичної особи",
+      "selfAssessmentTaxReturnsForDirector": "Самооцінка податкових декларацій для директора"
+    },
+    "ribbonBestValue": "Краща ціна",
+    "ribbonMostPopular": "Найпопулярніший",
+    "priceCard": {
+      "mth": "місяць",
+      "turnover": "Оборот за останні 12 місяців - ",
+      "currencies": "Операції з кількома валютами - ",
+      "services": "Послуги:",
+      "subscribe": "Підписатися"
+    }
+  },
+   "trustBlobs": {
+    "title": "Чому ви можете нам довіряти?",
+    "items": [
+      "Ви працюєте безпосередньо з бухгалтером. Вашою справою займається фахівець, який отримав кваліфікацію та практичний досвід у Великобританії.",
+      "AUDIT CONSULTING управляється власником, тому ви будете працювати з однією людиною протягом усього співробітництва.",
+      "Компанія ліцензована та акредитована. Ми маємо право представляти ваші інтереси перед HMRC.",
+      "Ми займаємося вашою справою від початку до кінця.",
+      "AUDIT CONSULTING регулюється багатьма органами для захисту інтересів користувачів.",
+      "Ми з України, тому розуміємо ваші особливості та цінності."
+    ]
+  },
+  "footer":{
+    "additional": "Додатково",
+    "contactUs": "Зв'яжіться з нами",
+    "aboutUs": "Про нас",
+    "services": "Послуги",
+    "businessConsulting": "Бізнес-консалтинг",
+    "companyFormation": "Послуга реєстрації компанії",
+    "accountingSupport": "Повна бухгалтерська та податкова підтримка",
+    "selfEmployment": "Реєстрація самозайнятості (UTR)",
+    "taxReturn": "Податкова декларація",
+    "questions": "Питання",
+    "location": "Локація",
+    "phone": "Телефон",
+    "email": "Електронна пошта",
+    "socialMedia": "Слідкуйте за нами на",
+    "socialLinks": [
+      {"name":"Telegram", "icon":"telegram"},
+      {"name": "Instagram", "icon": "instagram"},
+      {"name": "WhatsApp", "icon": "whatsapp"}
+    ]
+  }
+}
+

@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import styles from './Hero.module.css';
 import { Modal } from '../Modal/Modal';
 import { Form } from '../Form/Form';
+import { useTranslation } from 'react-i18next';
+
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
+  const { t } = useTranslation()
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
@@ -11,10 +14,10 @@ const Hero = () => {
     <div className={styles.overlay}>
       <div className={styles.hero}>
         <h1 className={styles.title}>
-          AUDIT CONSULTING: Expert UK Accounting & Tax Services
+          {t('hero.title')}
         </h1>
         <button onClick={handleShow} className={styles.btn}>
-          Get your first free consultation
+          {t('hero.getConsulting')}
         </button>
         <Modal show={showModal} handleClose={handleClose}>
           <Form></Form>
