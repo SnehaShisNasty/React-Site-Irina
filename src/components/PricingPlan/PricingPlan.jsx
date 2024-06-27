@@ -13,7 +13,8 @@ const PricingPlan = () => {
     {
       title: t('pricingPlan.planStandard'),
       description: t('pricingPlan.goodForSoleTraders'),
-      price: '150.00',
+      price: "150.00",
+
       turnover: t('pricingPlan.upTo'),
       multipleCurrencies: t('pricingPlan.multipleCurrenciesNotIncluded'),
       services: [

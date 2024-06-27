@@ -10,19 +10,22 @@
     }
   },
   "services": {
-    "title": "Послуги",
-    "learMore": "Дінатися більше",
-    "businessConsulting": "Бізнес Консалтинг",
-    "companyFormationService": "Послуги з формування компаній",
-    "fullAccountingAndTaxSupport": "Повна бухгалтерська та податкова підтримка",
-    "separateServicesVATReturnsAnnual": "Окремі послуги - ПДВ повернення, Річний звіт",
-    "accountsCT600": "Облікові записи, CT600",
-    "consulting": "Консалтинг",
-    "selfEmploymentRegistrationUTR": "Реєстрація самозайнятих (UTR)",
-    "selfAssessmentTaxReturn": "Самооцінка податкової декларації",
-    "cisRegistration": "20% Реєстрація CIS",
-    "payeRefundRequest": "Запит на повернення PAYE"
-  },
+      "title":"Послуги",
+      "forWhomTitle":"Для кого ця послуга?",
+      "descriptionTitle":"Що включає в себе ця послуга?",
+      "price":"Ціна",
+      "learMore":"Дінатися більше",
+      "businessConsulting": "Бізнес Консалтинг",
+      "companyFormationService": "Послуги з формування компаній",
+      "fullAccountingAndTaxSupport": "Повна бухгалтерська та податкова підтримка",
+      "separateServicesVATReturnsAnnual": "Окремі послуги - ПДВ повернення, Річний звіт",
+      "accountsCT600": "Облікові записи, CT600",
+      "consulting": "Консалтинг",
+      "selfEmploymentRegistrationUTR": "Реєстрація самозайнятих (UTR)",
+      "selfAssessmentTaxReturn": "Самооцінка податкової декларації",
+      "cisRegistration": "20% Реєстрація CIS",
+      "payeRefundRequest": "Запит на повернення PAYE"
+    },
   "hero": {
     "title": "AUDIT CONSULTING: Експертні бухгалтерські та податкові послуги в UK",
     "getConsulting": "Отримайте першу безкоштовну консультацію"

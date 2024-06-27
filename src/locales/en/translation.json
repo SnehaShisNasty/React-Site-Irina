@@ -10,18 +10,21 @@
     }
   },
   "services": {
-    "title": "Services",
-    "learnMore": "Learn more",
-    "businessConsulting": "Business Consulting",
-    "companyFormationService": "Company formation service",
-    "fullAccountingAndTaxSupport": "Full accounting and tax support",
-    "separateServicesVATReturnsAnnual": "Separate services - VAT returns, Annual",
-    "accountsCT600": "Accounts, CT600",
-    "consulting": "Consulting",
-    "selfEmploymentRegistrationUTR": "Self-employment registration (UTR)",
-    "selfAssessmentTaxReturn": "Self-Assessment Tax Return",
-    "cisRegistration": "20% CIS Registration",
-    "payeRefundRequest": "PAYE Refund Request"
+      "title":"Services",
+      "forWhomTitle":"For Whom it is ?",
+      "descriptionTitle":"What that service includes ?",
+      "price":"Price",
+      "learMore":"Lear more",
+      "businessConsulting": "Business Consulting",
+      "companyFormationService": "Company formation service",
+      "fullAccountingAndTaxSupport": "Full accounting and tax support",
+      "separateServicesVATReturnsAnnual": "Separate services - VAT returns, Annual",
+      "accountsCT600": "Accounts, CT600",
+      "consulting": "Consulting",
+      "selfEmploymentRegistrationUTR": "Self-employment registration (UTR)",
+      "selfAssessmentTaxReturn": "Self-Assessment Tax Return",
+      "cisRegistration": "20% CIS Registration",
+      "payeRefundRequest": "PAYE Refund Request"
   },
   "hero": {
     "title": "AUDIT CONSULTING: Expert UK Accounting & Tax Services",

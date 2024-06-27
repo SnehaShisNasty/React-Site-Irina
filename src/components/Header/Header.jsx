@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 import { Logo } from './Logo/Logo';
 import { NavMenu } from 'components/NavMenu/NavMenu';
 import { Search } from './Search/Search';
-import { items } from '../../data/servies';
+import { items } from '../../data/services';
 import { ChangeClass } from '../../helpers/ChangeClass';
 import { Modal } from '../Modal/Modal';
 import { Form } from '../Form/Form';

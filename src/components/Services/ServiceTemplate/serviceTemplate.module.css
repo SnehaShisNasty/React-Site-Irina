@@ -1,0 +1,57 @@
+.serviceTemplate {
+  padding: 20px;
+  padding-top: 80px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.forWhom {
+  margin-top: 20px;
+}
+
+.forWhom h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.forWhom p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.image {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.iconSvg {
+  width: 100px;
+  height: 100px;
+}
+
+.icon {
+  fill: currentColor;
+}
