@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './nav-menu.module.css';
-import { items } from '../../data/servies';
+import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 
 const NavMenu = () => {
@@ -11,7 +11,7 @@ const NavMenu = () => {
 
   const renderServiceCard = item => (
     <li className={styles.dropdownItem} key={item.id}>
-      <NavLink className={styles.dropdownLink} to={item.address}>
+      <NavLink className={styles.dropdownLink} to={`service/${ item.address }`}>
         {t(`services.${item.name}`)}
       </NavLink>
     </li>
@@ -24,7 +24,7 @@ const NavMenu = () => {
         </NavLink>
       </li>
       <li className={styles.item}>
-        <NavLink className={styles.link} to="/individual">
+        <NavLink className={styles.link} to="services/individual">
           {t('header.navMenu.individualServices')}
         </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
@@ -32,7 +32,7 @@ const NavMenu = () => {
         </ul>
       </li>
       <li className={styles.item}>
-        <NavLink className={styles.link} to="/corporate">
+        <NavLink className={styles.link} to="services/corporate">
           {t('header.navMenu.corporateServices')}
         </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>

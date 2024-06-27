@@ -11,6 +11,9 @@
   },
   "services": {
       "title":"Services",
+      "forWhomTitle":"For Whom it is ?",
+      "descriptionTitle":"What that service includes ?",
+      "price":"Price",
       "learMore":"Lear more",
       "businessConsulting": "Business Consulting",
       "companyFormationService": "Company formation service",

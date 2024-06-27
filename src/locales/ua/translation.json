@@ -11,6 +11,9 @@
   },
   "services": {
       "title":"Послуги",
+      "forWhomTitle":"Для кого ця послуга?",
+      "descriptionTitle":"Що включає в себе ця послуга?",
+      "price":"Ціна",
       "learMore":"Дінатися більше",
       "businessConsulting": "Бізнес Консалтинг",
       "companyFormationService": "Послуги з формування компаній",
