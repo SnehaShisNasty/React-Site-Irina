@@ -1,12 +1,12 @@
 {
-  "header":{
-    "search":"Пошук...",
-    "freeConsult":"Безкоштовна консульація",
-    "navMenu":{
-      "homePage":"Головна",
-      "individualServices":"Індивідуальні послуги",
-      "corporateServices":"Корпоративні послуги",
-      "aboutUs":"Про нас"
+  "header": {
+    "search": "Пошук...",
+    "freeConsult": "Безкоштовна консульація",
+    "navMenu": {
+      "homePage": "Головна",
+      "individualServices": "Індивідуальні послуги",
+      "corporateServices": "Корпоративні послуги",
+      "aboutUs": "Про нас"
     }
   },
   "services": {
@@ -42,18 +42,18 @@
     "messagePH": "Введіть ваше повідомлення",
     "submit": "Надіслати"
   },
-  "features":{
-    "title":"Чому AUDIT CONSULTING ?",
-    "reputation":"AUDIT CONSULTING має солідну репутацію, сформовану протягом багатьох років.",
-    "packages":"Наші пакети адаптовані до ваших потреб.",
-    "expertise":"Ми надаємо експертні знання.",
-    "services":"Ми пропонуємо широкий спектр послуг.",
-    "businessesType":"Ми обслуговуємо різні типи бізнесу.",
-    "belief":"Ми віримо в якість та досконалість.",
-    "benefits":"Ми надаємо численні переваги нашим клієнтам.",
-    "moreInfo":"Детальніше"
+  "features": {
+    "title": "Чому AUDIT CONSULTING ?",
+    "reputation": "AUDIT CONSULTING має солідну репутацію, сформовану протягом багатьох років.",
+    "packages": "Наші пакети адаптовані до ваших потреб.",
+    "expertise": "Ми надаємо експертні знання.",
+    "services": "Ми пропонуємо широкий спектр послуг.",
+    "businessesType": "Ми обслуговуємо різні типи бізнесу.",
+    "belief": "Ми віримо в якість та досконалість.",
+    "benefits": "Ми надаємо численні переваги нашим клієнтам.",
+    "moreInfo": "Детальніше"
   },
-   "pricingPlan": {
+  "pricingPlan": {
     "title": "Гнучкі цінові плани для вас та вашого бізнесу",
     "subtitle": "Цінова політика, яка масштабується разом з вашим бізнесом негайно",
     "planStandard": "ПЛАН СТАНДАРТ",
@@ -84,7 +84,7 @@
       "subscribe": "Підписатися"
     }
   },
-   "trustBlobs": {
+  "trustBlobs": {
     "title": "Чому ви можете нам довіряти?",
     "items": [
       "Ви працюєте безпосередньо з бухгалтером. Вашою справою займається фахівець, який отримав кваліфікацію та практичний досвід у Великобританії.",
@@ -95,11 +95,14 @@
       "Ми з України, тому розуміємо ваші особливості та цінності."
     ]
   },
-  "footer":{
+  "footer": {
     "additional": "Додатково",
+    "homePage": "Головна",
+    "individualServices": "Індивідуальні послуги",
+    "corporateServices": "Корпоративні послуги",
     "contactUs": "Зв'яжіться з нами",
     "aboutUs": "Про нас",
-    "services": "Послуги",
+    "services": "Популярні Послуги",
     "businessConsulting": "Бізнес-консалтинг",
     "companyFormation": "Послуга реєстрації компанії",
     "accountingSupport": "Повна бухгалтерська та податкова підтримка",
@@ -111,10 +114,9 @@
     "email": "Електронна пошта",
     "socialMedia": "Слідкуйте за нами на",
     "socialLinks": [
-      {"name":"Telegram", "icon":"telegram"},
-      {"name": "Instagram", "icon": "instagram"},
-      {"name": "WhatsApp", "icon": "whatsapp"}
+      { "name": "Telegram", "icon": "telegram" },
+      { "name": "Instagram", "icon": "instagram" },
+      { "name": "WhatsApp", "icon": "whatsapp" }
     ]
   }
 }
-

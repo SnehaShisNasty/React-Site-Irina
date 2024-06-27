@@ -7,19 +7,22 @@ import styles from './services.module.css';
 
 const Services = () => {
   const containerRef = useRef(null);
+
   const { t } = useTranslation();
   const { type } = useParams();
   const [isVisible, setIsVisible] = useState(false);
 
+
   const services = items.filter(item => item.type === type);
 
-  const renderServiceCard = (item) => (
+  const renderServiceCard = item => (
     <div key={item.id} className={styles.card}>
       <svg className={styles.iconSvg}>
         <use xlinkHref={`${sprite}#${item.icon}`} className={styles.icon}/>
       </svg>
       <h3 className={styles.cardTitle}>{t(`services.${item.name}`)}</h3>
       <Link to={`/service/${item.address}`} className={styles.cardLink}>{t('services.learMore')}</Link>
+
     </div>
   );
 
@@ -37,6 +40,6 @@ const Services = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Services;

@@ -5,7 +5,7 @@ import sprite from '../../img/symbol-defs.svg';
 import styles from './footer.module.css';
 
 const Footer = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const openMap = address => {
     const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -15,8 +15,11 @@ const Footer = () => {
   };
 
   const additionalLinks = [
+    { path: '/', label: t('footer.homePage') },
+    { path: '/', label: t('footer.individualServices') },
+    { path: '/', label: t('footer.corporateServices') },
     { path: '/', label: t('footer.contactUs') },
-    { path: '/', label: t('footer.aboutUs') }
+    { path: '/', label: t('footer.aboutUs') },
   ];
 
   const servicesLinks = [
@@ -24,17 +27,20 @@ const Footer = () => {
     { path: '/', label: t('footer.companyFormation') },
     { path: '/', label: t('footer.accountingSupport') },
     { path: '/', label: t('footer.selfEmployment') },
-    { path: '/', label: t('footer.taxReturn') }
+    { path: '/', label: t('footer.taxReturn') },
   ];
 
   const contactInfo = [
-    { type: 'location', value: info.location, action: () => openMap(info.location) },
+    {
+      type: 'location',
+      value: info.location,
+      action: () => openMap(info.location),
+    },
     { type: 'tel', value: info.tel, action: () => `tel:${info.tel}` },
-    { type: 'email', value: info.email, action: () => `mailto:${info.email}` }
+    { type: 'email', value: info.email, action: () => `mailto:${info.email}` },
   ];
 
   const socialLinks = t('footer.socialLinks', { returnObjects: true });
-
 
   return (
     <div className={styles.container}>
@@ -84,7 +90,10 @@ const Footer = () => {
             <li key={index}>
               <a href="/" className={styles.linkSocial}>
                 <svg className={styles.iconSvg}>
-                  <use href={`${sprite}#${link.icon}`} className={styles.icon} />
+                  <use
+                    href={`${sprite}#${link.icon}`}
+                    className={styles.icon}
+                  />
                 </svg>
               </a>
             </li>
