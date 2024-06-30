@@ -1,0 +1,24 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="flag-ua" viewBox="0 0 46 32">
+<path fill="#005bbb" style="fill: var(--color1, #005bbb)" d="M2.525 0h40.942c1.392 0 2.525 1.133 2.525 2.525v26.942c0 1.392-1.142 2.525-2.525 2.525h-40.942c-1.383 0.008-2.525-1.125-2.525-2.517v-26.95c0-1.392 1.142-2.525 2.525-2.525v0z"></path>
+<path fill="#ffd500" style="fill: var(--color2, #ffd500)" d="M0 16h46v13.475c0 1.392-1.142 2.525-2.525 2.525h-40.95c-1.383 0-2.525-1.133-2.525-2.525v-13.475z"></path>
+</symbol>
+<symbol id="flag-uk" viewBox="0 0 46 32">
+<path fill="#fefefe" style="fill: var(--color3, #fefefe)" d="M2.392 32h41.217c1.325-0.075 2.392-1.183 2.392-2.525v-26.95c0-1.383-1.125-2.517-2.508-2.525h-40.983c-1.383 0.008-2.508 1.142-2.508 2.525v26.942c0 1.35 1.067 2.458 2.392 2.533v0z"></path>
+<path fill="#c8102e" style="fill: var(--color4, #c8102e)" d="M19.783 19.192v12.808h6.4v-12.808h19.817v-6.4h-19.817v-12.792h-6.4v12.792h-19.783v6.4h19.783z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M28.317 10.358v-10.358h15.192c1.050 0.017 1.95 0.675 2.317 1.6l-17.508 8.758z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M28.317 21.642v10.358h15.292c1.008-0.058 1.858-0.708 2.217-1.6l-17.508-8.758z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M17.65 21.642v10.358h-15.258c-1.008-0.058-1.867-0.708-2.217-1.617l17.475-8.742z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M17.65 10.358v-10.358h-15.158c-1.050 0.017-1.958 0.683-2.317 1.617l17.475 8.742z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M0 10.667h6.375l-6.375-3.192v3.192z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M46 10.667h-6.408l6.408-3.208v3.208z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M46 21.333h-6.408l6.408 3.208v-3.208z"></path>
+<path fill="#012169" style="fill: var(--color5, #012169)" d="M0 21.333h6.375l-6.375 3.192v-3.192z"></path>
+<path fill="#c8102e" style="fill: var(--color4, #c8102e)" d="M46 2.708l-15.875 7.958h3.55l12.325-6.167v-1.792z"></path>
+<path fill="#c8102e" style="fill: var(--color4, #c8102e)" d="M15.842 21.333h-3.55l-12.292 6.15v1.792l15.875-7.942h-0.033z"></path>
+<path fill="#c8102e" style="fill: var(--color4, #c8102e)" d="M8.767 10.675h3.55l-12.317-6.167v1.783l8.767 4.383z"></path>
+<path fill="#c8102e" style="fill: var(--color4, #c8102e)" d="M37.192 21.325h-3.55l12.358 6.192v-1.783l-8.808-4.408z"></path>
+</symbol>
+</defs>
+</svg>
