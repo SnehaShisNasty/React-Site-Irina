@@ -38,11 +38,6 @@
   transform: translateX(-50%);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
 .item {
   font-size: 1.2em;
   color: #34495e;
@@ -104,10 +99,12 @@ ul {
   height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.8;
+
+  object-fit: contain;
 }
 
 .logoImg:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   opacity: 1;
 }
 

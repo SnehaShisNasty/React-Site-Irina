@@ -18,6 +18,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--gray-900);
 }
 .title {
   font-weight: 700;

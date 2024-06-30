@@ -4,14 +4,14 @@ import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 
 const NavMenu = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const corporateServices = items.filter(item => item.type === 'corporate');
   const individualServices = items.filter(item => item.type === 'individual');
 
   const renderServiceCard = item => (
     <li className={styles.dropdownItem} key={item.id}>
-      <NavLink className={styles.dropdownLink} to={`service/${ item.address }`}>
+      <NavLink className={styles.dropdownLink} to={`service/${item.address}`}>
         {t(`services.${item.name}`)}
       </NavLink>
     </li>
@@ -28,7 +28,7 @@ const NavMenu = () => {
           {t('header.navMenu.individualServices')}
         </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
-          {corporateServices.map(renderServiceCard)}
+          {individualServices.map(renderServiceCard)}
         </ul>
       </li>
       <li className={styles.item}>
@@ -36,9 +36,7 @@ const NavMenu = () => {
           {t('header.navMenu.corporateServices')}
         </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
-          <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
-            {individualServices.map(renderServiceCard)}
-          </ul>
+          {corporateServices.map(renderServiceCard)}
         </ul>
       </li>
       <li className={styles.item}>

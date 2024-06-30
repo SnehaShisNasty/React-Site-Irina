@@ -2,32 +2,35 @@ import { useRef } from 'react';
 import useVisibility from 'customeHooks/useVisivility';
 import { useTranslation } from 'react-i18next';
 // import content from "./featuresContent";
-import images from "../../img/brand/images"
-import styles from "./features.module.css";
+import images from '../../img/brand/images';
+import styles from './features.module.css';
 
 const Features = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const containerRef = useRef(null);
   const isVisible = useVisibility(containerRef);
 
-   const contentKeys = [
+  const contentKeys = [
     'reputation',
     'packages',
     'expertise',
     'services',
     'businessesType',
     'belief',
-    'benefits'
+    'benefits',
   ];
 
   return (
-    <div ref={containerRef} className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
+    <div
+      ref={containerRef}
+      className={`${styles.container} ${isVisible ? styles.visible : ''}`}
+    >
       <h1 className={styles.title}>{t('features.title')}</h1>
       <ul>
-        {contentKeys.map((key, index)=>(
-        <li key={key} className={styles.item}>
-            {index + 1}. {t(`features.${key}`)}
-        </li>
+        {contentKeys.map(key => (
+          <li key={key} className={styles.item}>
+            {t(`features.${key}`)}
+          </li>
         ))}
       </ul>
       <button className={styles.btn}>{t('features.moreInfo')}</button>
@@ -35,13 +38,13 @@ const Features = () => {
         <ul className={styles.logoContainer}>
           {images.map((image, index) => (
             <li key={index} className={styles.logo_item}>
-                <img src={image.src} alt={image.alt} className={styles.logoImg} />
+              <img src={image.src} alt={image.alt} className={styles.logoImg} />
             </li>
           ))}
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;
