@@ -17,7 +17,7 @@ const Header = () => {
   const [filter, setFilter] = useState([]);
   const filteredList = useRef(null);
   const link = useRef(null);
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const handleSearch = ({ search }) => {
     setFilter(search);
@@ -62,6 +62,7 @@ const Header = () => {
       <div className={styles.header}>
         <Logo />
         <NavMenu />
+        <button className={styles.mobileMenu}></button>
         <div className={styles.content}>
           <button onClick={handleShow} className={styles.btn}>
             {t('header.freeConsult')}
@@ -80,7 +81,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <LanguageSwitcher/>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

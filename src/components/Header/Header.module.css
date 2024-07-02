@@ -3,7 +3,6 @@
   width: 100%;
   z-index: 999;
 }
-
 .header {
   display: flex;
   align-items: center;
@@ -18,57 +17,71 @@
   border-radius: 2px;
 }
 .content {
-  display: flex;
-  flex-direction: row;
-}
-.searchBox {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.filteredList {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: var(--white-900);
-  width: max-content;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  z-index: 1000;
-  opacity: 0;
-  transform-origin: top center;
-  transform: scaleY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.active {
-  display: block;
-  opacity: 1;
-  transform: scaleY(1);
+.mobileMenu {
 }
 
-.item {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  text-align: center;
+@media screen and (min-width: 768px) {
 }
+@media screen and (min-width: 1440px) {
+  .mobileMenu {
+    display: none;
+  }
 
-.item:last-child {
-  border-bottom: none;
-}
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filteredList {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white-900);
+    width: max-content;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1000;
+    opacity: 0;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .active {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+  }
 
-.btn {
-  width: 150px;
-  height: 40px;
-  margin: 10px 0;
-  border-radius: 10px;
-  color: var(--white-900);
-  background-color: var(--primary-500);
-  transition: background-color 0.3s ease;
-  margin-right: 20px;
-}
+  .item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
 
-.btn:hover {
-  background-color: #23a352;
+  .item:last-child {
+    border-bottom: none;
+  }
+
+  .btn {
+    width: 150px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: var(--white-900);
+    background-color: var(--primary-500);
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }
+
+  .btn:hover {
+    background-color: #23a352;
+  }
 }
