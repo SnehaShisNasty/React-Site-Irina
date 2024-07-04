@@ -1,10 +1,29 @@
-import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import SmoothScroll from 'smooth-scroll';
 import styles from './nav-menu.module.css';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 
 const NavMenu = () => {
   const { t } = useTranslation();
+  const location = useLocation()
+
+useEffect(() => {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 800,
+      speedAsDuration: true,
+    });
+
+    return () => scroll.destroy();
+}, []);
+
+  const handleHomeClick = (event) => {
+    if (location.pathname === '/') {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   const corporateServices = items.filter(item => item.type === 'corporate');
   const individualServices = items.filter(item => item.type === 'individual');
@@ -19,22 +38,22 @@ const NavMenu = () => {
   return (
     <ul className={styles.menu}>
       <li className={styles.item}>
-        <NavLink className={styles.link} to="/">
+        <NavLink className={styles.link} to="/" onClick={handleHomeClick}>
           {t('header.navMenu.homePage')}
         </NavLink>
       </li>
       <li className={styles.item}>
-        <NavLink className={styles.link} to="services/individual">
+        <a className={styles.link} href='#individual'>
           {t('header.navMenu.individualServices')}
-        </NavLink>
+        </a>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           {individualServices.map(renderServiceCard)}
         </ul>
       </li>
       <li className={styles.item}>
-        <NavLink className={styles.link} to="services/corporate">
+        <a className={styles.link} href='#corporate'>
           {t('header.navMenu.corporateServices')}
-        </NavLink>
+        </a>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           {corporateServices.map(renderServiceCard)}
         </ul>
