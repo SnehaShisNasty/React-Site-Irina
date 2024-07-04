@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React-Site-Irina/static/css/main.ca6b7447.css",
-    "main.js": "/React-Site-Irina/static/js/main.efb63e7f.js",
-    "static/css/152.eaa5b749.chunk.css": "/React-Site-Irina/static/css/152.eaa5b749.chunk.css",
-    "static/js/152.2284c362.chunk.js": "/React-Site-Irina/static/js/152.2284c362.chunk.js",
+    "main.js": "/React-Site-Irina/static/js/main.eae05990.js",
+    "static/css/152.5c7e5b9a.chunk.css": "/React-Site-Irina/static/css/152.5c7e5b9a.chunk.css",
+    "static/js/152.0827b9f2.chunk.js": "/React-Site-Irina/static/js/152.0827b9f2.chunk.js",
     "static/css/230.0c465198.chunk.css": "/React-Site-Irina/static/css/230.0c465198.chunk.css",
     "static/js/230.0af03e0f.chunk.js": "/React-Site-Irina/static/js/230.0af03e0f.chunk.js",
     "static/css/467.476a7acc.chunk.css": "/React-Site-Irina/static/css/467.476a7acc.chunk.css",
     "static/js/467.cf64c153.chunk.js": "/React-Site-Irina/static/js/467.cf64c153.chunk.js",
     "static/js/794.ec5d7944.chunk.js": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js",
-    "static/media/pexels-pixabay-257856.jpg": "/React-Site-Irina/static/media/pexels-pixabay-257856.53229c4501081612d883.jpg",
+    "static/media/hero1.jpg": "/React-Site-Irina/static/media/hero1.a881baeee25ec58207d5.jpg",
     "static/media/xero-logo.png": "/React-Site-Irina/static/media/xero-logo.7084e0addb2e41ec76ee.png",
     "static/media/sage-logo.jpg": "/React-Site-Irina/static/media/sage-logo.8e00bb335e11ddbb30a6.jpg",
     "static/media/dext-logo.jpg": "/React-Site-Irina/static/media/dext-logo.f1c78e28edc5d43184ab.jpg",
@@ -23,9 +23,9 @@
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "main.ca6b7447.css.map": "/React-Site-Irina/static/css/main.ca6b7447.css.map",
-    "main.efb63e7f.js.map": "/React-Site-Irina/static/js/main.efb63e7f.js.map",
-    "152.eaa5b749.chunk.css.map": "/React-Site-Irina/static/css/152.eaa5b749.chunk.css.map",
-    "152.2284c362.chunk.js.map": "/React-Site-Irina/static/js/152.2284c362.chunk.js.map",
+    "main.eae05990.js.map": "/React-Site-Irina/static/js/main.eae05990.js.map",
+    "152.5c7e5b9a.chunk.css.map": "/React-Site-Irina/static/css/152.5c7e5b9a.chunk.css.map",
+    "152.0827b9f2.chunk.js.map": "/React-Site-Irina/static/js/152.0827b9f2.chunk.js.map",
     "230.0c465198.chunk.css.map": "/React-Site-Irina/static/css/230.0c465198.chunk.css.map",
     "230.0af03e0f.chunk.js.map": "/React-Site-Irina/static/js/230.0af03e0f.chunk.js.map",
     "467.476a7acc.chunk.css.map": "/React-Site-Irina/static/css/467.476a7acc.chunk.css.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.ca6b7447.css",
-    "static/js/main.efb63e7f.js"
+    "static/js/main.eae05990.js"
   ]
 }
