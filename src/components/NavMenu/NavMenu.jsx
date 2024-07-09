@@ -31,7 +31,7 @@ useEffect(() => {
   const renderServiceCard = item => (
     <li className={styles.dropdownItem} key={item.id}>
       <NavLink className={styles.dropdownLink} to={`service/${item.address}`}>
-        {t(`services.${item.name}`)}
+        {t(`services.${item.name}.name`)}
       </NavLink>
     </li>
   );

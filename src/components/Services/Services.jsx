@@ -18,7 +18,7 @@ const Services = () => {
       <svg className={styles.iconSvg}>
         <use xlinkHref={`${sprite}#${item.icon}`} className={styles.icon} />
       </svg>
-      <h3 className={styles.cardTitle}>{t(`services.${item.name}`)}</h3>
+      <h3 className={styles.cardTitle}>{t(`services.${item.name}.name`)}</h3>
       <NavLink to={`service/${item.address}`} className={styles.cardLink}>
         {t('services.learnMore')}
       </NavLink>
