@@ -1,9 +1,16 @@
 .serviceTemplate {
   padding: 20px;
   padding-top: 80px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fadeOut {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeIn {
+  opacity: 1;
 }
 
 .visible {
@@ -14,6 +21,15 @@
 .title {
   font-size: 2rem;
   margin-bottom: 10px;
+}
+
+.descriptionList {
+  margin-left: 40px;
+  list-style-type: circle;
+}
+
+.howItWorksList {
+  list-style-type: decimal;
 }
 
 .description p {
