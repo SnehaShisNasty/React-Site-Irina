@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/React-Site-Irina/static/css/main.da9be212.css",
-    "main.js": "/React-Site-Irina/static/js/main.b067f7d4.js",
+    "main.js": "/React-Site-Irina/static/js/main.cf086a75.js",
     "static/css/877.929cb19b.chunk.css": "/React-Site-Irina/static/css/877.929cb19b.chunk.css",
-    "static/js/877.05642bb2.chunk.js": "/React-Site-Irina/static/js/877.05642bb2.chunk.js",
+    "static/js/877.c9a72e0a.chunk.js": "/React-Site-Irina/static/js/877.c9a72e0a.chunk.js",
     "static/css/467.934a1dc6.chunk.css": "/React-Site-Irina/static/css/467.934a1dc6.chunk.css",
     "static/js/467.615eb233.chunk.js": "/React-Site-Irina/static/js/467.615eb233.chunk.js",
     "static/js/794.ec5d7944.chunk.js": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js",
@@ -21,15 +21,15 @@
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "main.da9be212.css.map": "/React-Site-Irina/static/css/main.da9be212.css.map",
-    "main.b067f7d4.js.map": "/React-Site-Irina/static/js/main.b067f7d4.js.map",
+    "main.cf086a75.js.map": "/React-Site-Irina/static/js/main.cf086a75.js.map",
     "877.929cb19b.chunk.css.map": "/React-Site-Irina/static/css/877.929cb19b.chunk.css.map",
-    "877.05642bb2.chunk.js.map": "/React-Site-Irina/static/js/877.05642bb2.chunk.js.map",
+    "877.c9a72e0a.chunk.js.map": "/React-Site-Irina/static/js/877.c9a72e0a.chunk.js.map",
     "467.934a1dc6.chunk.css.map": "/React-Site-Irina/static/css/467.934a1dc6.chunk.css.map",
     "467.615eb233.chunk.js.map": "/React-Site-Irina/static/js/467.615eb233.chunk.js.map",
     "794.ec5d7944.chunk.js.map": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da9be212.css",
-    "static/js/main.b067f7d4.js"
+    "static/js/main.cf086a75.js"
   ]
 }
