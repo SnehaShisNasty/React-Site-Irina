@@ -1,17 +1,28 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import useVisibility from 'customeHooks/useVisivility';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 import sprite from '../../img/symbol-defs-services.svg';
 import styles from './services.module.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Services = () => {
   const containerRef = useRef(null);
   const isVisible = useVisibility(containerRef);
   const { t } = useTranslation();
+  const location = useLocation()
+
   const corporateServices = items.filter(item => item.type === 'corporate');
   const individualServices = items.filter(item => item.type === 'individual');
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   const renderServiceCard = item => (
     <div key={item.id} className={styles.card}>
@@ -22,7 +33,7 @@ const Services = () => {
       <NavLink to={`service/${item.address}`} className={styles.cardLink}>
         {t('services.learnMore')}
       </NavLink>
-      </div>
+    </div>
   );
 
   return (
@@ -30,15 +41,15 @@ const Services = () => {
       ref={containerRef}
       className={`${styles.container} ${isVisible ? styles.visible : ''}`}
     >
-      <h1 className={styles.title} id='corporate'>{t('services.title')}</h1>
-      <p className={styles.subTitle} >{t('header.navMenu.corporateServices')}</p>
+      <h1 className={styles.title}>{t('services.title')}</h1>
+      <p className={styles.subTitle} id='corporate'>{t('header.navMenu.corporateServices')}</p>
       <div className={styles.servicesFlex}>
         {corporateServices.slice(0, 3).map(renderServiceCard)}
       </div>
-      <div className={`${styles.servicesFlex} ${styles.secondRow}`} id='individual'>
+      <div className={`${styles.servicesFlex} ${styles.secondRow}`}>
         {corporateServices.slice(3).map(renderServiceCard)}
       </div>
-      <p className={styles.subTitle} >
+      <p className={styles.subTitle} id='individual'>
         {t('header.navMenu.individualServices')}
       </p>
       <div className={styles.servicesFlex}>

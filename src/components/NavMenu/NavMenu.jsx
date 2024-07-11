@@ -1,27 +1,42 @@
 import { useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import SmoothScroll from 'smooth-scroll';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { animateScroll as scroll, scroller } from 'react-scroll';
 import styles from './nav-menu.module.css';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 
 const NavMenu = () => {
   const { t } = useTranslation();
-  const location = useLocation()
+  const location = useLocation();
+  const navigate = useNavigate();
 
-useEffect(() => {
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 800,
-      speedAsDuration: true,
-    });
-
-    return () => scroll.destroy();
-}, []);
+   useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   const handleHomeClick = (event) => {
     if (location.pathname === '/') {
       event.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      scroll.scrollToTop({ duration: 800, smooth: 'easeInOutQuad' });
+    }
+  };
+
+  const handleAnchorClick = (anchor) => (event) => {
+    event.preventDefault();
+    if (location.pathname === '/') {
+      scroller.scrollTo(anchor.slice(1), {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuad',
+        offset: -100,
+      });
+    } else {
+      navigate(`/${anchor}`);
     }
   };
 
@@ -35,6 +50,7 @@ useEffect(() => {
       </NavLink>
     </li>
   );
+
   return (
     <ul className={styles.menu}>
       <li className={styles.item}>
@@ -43,17 +59,17 @@ useEffect(() => {
         </NavLink>
       </li>
       <li className={styles.item}>
-        <a className={styles.link} href='#individual'>
+        <NavLink className={styles.link} to="#individual" onClick={handleAnchorClick('#individual')}>
           {t('header.navMenu.individualServices')}
-        </a>
+        </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           {individualServices.map(renderServiceCard)}
         </ul>
       </li>
       <li className={styles.item}>
-        <a className={styles.link} href='#corporate'>
+        <NavLink className={styles.link} to="#corporate" onClick={handleAnchorClick('#corporate')}>
           {t('header.navMenu.corporateServices')}
-        </a>
+        </NavLink>
         <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
           {corporateServices.map(renderServiceCard)}
         </ul>

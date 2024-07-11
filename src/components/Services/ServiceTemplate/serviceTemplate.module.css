@@ -1,9 +1,16 @@
 .serviceTemplate {
   padding: 20px;
   padding-top: 80px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fadeOut {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeIn {
+  opacity: 1;
 }
 
 .visible {
