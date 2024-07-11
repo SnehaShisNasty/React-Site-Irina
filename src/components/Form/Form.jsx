@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Notiflix from 'notiflix';
 import styles from './Form.module.css';
 import { sendForm } from 'api/telegram';
-const Form = ({ onSubmit }) => {
+const Form = ({ onSubmit, typeForm }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -46,7 +46,7 @@ const Form = ({ onSubmit }) => {
       Notiflix.Notify.failure('Invalid phone number');
       return;
     }
-    sendForm({ ...formData }, 'Free Consult');
+    sendForm({ ...formData }, typeForm);
     Notiflix.Notify.success('Form submitted successfully!');
     reset();
   };

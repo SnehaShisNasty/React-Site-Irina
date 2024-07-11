@@ -17,7 +17,7 @@ const Header = () => {
   const [filter, setFilter] = useState([]);
   const filteredList = useRef(null);
   const link = useRef(null);
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const handleSearch = ({ search }) => {
     setFilter(search);
@@ -67,7 +67,7 @@ const Header = () => {
             {t('header.freeConsult')}
           </button>
           <Modal show={showModal} handleClose={handleClose}>
-            <Form />
+            <Form typeForm={'FreeConslt'} />
           </Modal>
           <div className={styles.searchBox}>
             <Search onSubmit={handleSearch} />
@@ -80,7 +80,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <LanguageSwitcher/>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
