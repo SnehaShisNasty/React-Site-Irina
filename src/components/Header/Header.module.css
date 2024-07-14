@@ -19,9 +19,24 @@
 .content {
   display: none;
 }
-.mobileMenu {
-}
 
+.mobileMenu {
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+}
+.mobileMenu::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  background-image: url(../../img/burger-menu.svg);
+  position: absolute;
+}
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1440px) {
