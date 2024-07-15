@@ -18,11 +18,11 @@ const ServiceTemplate = ({ service }) => {
     return () => clearTimeout(timer);
   }, [service]);
 
-  return (
+return (
     <div
       key={currentService.id}
       ref={containerRef}
-      className={`${styles.serviceTemplate}  ${isFadingOut ? styles.fadeOut : styles.fadeIn}`}
+      className={`${styles.serviceTemplate} ${isFadingOut ? styles.fadeOut : styles.fadeIn}`}
     >
       <h1 className={styles.title}>{t(`services.${currentService.name}.name`)}</h1>
       <div className={styles.description}>
@@ -37,13 +37,23 @@ const ServiceTemplate = ({ service }) => {
         <div className={styles.howItWorks}>
           <h2 className={styles.howItWorksTitle}>{t('services.howItWorksTitle')}</h2>
           <ul className={styles.howItWorksList}>
-            {Object.keys(currentService.howItWorks).map((key) => (
-              <li key={key} className={styles.howItWorksItem}>{t(`services.${currentService.name}.howItWorks.${key}`)}</li>
-            ))}
+            {Object.keys(currentService.howItWorks).map((key) => {
+              const translatedSteps = t(`services.${currentService.name}.howItWorks.${key}`, { returnObjects: true });
+              return (
+                <li key={key} className={styles.howItWorksItem}>
+                  {Array.isArray(translatedSteps) ? (
+                    translatedSteps.map((step, index) => (
+                      <p key={index}>{step}</p>
+                    ))
+                  ) : (
+                    <span>{translatedSteps}</span>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
-      {/* <img src={currentService.img} alt={t(`services.${currentService.name}.name`)} className={styles.image} /> */}
       <p className={styles.price}>{t('services.price')}: {currentService.price}</p>
       <svg className={styles.iconSvg}>
         <use xlinkHref={`#${currentService.icon}`} className={styles.icon} />
