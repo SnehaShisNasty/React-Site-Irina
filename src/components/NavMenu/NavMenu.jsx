@@ -19,26 +19,26 @@ const NavMenu = () => {
     }
   }, [location]);
 
-  const handleHomeClick = (event) => {
-    if (location.pathname === '/') {
-      event.preventDefault();
-      scroll.scrollToTop({ duration: 800, smooth: 'easeInOutQuad' });
-    }
-  };
+  // const handleHomeClick = (event) => {
+  //   if (location.pathname === '/') {
+  //     event.preventDefault();
+  //     scroll.scrollToTop({ duration: 800, smooth: 'easeInOutQuad' });
+  //   }
+  // };
 
-  const handleAnchorClick = (anchor) => (event) => {
-    event.preventDefault();
-    if (location.pathname === '/') {
-      scroller.scrollTo(anchor.slice(1), {
-        duration: 800,
-        delay: 0,
-        smooth: 'easeInOutQuad',
-        offset: -100,
-      });
-    } else {
-      navigate(`/${anchor}`);
-    }
-  };
+  // const handleAnchorClick = (anchor) => (event) => {
+  //   event.preventDefault();
+  //   if (location.pathname === '/') {
+  //     scroller.scrollTo(anchor.slice(1), {
+  //       duration: 800,
+  //       delay: 0,
+  //       smooth: 'easeInOutQuad',
+  //       offset: -100,
+  //     });W
+  //   } else {
+  //     navigate(`/${anchor}`);
+  //   }
+  // };
 
   const corporateServices = items.filter(item => item.type === 'corporate');
   const individualServices = items.filter(item => item.type === 'individual');
