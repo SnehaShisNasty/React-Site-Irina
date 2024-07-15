@@ -1,6 +1,6 @@
 import Hero from 'components/Hero/Hero';
 import Features from 'components/Features/Features';
-// import Services from 'components/Services/Services';
+import Services from 'components/Services/Services';
 import TrustBlobs from 'components/TrustBlobs/TrustBlobs';
 import PricingPlan from 'components/PricingPlan/PricingPlan';
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     <section>
       <Hero></Hero>
       <Features />
-      {/* <Services /> */}
+      <Services />
       <PricingPlan />
       <TrustBlobs />
     </section>

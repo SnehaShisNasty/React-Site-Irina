@@ -1,5 +1,18 @@
+
 .mobile {
   display: none;
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {

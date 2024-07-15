@@ -68,7 +68,7 @@ const Header = () => {
             {t('header.freeConsult')}
           </button>
           <Modal show={showModal} handleClose={handleClose}>
-            <Form />
+            <Form typeForm={'FreeConslt'} />
           </Modal>
           <div className={styles.searchBox}>
             <Search onSubmit={handleSearch} />

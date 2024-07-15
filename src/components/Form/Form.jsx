@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Notiflix from 'notiflix';
 import styles from './Form.module.css';
-
-const Form = ({ onSubmit }) => {
+import { sendForm } from 'api/telegram';
+const Form = ({ onSubmit, typeForm }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,7 +11,7 @@ const Form = ({ onSubmit }) => {
     message: '',
   });
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -23,14 +23,14 @@ const Form = ({ onSubmit }) => {
 
   const validateEmail = email => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  const validatePhone = phone => /^\d{10}$/.test(phone);
+  const validatePhone = phone => /^\d{11}$/.test(phone);
 
   const handleSubmit = e => {
     e.preventDefault();
 
-    const { name, email, phone, message } = formData;
+    const { name, email, phone } = formData;
 
-    if (!name || !email || !phone || !message) {
+    if (!name || !email || !phone) {
       Notiflix.Notify.warning('Please fill in all fields');
       return;
     }
@@ -46,7 +46,7 @@ const Form = ({ onSubmit }) => {
       Notiflix.Notify.failure('Invalid phone number');
       return;
     }
-    onSubmit({ ...formData });
+    sendForm({ ...formData }, typeForm);
     Notiflix.Notify.success('Form submitted successfully!');
     reset();
   };
@@ -61,7 +61,9 @@ const Form = ({ onSubmit }) => {
         <p className={styles['form--heading']}>{t('modal.title')}</p>
         <form autoComplete="off" onSubmit={handleSubmit}>
           <div className={styles.inputGroup}>
-            <label htmlFor="name" className={styles.label}>{t('modal.name')}</label>
+            <label htmlFor="name" className={styles.label}>
+              {t('modal.name')}
+            </label>
             <input
               type="text"
               id="name"
@@ -73,7 +75,9 @@ const Form = ({ onSubmit }) => {
             />
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor="email" className={styles.label}>{t('modal.email')}</label>
+            <label htmlFor="email" className={styles.label}>
+              {t('modal.email')}
+            </label>
             <input
               type="email"
               id="email"
@@ -85,7 +89,9 @@ const Form = ({ onSubmit }) => {
             />
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor="phone" className={styles.label}>{t('modal.phone')}</label>
+            <label htmlFor="phone" className={styles.label}>
+              {t('modal.phone')}
+            </label>
             <input
               type="text"
               id="phone"
@@ -97,7 +103,9 @@ const Form = ({ onSubmit }) => {
             />
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor="message" className={styles.label}>{t('modal.message')}</label>
+            <label htmlFor="message" className={styles.label}>
+              {t('modal.message')}
+            </label>
             <textarea
               id="message"
               name="message"
