@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { animateScroll as scroll, scroller } from 'react-scroll';
+// import { animateScroll as scroll, scroller } from 'react-scroll';
 import styles from './nav-menu.module.css';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const NavMenu = () => {
   const { t } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
    useEffect(() => {
     if (location.hash) {
