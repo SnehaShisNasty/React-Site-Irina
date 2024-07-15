@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation} from 'react-router-dom';
 // import { animateScroll as scroll, scroller } from 'react-scroll';
 import styles from './nav-menu.module.css';
 import { items } from '../../data/services';
