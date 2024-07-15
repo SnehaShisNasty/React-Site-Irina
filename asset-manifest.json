@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/React-Site-Irina/static/css/main.da9be212.css",
-    "main.js": "/React-Site-Irina/static/js/main.cf086a75.js",
-    "static/css/877.929cb19b.chunk.css": "/React-Site-Irina/static/css/877.929cb19b.chunk.css",
+    "main.css": "/React-Site-Irina/static/css/main.9920818d.css",
+    "main.js": "/React-Site-Irina/static/js/main.1c41958e.js",
+    "static/css/877.afd3011e.chunk.css": "/React-Site-Irina/static/css/877.afd3011e.chunk.css",
     "static/js/877.c9a72e0a.chunk.js": "/React-Site-Irina/static/js/877.c9a72e0a.chunk.js",
-    "static/css/467.934a1dc6.chunk.css": "/React-Site-Irina/static/css/467.934a1dc6.chunk.css",
-    "static/js/467.615eb233.chunk.js": "/React-Site-Irina/static/js/467.615eb233.chunk.js",
+    "static/css/467.77888205.chunk.css": "/React-Site-Irina/static/css/467.77888205.chunk.css",
+    "static/js/467.fb1edcbc.chunk.js": "/React-Site-Irina/static/js/467.fb1edcbc.chunk.js",
     "static/js/794.ec5d7944.chunk.js": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js",
     "static/media/hero1.jpg": "/React-Site-Irina/static/media/hero1.a881baeee25ec58207d5.jpg",
     "static/media/xero-logo.png": "/React-Site-Irina/static/media/xero-logo.7084e0addb2e41ec76ee.png",
@@ -20,16 +20,17 @@
     "static/media/symbol-defs-flags.svg": "/React-Site-Irina/static/media/symbol-defs-flags.3ef34becec212fcbb7f8d9cb242ec61f.svg",
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
-    "main.da9be212.css.map": "/React-Site-Irina/static/css/main.da9be212.css.map",
-    "main.cf086a75.js.map": "/React-Site-Irina/static/js/main.cf086a75.js.map",
-    "877.929cb19b.chunk.css.map": "/React-Site-Irina/static/css/877.929cb19b.chunk.css.map",
+    "static/media/burger-menu.svg": "/React-Site-Irina/static/media/burger-menu.ba712e0903bbd659b2ea.svg",
+    "main.9920818d.css.map": "/React-Site-Irina/static/css/main.9920818d.css.map",
+    "main.1c41958e.js.map": "/React-Site-Irina/static/js/main.1c41958e.js.map",
+    "877.afd3011e.chunk.css.map": "/React-Site-Irina/static/css/877.afd3011e.chunk.css.map",
     "877.c9a72e0a.chunk.js.map": "/React-Site-Irina/static/js/877.c9a72e0a.chunk.js.map",
-    "467.934a1dc6.chunk.css.map": "/React-Site-Irina/static/css/467.934a1dc6.chunk.css.map",
-    "467.615eb233.chunk.js.map": "/React-Site-Irina/static/js/467.615eb233.chunk.js.map",
+    "467.77888205.chunk.css.map": "/React-Site-Irina/static/css/467.77888205.chunk.css.map",
+    "467.fb1edcbc.chunk.js.map": "/React-Site-Irina/static/js/467.fb1edcbc.chunk.js.map",
     "794.ec5d7944.chunk.js.map": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da9be212.css",
-    "static/js/main.cf086a75.js"
+    "static/css/main.9920818d.css",
+    "static/js/main.1c41958e.js"
   ]
 }
