@@ -32,37 +32,37 @@
           "4":"Setting up the accounting software."
         }
       },
-      "fullAccountingAndTaxSupport":{
-        "name":"Full accounting and tax support",
-        "description":{
-          "1":"All current reports.",
-          "2":"All annual reports.",
-          "3":"Constant support regarding accounting and tax issues.",
-          "4":"Interim reports on the results of the company's activities.",
-          "5":"VAT returns.",
-          "6":"Annual Accounts.",
-          "7":"Confirmation Statements.",
-          "8":"Corporation tax return (CT600).",
-          "9":"Monthly payroll"
-        },
-        "howItWorks": {
-          "1": [
-            "FIND OUT YOUR SPECIFICS AND YOUR FINAL GOAL.",
-            "First question that we will ask you would be What is your goal? so be prepared to answer it..",
-            "As possible answers: to accumulate resources within the company with future plans for capital investment or to withdraw as much as possible in the most tax efficient way.."
-          ],
-          "2": [
-            "SETTING UP A PLAN FOR THE FOLLOWING 12 MONTHS ACCORDING TO YOUR GOAL.",
-            "Upon establishing your final goal, we will create a strategic plan that will reflect your main goal including setting up salary level, dividends, expenses etcetera."
-          ],
-          "3": [
-            "MONITOR OF PERFORMANCE AND MAKING NECESSARY CORRECTION.",
-            "We use accounting software that allows you to send invoices, record receipts and gives us analytics in relation to the revenue, expenditure, profit, and taxes.",
-            "That analytics enable us to see the performance in almost real time and to compare it with the plan.",
-            "Regular reviews, that we perform, allows to see whether we are on track and if not to make an amendment."
-          ]
-        }
+      "fullAccountingAndTaxSupport": {
+      "name": "Full accounting and tax support",
+      "description": {
+        "1": "All current reports.",
+        "2": "All annual reports.",
+        "3": "Constant support regarding accounting and tax issues.",
+        "4": "Interim reports on the results of the company's activities.",
+        "5": "VAT returns.",
+        "6": "Annual Accounts.",
+        "7": "Confirmation Statements.",
+        "8": "Corporation tax return (CT600).",
+        "9": "Monthly payroll"
       },
+      "howItWorks": {
+        "1": [
+          "FIND OUT YOUR SPECIFICS AND YOUR FINAL GOAL.",
+          "First question that we will ask you would be What is your goal? so be prepared to answer it..",
+          "As possible answers: to accumulate resources within the company with future plans for capital investment or to withdraw as much as possible in the most tax efficient way.."
+        ],
+        "2": [
+          "SETTING UP A PLAN FOR THE FOLLOWING 12 MONTHS ACCORDING TO YOUR GOAL.",
+          "Upon establishing your final goal, we will create a strategic plan that will reflect your main goal including setting up salary level, dividends, expenses etcetera."
+        ],
+        "3": [
+          "MONITOR OF PERFORMANCE AND MAKING NECESSARY CORRECTION.",
+          "We use accounting software that allows you to send invoices, record receipts and gives us analytics in relation to the revenue, expenditure, profit, and taxes.",
+          "That analytics enable us to see the performance in almost real time and to compare it with the plan.",
+          "Regular reviews, that we perform, allows to see whether we are on track and if not to make an amendment."
+        ]
+      }
+    },
       "separateServicesVATReturnsAnnual":{
         "name":"Separate services - VAT returns, Annual",
         "description":{

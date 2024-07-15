@@ -1,6 +1,6 @@
 .serviceTemplate {
   padding: 20px;
-  padding-top: 80px;
+  padding-top: 100px;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
@@ -19,17 +19,81 @@
 }
 
 .title {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.title:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-500);
+  transform: translateX(-50%);
 }
 
 .descriptionList {
-  margin-left: 40px;
-  list-style-type: circle;
+  list-style-type: none;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.descriptionItem {
+  font-size: 22px;
+  padding: 5px;
+  padding-left: 25px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.descriptionItem:before {
+  content: '✔';
+  color: var(--primary-500);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2em;
+}
+
+.descriptionItem:hover {
+  color: var(--primary-500);
+  cursor: default;
+}
+
+.howItWorksTitle {
+  font-size: 1.8em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .howItWorksList {
   list-style-type: decimal;
+  padding: 20px 50px;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.howItWorksItem {
+  font-size: 18px;
+  padding: 5px;
+  padding-left: 25px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .description p {
@@ -38,7 +102,10 @@
 }
 
 .forWhom {
-  margin-top: 20px;
+  font-size: 1.8em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .forWhom h2 {
@@ -58,9 +125,10 @@
 }
 
 .price {
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .iconSvg {
