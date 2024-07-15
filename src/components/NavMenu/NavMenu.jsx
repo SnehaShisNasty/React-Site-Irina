@@ -52,34 +52,37 @@ const NavMenu = () => {
   );
 
   return (
-    <ul className={styles.menu}>
-      <li className={styles.item}>
-        <NavLink className={styles.link} to="/" onClick={handleHomeClick}>
-          {t('header.navMenu.homePage')}
-        </NavLink>
-      </li>
-      <li className={styles.item}>
-        <NavLink className={styles.link} to="#individual" onClick={handleAnchorClick('#individual')}>
-          {t('header.navMenu.individualServices')}
-        </NavLink>
-        <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
-          {individualServices.map(renderServiceCard)}
-        </ul>
-      </li>
-      <li className={styles.item}>
-        <NavLink className={styles.link} to="#corporate" onClick={handleAnchorClick('#corporate')}>
-          {t('header.navMenu.corporateServices')}
-        </NavLink>
-        <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
-          {corporateServices.map(renderServiceCard)}
-        </ul>
-      </li>
-      <li className={styles.item}>
-        <NavLink className={styles.link} to="/about-us">
-          {t('header.navMenu.aboutUs')}
-        </NavLink>
-      </li>
-    </ul>
+    <div className={styles.mobile}>
+      <ul className={styles.menu}>
+        <li className={styles.item}>
+          <NavLink className={styles.link} to="/">
+            {t('header.navMenu.homePage')}
+          </NavLink>
+        </li>
+        <li className={styles.item}>
+          <NavLink className={styles.link} to="services/individual">
+            {t('header.navMenu.individualServices')}
+          </NavLink>
+          <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
+            {individualServices.map(renderServiceCard)}
+          </ul>
+        </li>
+        <li className={styles.item}>
+          <NavLink className={styles.link} to="services/corporate">
+            {t('header.navMenu.corporateServices')}
+          </NavLink>
+          <ul className={`${styles.dropdown} ${styles.fadeIn}`}>
+            {corporateServices.map(renderServiceCard)}
+          </ul>
+        </li>
+        <li className={styles.item}>
+          <NavLink className={styles.link} to="/about-us">
+            {t('header.navMenu.aboutUs')}
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+
   );
 };
 

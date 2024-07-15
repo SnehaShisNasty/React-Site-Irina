@@ -62,6 +62,7 @@ const Header = () => {
       <div className={styles.header}>
         <Logo />
         <NavMenu />
+        <button className={styles.mobileMenu}></button>
         <div className={styles.content}>
           <button onClick={handleShow} className={styles.btn}>
             {t('header.freeConsult')}
