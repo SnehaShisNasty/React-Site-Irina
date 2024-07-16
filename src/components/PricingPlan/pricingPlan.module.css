@@ -87,15 +87,16 @@
 /* Медиа-запрос для экранов шириной от 768px до 1439px */
 @media (min-width: 768px) and (max-width: 1439px) {
   .container {
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 40px;
   }
 
   .title {
-    font-size: 32px; /* Уменьшаем размер заголовка для средних экранов */
+    font-size: 32px;
   }
 
   .card {
-    flex: 1 0 250px; /* Размер карточек для средних экранов */
+    flex: 1 0 250px;
   }
 
   .iconSvg {
