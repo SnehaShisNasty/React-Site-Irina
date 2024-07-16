@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/React-Site-Irina/static/css/main.9625dd30.css",
-    "main.js": "/React-Site-Irina/static/js/main.16a22bbd.js",
+    "main.css": "/React-Site-Irina/static/css/main.7c256ae0.css",
+    "main.js": "/React-Site-Irina/static/js/main.b77e4253.js",
     "static/css/877.cf12f80f.chunk.css": "/React-Site-Irina/static/css/877.cf12f80f.chunk.css",
     "static/js/877.05fa24d2.chunk.js": "/React-Site-Irina/static/js/877.05fa24d2.chunk.js",
     "static/css/467.77888205.chunk.css": "/React-Site-Irina/static/css/467.77888205.chunk.css",
-    "static/js/467.fb1edcbc.chunk.js": "/React-Site-Irina/static/js/467.fb1edcbc.chunk.js",
+    "static/js/467.f036db6f.chunk.js": "/React-Site-Irina/static/js/467.f036db6f.chunk.js",
     "static/js/794.ec5d7944.chunk.js": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js",
     "static/js/667.4a27477c.chunk.js": "/React-Site-Irina/static/js/667.4a27477c.chunk.js",
     "static/media/hero1.jpg": "/React-Site-Irina/static/media/hero1.a881baeee25ec58207d5.jpg",
@@ -22,17 +22,17 @@
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "static/media/burger-menu.svg": "/React-Site-Irina/static/media/burger-menu.ba712e0903bbd659b2ea.svg",
-    "main.9625dd30.css.map": "/React-Site-Irina/static/css/main.9625dd30.css.map",
-    "main.16a22bbd.js.map": "/React-Site-Irina/static/js/main.16a22bbd.js.map",
+    "main.7c256ae0.css.map": "/React-Site-Irina/static/css/main.7c256ae0.css.map",
+    "main.b77e4253.js.map": "/React-Site-Irina/static/js/main.b77e4253.js.map",
     "877.cf12f80f.chunk.css.map": "/React-Site-Irina/static/css/877.cf12f80f.chunk.css.map",
     "877.05fa24d2.chunk.js.map": "/React-Site-Irina/static/js/877.05fa24d2.chunk.js.map",
     "467.77888205.chunk.css.map": "/React-Site-Irina/static/css/467.77888205.chunk.css.map",
-    "467.fb1edcbc.chunk.js.map": "/React-Site-Irina/static/js/467.fb1edcbc.chunk.js.map",
+    "467.f036db6f.chunk.js.map": "/React-Site-Irina/static/js/467.f036db6f.chunk.js.map",
     "794.ec5d7944.chunk.js.map": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js.map",
     "667.4a27477c.chunk.js.map": "/React-Site-Irina/static/js/667.4a27477c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9625dd30.css",
-    "static/js/main.16a22bbd.js"
+    "static/css/main.7c256ae0.css",
+    "static/js/main.b77e4253.js"
   ]
 }
