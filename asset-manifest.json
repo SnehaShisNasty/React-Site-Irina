@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Site-Irina/static/css/main.9920818d.css",
-    "main.js": "/React-Site-Irina/static/js/main.d7464e06.js",
-    "static/css/877.bb5b22e2.chunk.css": "/React-Site-Irina/static/css/877.bb5b22e2.chunk.css",
+    "main.js": "/React-Site-Irina/static/js/main.5daabc7f.js",
+    "static/css/877.cf12f80f.chunk.css": "/React-Site-Irina/static/css/877.cf12f80f.chunk.css",
     "static/js/877.05fa24d2.chunk.js": "/React-Site-Irina/static/js/877.05fa24d2.chunk.js",
     "static/css/467.77888205.chunk.css": "/React-Site-Irina/static/css/467.77888205.chunk.css",
     "static/js/467.fb1edcbc.chunk.js": "/React-Site-Irina/static/js/467.fb1edcbc.chunk.js",
@@ -23,8 +23,8 @@
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "static/media/burger-menu.svg": "/React-Site-Irina/static/media/burger-menu.ba712e0903bbd659b2ea.svg",
     "main.9920818d.css.map": "/React-Site-Irina/static/css/main.9920818d.css.map",
-    "main.d7464e06.js.map": "/React-Site-Irina/static/js/main.d7464e06.js.map",
-    "877.bb5b22e2.chunk.css.map": "/React-Site-Irina/static/css/877.bb5b22e2.chunk.css.map",
+    "main.5daabc7f.js.map": "/React-Site-Irina/static/js/main.5daabc7f.js.map",
+    "877.cf12f80f.chunk.css.map": "/React-Site-Irina/static/css/877.cf12f80f.chunk.css.map",
     "877.05fa24d2.chunk.js.map": "/React-Site-Irina/static/js/877.05fa24d2.chunk.js.map",
     "467.77888205.chunk.css.map": "/React-Site-Irina/static/css/467.77888205.chunk.css.map",
     "467.fb1edcbc.chunk.js.map": "/React-Site-Irina/static/js/467.fb1edcbc.chunk.js.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.9920818d.css",
-    "static/js/main.d7464e06.js"
+    "static/js/main.5daabc7f.js"
   ]
 }
