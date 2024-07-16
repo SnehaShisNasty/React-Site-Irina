@@ -51,7 +51,7 @@ export const items = [
       3: "MONITOR OF PERFORMANCE AND MAKING NECESSARY CORRECTION\nWe use accounting software that allows you to send invoices, record receipts and gives us analytics in relation to the revenue, expenditure, profit, and taxes. That analytics enable us to see the performance in almost real time and to compare it with the plan. Regular reviews, that we perform, allows to see whether we are on track and if not to make an amendment."
     },
     img: "img",
-    price:"price$"
+    price:"£150"
   },
   {
     id: 4,
@@ -83,7 +83,7 @@ export const items = [
       5:"Monthly payroll"
     },
     img: "img",
-    price:"price$"
+    price:"£150"
   },
   {
     id: 6,
@@ -111,7 +111,7 @@ export const items = [
       5:"Constant support regarding accounting and tax issues."
     },
     img: "img",
-    price:"price$"
+    price:"£150"
   },
   {
     id: 8,
