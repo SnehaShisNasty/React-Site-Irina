@@ -154,7 +154,8 @@
     "businessesType": "We help a diverse range of businesses including start-ups, sole traders, limited companies, contractors, freelancers and landlords.",
     "belief": "We believe that in today's complex financial and business world, everyone needs reliable, professional accountancy advice and help in managing their personal and business finances.",
     "benefits": "Our highly regarded accounting includes a dedicated accountant, unlimited phone, email and chat support, annual accountants and much more.",
-    "moreInfo": "More info"
+    "showMore": "More info",
+    "showLess": "Hide info"
   },
   "pricingPlan": {
     "title": "Flexible pricing plans for you and your business",
