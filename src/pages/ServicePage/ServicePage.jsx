@@ -14,7 +14,7 @@ const ServicePage = () => {
   }, [serviceAddress]);
 
   if (!service) {
-    return <div>Сервис не найден</div>;
+    return <div>Services not found</div>;
   }
 
   return (

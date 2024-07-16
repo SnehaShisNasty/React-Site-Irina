@@ -39,15 +39,19 @@
 }
 .overlayMenu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 120px;
+  top: 90px;
+  border-radius: 30px;
   width: 100%;
-  height: 60px;
+  height: 300px;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(247, 248, 249) 0%,
     rgb(247, 248, 249) 100%
   );
+  border-bottom: solid 1px gray;
 }
 .activeMenu {
 }

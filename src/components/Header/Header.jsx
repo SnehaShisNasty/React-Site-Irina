@@ -58,7 +58,7 @@ const Header = () => {
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
   const toggleMenu = () => setMenuActive(prevState => !prevState);
-  console.log(menuActive);
+
   return (
     <div className={styles.overlay}>
       <div className={styles.header}>
@@ -67,7 +67,9 @@ const Header = () => {
         <button className={styles.mobileButton} onClick={toggleMenu}></button>
         {menuActive ? (
           <div className={styles.overlayMenu}>
-            <div className={styles.activeMenu}></div>
+            <div className={styles.activeMenu}>
+              <NavMenu toggleMenu={toggleMenu} />
+            </div>
           </div>
         ) : (
           <>
