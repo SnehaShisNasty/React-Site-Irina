@@ -17,6 +17,7 @@ const Header = () => {
   const [filter, setFilter] = useState([]);
   const filteredList = useRef(null);
   const link = useRef(null);
+  const content = useRef(null);
   const [menuActive, setMenuActive] = useState(false);
   const { t } = useTranslation();
 
@@ -54,11 +55,19 @@ const Header = () => {
       document.removeEventListener('click', handleClick);
     };
   }, [filter]);
-
+  useEffect(() => {
+    if (menuActive) {
+      ChangeClass(content, styles.contentActive, true);
+    }
+  }, [menuActive]);
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
   const toggleMenu = () => setMenuActive(prevState => !prevState);
-
+  const handleClick = event => {
+    if (event) {
+      setMenuActive(false);
+    }
+  };
   return (
     <div className={styles.overlay}>
       <div className={styles.header}>
@@ -69,11 +78,30 @@ const Header = () => {
           <div className={styles.overlayMenu}>
             <div className={styles.activeMenu}>
               <NavMenu toggleMenu={toggleMenu} />
+              <div className={styles.content} ref={content}>
+                <button onClick={handleShow} className={styles.btn}>
+                  {t('header.freeConsult')}
+                </button>
+                <Modal show={showModal} handleClose={handleClose}>
+                  <Form typeForm={'FreeConslt'} />
+                </Modal>
+                <div className={styles.searchBox}>
+                  <Search onSubmit={handleSearch} />
+                  <ul ref={filteredList} className={styles.filteredList}>
+                    {filteredItems.map(item => (
+                      <li key={item.id} className={styles.item}>
+                        <NavLink to={item.address}>{item.name}</NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                  <LanguageSwitcher />
+                </div>
+              </div>
             </div>
           </div>
         ) : (
           <>
-            <NavMenu />
+            <NavMenu onHandleClick={handleClick} />
             <div className={styles.content}>
               <button onClick={handleShow} className={styles.btn}>
                 {t('header.freeConsult')}

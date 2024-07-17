@@ -6,7 +6,7 @@ import styles from './nav-menu.module.css';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 
-const NavMenu = ({ toggleMenu }) => {
+const NavMenu = ({ toggleMenu, onHandleClick }) => {
   const { t } = useTranslation();
   const location = useLocation();
   const menu = useRef(null);
@@ -44,10 +44,15 @@ const NavMenu = ({ toggleMenu }) => {
 
   const corporateServices = items.filter(item => item.type === 'corporate');
   const individualServices = items.filter(item => item.type === 'individual');
+  const closeMenu = event => onHandleClick(event);
 
   const renderServiceCard = item => (
     <li className={styles.dropdownItem} key={item.id}>
-      <NavLink className={styles.dropdownLink} to={`service/${item.address}`}>
+      <NavLink
+        className={styles.dropdownLink}
+        to={`service/${item.address}`}
+        onClick={closeMenu}
+      >
         {t(`services.${item.name}.name`)}
       </NavLink>
     </li>
@@ -62,7 +67,7 @@ const NavMenu = ({ toggleMenu }) => {
     <div className={styles.mobile}>
       <ul className={styles.menu} ref={menu}>
         <li className={styles.item}>
-          <NavLink className={styles.link} to="/">
+          <NavLink className={styles.link} to="/" onClick={closeMenu}>
             {t('header.navMenu.homePage')}
           </NavLink>
         </li>
@@ -83,7 +88,7 @@ const NavMenu = ({ toggleMenu }) => {
           </ul>
         </li>
         <li className={styles.item}>
-          <NavLink className={styles.link} to="/about-us">
+          <NavLink className={styles.link} to="/about-us" onClick={closeMenu}>
             {t('header.navMenu.aboutUs')}
           </NavLink>
         </li>

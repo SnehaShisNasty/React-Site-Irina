@@ -16,9 +16,6 @@
   border-bottom: solid 1px gray;
   border-radius: 2px;
 }
-.content {
-  display: none;
-}
 
 .mobileButton {
   position: relative;
@@ -54,7 +51,27 @@
   );
   border-bottom: solid 1px gray;
 }
-.activeMenu {
+.content {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.contentActive {
+  display: flex;
+}
+.btn {
+  width: 150px;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: var(--white-900);
+  background-color: var(--primary-500);
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #23a352;
 }
 @media screen and (min-width: 768px) {
 }
