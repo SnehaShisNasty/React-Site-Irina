@@ -20,6 +20,7 @@ const Header = () => {
   const link = useRef(null);
   const { t, i18n } = useTranslation();
 
+
   const handleSearch = ({ search }) => {
   setFilter(search);
   if (search !== '') {
@@ -66,6 +67,7 @@ const Header = () => {
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
+  const toggleMenu = () => setMenuActive(prevState => !prevState);
 
   return (
     <div className={styles.overlay}>
@@ -92,8 +94,32 @@ const Header = () => {
               ))}
             </ul>
             <LanguageSwitcher />
+
           </div>
-        </div>
+        ) : (
+          <>
+            <NavMenu />
+            <div className={styles.content}>
+              <button onClick={handleShow} className={styles.btn}>
+                {t('header.freeConsult')}
+              </button>
+              <Modal show={showModal} handleClose={handleClose}>
+                <Form typeForm={'FreeConslt'} />
+              </Modal>
+              <div className={styles.searchBox}>
+                <Search onSubmit={handleSearch} />
+                <ul ref={filteredList} className={styles.filteredList}>
+                  {filteredItems.map(item => (
+                    <li key={item.id} className={styles.item}>
+                      <NavLink to={item.address}>{item.name}</NavLink>
+                    </li>
+                  ))}
+                </ul>
+                <LanguageSwitcher />
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

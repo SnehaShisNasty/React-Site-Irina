@@ -1,16 +1,18 @@
-import { useEffect } from 'react';
-import { NavLink, useLocation} from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import { ChangeClass } from 'helpers/ChangeClass';
 // import { animateScroll as scroll, scroller } from 'react-scroll';
 import styles from './nav-menu.module.css';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 
-const NavMenu = () => {
+const NavMenu = ({ toggleMenu }) => {
   const { t } = useTranslation();
   const location = useLocation();
+  const menu = useRef(null);
   // const navigate = useNavigate();
 
-   useEffect(() => {
+  useEffect(() => {
     if (location.hash) {
       const element = document.getElementById(location.hash.slice(1));
       if (element) {
@@ -50,10 +52,15 @@ const NavMenu = () => {
       </NavLink>
     </li>
   );
+  useEffect(() => {
+    if (toggleMenu) {
+      ChangeClass(menu, styles.menuActive, true);
+    }
+  }, [toggleMenu]);
 
   return (
     <div className={styles.mobile}>
-      <ul className={styles.menu}>
+      <ul className={styles.menu} ref={menu}>
         <li className={styles.item}>
           <NavLink className={styles.link} to="/">
             {t('header.navMenu.homePage')}
@@ -82,7 +89,6 @@ const NavMenu = () => {
         </li>
       </ul>
     </div>
-
   );
 };
 
