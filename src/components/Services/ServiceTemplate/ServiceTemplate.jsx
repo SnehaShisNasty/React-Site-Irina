@@ -55,9 +55,9 @@ return (
         </div>
       )}
       <p className={styles.price}>{t('services.price')}: {currentService.price}</p>
-      <svg className={styles.iconSvg}>
+      {/* <svg className={styles.iconSvg}>
         <use xlinkHref={`#${currentService.icon}`} className={styles.icon} />
-      </svg>
+      </svg> */}
     </div>
   );
 };

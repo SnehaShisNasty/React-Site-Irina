@@ -11,26 +11,36 @@ import { Form } from '../Form/Form';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
+
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const [filteredItems, setFilteredItems] = useState([]);
-  const [filter, setFilter] = useState([]);
+  const [filter, setFilter] = useState('');
   const filteredList = useRef(null);
   const link = useRef(null);
-  const [menuActive, setMenuActive] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
 
   const handleSearch = ({ search }) => {
-    setFilter(search);
-    if (search !== '') {
-      const filtered = items.filter(item =>
-        item.name.toLowerCase().includes(search.toLowerCase())
-      );
-      setFilteredItems(filtered);
-      ChangeClass(filteredList, styles.active, true);
-    } else {
-      setFilteredItems([]);
-      ChangeClass(filteredList, styles.active);
+  setFilter(search);
+  if (search !== '') {
+    const language = i18n.language; // текущий язык
+    const filtered = items.filter(item => {
+      const itemName = item.name.toLowerCase(); // или item.key, как у вас в данных
+      const translatedName = t(`services.${itemName}.name`).toLocaleLowerCase(language); // правильное преобразование для текущего языка
+      return translatedName.includes(search.toLocaleLowerCase(language));
+    });
+    setFilteredItems(filtered);
+    ChangeClass(filteredList, styles.active, true);
+  } else {
+    setFilteredItems([]);
+    ChangeClass(filteredList, styles.active);
+  }
+};
+
+  const handleInputChange = ({ name, value }) => {
+    if (name === 'search') {
+      handleSearch({ search: value });
     }
   };
 
@@ -63,13 +73,28 @@ const Header = () => {
     <div className={styles.overlay}>
       <div className={styles.header}>
         <Logo />
+        <NavMenu />
+        <button className={styles.mobileMenu}></button>
+        <div className={styles.content}>
+          <button onClick={handleShow} className={styles.btn}>
+            {t('header.freeConsult')}
+          </button>
+          <Modal show={showModal} handleClose={handleClose}>
+            <Form typeForm={'FreeConslt'} />
+          </Modal>
+          <div className={styles.searchBox}>
+            <Search onSubmit={handleSearch} onChange={handleInputChange} />
+            <ul ref={filteredList} className={`${styles.filteredList}`}>
+              {filteredItems.map(item => (
+                <li key={item.id} className={styles.item}>
+                  <NavLink to={`service/${item.address}`} ref={link}>
+                    {t(`services.${item.name}.name`)}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+            <LanguageSwitcher />
 
-        <button className={styles.mobileButton} onClick={toggleMenu}></button>
-        {menuActive ? (
-          <div className={styles.overlayMenu}>
-            <div className={styles.activeMenu}>
-              <NavMenu toggleMenu={toggleMenu} />
-            </div>
           </div>
         ) : (
           <>
