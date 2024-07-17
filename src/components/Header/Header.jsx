@@ -11,25 +11,35 @@ import { Form } from '../Form/Form';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
+
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const [filteredItems, setFilteredItems] = useState([]);
-  const [filter, setFilter] = useState([]);
+  const [filter, setFilter] = useState('');
   const filteredList = useRef(null);
   const link = useRef(null);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const handleSearch = ({ search }) => {
-    setFilter(search);
-    if (search !== '') {
-      const filtered = items.filter(item =>
-        item.name.toLowerCase().includes(search.toLowerCase())
-      );
-      setFilteredItems(filtered);
-      ChangeClass(filteredList, styles.active, true);
-    } else {
-      setFilteredItems([]);
-      ChangeClass(filteredList, styles.active);
+  setFilter(search);
+  if (search !== '') {
+    const language = i18n.language; // текущий язык
+    const filtered = items.filter(item => {
+      const itemName = item.name.toLowerCase(); // или item.key, как у вас в данных
+      const translatedName = t(`services.${itemName}.name`).toLocaleLowerCase(language); // правильное преобразование для текущего языка
+      return translatedName.includes(search.toLocaleLowerCase(language));
+    });
+    setFilteredItems(filtered);
+    ChangeClass(filteredList, styles.active, true);
+  } else {
+    setFilteredItems([]);
+    ChangeClass(filteredList, styles.active);
+  }
+};
+
+  const handleInputChange = ({ name, value }) => {
+    if (name === 'search') {
+      handleSearch({ search: value });
     }
   };
 
@@ -71,12 +81,12 @@ const Header = () => {
             <Form typeForm={'FreeConslt'} />
           </Modal>
           <div className={styles.searchBox}>
-            <Search onSubmit={handleSearch} />
+            <Search onSubmit={handleSearch} onChange={handleInputChange} />
             <ul ref={filteredList} className={`${styles.filteredList}`}>
               {filteredItems.map(item => (
                 <li key={item.id} className={styles.item}>
-                  <NavLink to={item.address} ref={link}>
-                    {item.name}
+                  <NavLink to={`service/${item.address}`} ref={link}>
+                    {t(`services.${item.name}.name`)}
                   </NavLink>
                 </li>
               ))}

@@ -11,7 +11,7 @@ const Hero = () => {
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
   return (
-    <div className={styles.overlay}>
+    <div className={styles.overlay} id='homePage'>
       <div className={styles.hero}>
         <h1 className={styles.title}>{t('hero.title')}</h1>
         <button onClick={handleShow} className={styles.btn}>

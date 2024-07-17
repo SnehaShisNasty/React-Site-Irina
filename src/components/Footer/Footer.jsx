@@ -1,34 +1,42 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import info from '../../data/contactInfo';
+import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
+import { scroller } from 'react-scroll';
 import sprite from '../../img/symbol-defs.svg';
 import styles from './footer.module.css';
 
 const Footer = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const openMap = address => {
-    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-      address
-    )}`;
+    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
     window.open(mapUrl, '_blank');
   };
 
   const additionalLinks = [
-    { path: '/', label: t('footer.homePage') },
-    { path: '/', label: t('footer.individualServices') },
-    { path: '/', label: t('footer.corporateServices') },
-    { path: '/', label: t('footer.contactUs') },
-    { path: '/', label: t('footer.aboutUs') },
+    { path: '/', label: t('footer.homePage'), anchor: 'homePage' },
+    { path: '/', label: t('footer.individualServices'), anchor: 'individual' },
+    { path: '/', label: t('footer.corporateServices'), anchor: 'corporate' },
+    { path: '/contact-us', label: t('footer.contactUs') },
+    { path: '/about-us', label: t('footer.aboutUs') },
   ];
 
-  const servicesLinks = [
-    { path: '/', label: t('footer.businessConsulting') },
-    { path: '/', label: t('footer.companyFormation') },
-    { path: '/', label: t('footer.accountingSupport') },
-    { path: '/', label: t('footer.selfEmployment') },
-    { path: '/', label: t('footer.taxReturn') },
+  const servicesNames = [
+    'businessConsulting',
+    'companyFormationService',
+    'fullAccountingAndTaxSupport',
+    'selfEmploymentRegistrationUTR',
+    'selfAssessmentTaxReturn',
   ];
+
+  const servicesLinks = servicesNames.map(name => {
+    const service = items.find(item => item.name === name);
+    return service ? { path: `service/${service.address}`, label: t(`services.${service.name}.name`) } : null;
+  }).filter(link => link !== null);
 
   const contactInfo = [
     {
@@ -42,31 +50,58 @@ const Footer = () => {
 
   const socialLinks = t('footer.socialLinks', { returnObjects: true });
 
+  const handleLinkClick = (path, anchor) => (event) => {
+    event.preventDefault();
+    if (window.location.pathname === '/') {
+      scroller.scrollTo(anchor, {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart',
+        offset: -0
+      });
+    } else {
+      navigate(path, { state: { anchor } });
+    }
+  };
+
+  useEffect(() => {
+    if (location.state && location.state.anchor) {
+      scroller.scrollTo(location.state.anchor, {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart',
+        offset: -150
+      });
+    }
+  }, [location]);
+
+  const renderLinks = (links) => (
+    <ul className={styles.list}>
+      {links.map((link, index) => (
+        <li key={index}>
+          {link.anchor ? (
+            <a href={link.path} className={styles.link} onClick={handleLinkClick(link.path, link.anchor)}>
+              {link.label}
+            </a>
+          ) : (
+            <NavLink to={link.path} className={styles.link}>
+              {link.label}
+            </NavLink>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+
   return (
     <div className={styles.container}>
       <div className={styles.column}>
         <h1>{t('footer.additional')}</h1>
-        <ul className={styles.list}>
-          {additionalLinks.map((link, index) => (
-            <li key={index}>
-              <NavLink to={link.path} className={styles.link}>
-                {link.label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {renderLinks(additionalLinks)}
       </div>
       <div className={styles.column}>
         <h1>{t('footer.services')}</h1>
-        <ul className={styles.list}>
-          {servicesLinks.map((link, index) => (
-            <li key={index}>
-              <NavLink to={link.path} className={styles.link}>
-                {link.label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {renderLinks(servicesLinks)}
       </div>
       <div className={styles.column}>
         <h1>{t('footer.questions')}</h1>
@@ -88,12 +123,9 @@ const Footer = () => {
         <ul className={styles.social}>
           {socialLinks.map((link, index) => (
             <li key={index}>
-              <a href="/" className={styles.linkSocial}>
+              <a href={link.url} className={styles.linkSocial}>
                 <svg className={styles.iconSvg}>
-                  <use
-                    href={`${sprite}#${link.icon}`}
-                    className={styles.icon}
-                  />
+                  <use href={`${sprite}#${link.icon}`} className={styles.icon} />
                 </svg>
               </a>
             </li>

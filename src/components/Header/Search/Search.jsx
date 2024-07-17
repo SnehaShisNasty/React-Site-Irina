@@ -7,9 +7,9 @@ const INITIAL_STATE = {
   search: '',
 };
 
-const Search = ({ onSubmit, onClick, onFocus }) => {
+const Search = ({ onSubmit, onChange, onClick, onFocus }) => {
   const [state, setState] = useState({ ...INITIAL_STATE });
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const handleChange = ({ target }) => {
     const { name, value } = target;
@@ -17,6 +17,9 @@ const Search = ({ onSubmit, onClick, onFocus }) => {
       ...state,
       [name]: value,
     });
+    if (onChange) {
+      onChange({ name, value });
+    }
   };
 
   const handleSubmit = e => {
@@ -28,16 +31,19 @@ const Search = ({ onSubmit, onClick, onFocus }) => {
   const reset = () => {
     setState({ search: '' });
   };
+
   const handleClick = event => {
     if (onClick) {
       onClick(event);
     }
   };
+
   const handleFocus = event => {
     if (onFocus) {
       onFocus(event);
     }
   };
+
   const searchId = nanoid();
 
   return (
