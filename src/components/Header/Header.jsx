@@ -74,11 +74,11 @@ const Header = () => {
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
   const toggleMenu = () => setMenuActive(prevState => !prevState);
-  const handleClick = event => {
-    if (event) {
-      setMenuActive(false);
-    }
-  };
+  // const handleClick = event => {
+  //   if (event) {
+  //     setMenuActive(false);
+  //   }
+  // };
   return (
     <div className={styles.overlay}>
       <div className={styles.header}>
