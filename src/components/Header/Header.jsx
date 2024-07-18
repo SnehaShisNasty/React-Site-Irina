@@ -24,12 +24,12 @@ const Header = () => {
   const handleSearch = ({ search }) => {
     setFilter(search);
     if (search !== '') {
-      const language = i18n.language; // текущий язык
+      const language = i18n.language;
       const filtered = items.filter(item => {
-        const itemName = item.name.toLowerCase(); // или item.key, как у вас в данных
+        const itemName = item.name.toLowerCase();
         const translatedName = t(`services.${itemName}.name`).toLocaleLowerCase(
           language
-        ); // правильное преобразование для текущего языка
+        );
         return translatedName.includes(search.toLocaleLowerCase(language));
       });
       setFilteredItems(filtered);
@@ -105,8 +105,8 @@ const Header = () => {
                       </li>
                     ))}
                   </ul>
-                  <LanguageSwitcher />
                 </div>
+                <LanguageSwitcher />
               </div>
             </div>
           </div>
