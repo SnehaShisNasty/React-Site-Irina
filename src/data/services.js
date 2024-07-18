@@ -57,7 +57,7 @@ export const items = [
   },
   {
     id: 4,
-    name: 'separateServicesVATReturnsAnnual',
+    name: 'separateServicesVATReturnsAnnualAccountsCT600',
     type: 'corporate',
     address: 'separate-services-VAT-returns-annual',
     icon: 'vat',
@@ -72,23 +72,23 @@ export const items = [
     price:
       'DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING',
   },
-  {
-    id: 5,
-    name: 'accountsCT600',
-    type: 'corporate',
-    address: 'accounts-CT600',
-    icon: 'accounts',
-    description: {
-      1: 'VAT returns.',
-      2: 'Annual Accounts.',
-      3: 'Confirmation Statements.',
-      4: 'Corporation tax return (CT600).',
-      5: 'Monthly payroll',
-    },
-    img: 'img',
-    price:
-      'DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING.',
-  },
+  // {
+  //   id: 5,
+  //   name: 'accountsCT600',
+  //   type: 'corporate',
+  //   address: 'accounts-CT600',
+  //   icon: 'accounts',
+  //   description: {
+  //     1: 'VAT returns.',
+  //     2: 'Annual Accounts.',
+  //     3: 'Confirmation Statements.',
+  //     4: 'Corporation tax return (CT600).',
+  //     5: 'Monthly payroll',
+  //   },
+  //   img: 'img',
+  //   price:
+  //     'DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING.',
+  // },
   // {
   //   id: 6,
   //   name: 'consulting',
