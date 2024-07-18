@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/React-Site-Irina/static/css/main.36b4a43c.css",
-    "main.js": "/React-Site-Irina/static/js/main.a03f532d.js",
-    "static/css/877.cf12f80f.chunk.css": "/React-Site-Irina/static/css/877.cf12f80f.chunk.css",
+    "main.css": "/React-Site-Irina/static/css/main.04ddd213.css",
+    "main.js": "/React-Site-Irina/static/js/main.a41efaa9.js",
+    "static/css/877.8fc9a719.chunk.css": "/React-Site-Irina/static/css/877.8fc9a719.chunk.css",
     "static/js/877.96bc563d.chunk.js": "/React-Site-Irina/static/js/877.96bc563d.chunk.js",
     "static/css/467.77888205.chunk.css": "/React-Site-Irina/static/css/467.77888205.chunk.css",
     "static/js/467.bc222bf7.chunk.js": "/React-Site-Irina/static/js/467.bc222bf7.chunk.js",
     "static/js/794.ec5d7944.chunk.js": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js",
-    "static/media/hero1.jpg": "/React-Site-Irina/static/media/hero1.a881baeee25ec58207d5.jpg",
     "static/media/xero-logo.png": "/React-Site-Irina/static/media/xero-logo.7084e0addb2e41ec76ee.png",
     "static/media/sage-logo.jpg": "/React-Site-Irina/static/media/sage-logo.8e00bb335e11ddbb30a6.jpg",
     "static/media/dext-logo.jpg": "/React-Site-Irina/static/media/dext-logo.f1c78e28edc5d43184ab.jpg",
     "static/media/acca-logo.jpg": "/React-Site-Irina/static/media/acca-logo.a6d34ca76da0384150a9.jpg",
     "static/media/att-logo.png": "/React-Site-Irina/static/media/att-logo.2f19cee02c1a6151d880.png",
+    "static/media/photo_2024-07-18_12-28-22.jpg": "/React-Site-Irina/static/media/photo_2024-07-18_12-28-22.83fde175b649c514704f.jpg",
     "static/media/symbol-defs-services.svg": "/React-Site-Irina/static/media/symbol-defs-services.23aee614bf85a9cb4208d4fe09e6d41e.svg",
     "static/media/iab-logo.jpg": "/React-Site-Irina/static/media/iab-logo.eb3e606d16e450870bf9.jpg",
     "static/media/img.svg": "/React-Site-Irina/static/media/img.0c7fbdb675ed8c81954d.svg",
@@ -21,16 +21,16 @@
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "static/media/burger-menu.svg": "/React-Site-Irina/static/media/burger-menu.ba712e0903bbd659b2ea.svg",
-    "main.36b4a43c.css.map": "/React-Site-Irina/static/css/main.36b4a43c.css.map",
-    "main.a03f532d.js.map": "/React-Site-Irina/static/js/main.a03f532d.js.map",
-    "877.cf12f80f.chunk.css.map": "/React-Site-Irina/static/css/877.cf12f80f.chunk.css.map",
+    "main.04ddd213.css.map": "/React-Site-Irina/static/css/main.04ddd213.css.map",
+    "main.a41efaa9.js.map": "/React-Site-Irina/static/js/main.a41efaa9.js.map",
+    "877.8fc9a719.chunk.css.map": "/React-Site-Irina/static/css/877.8fc9a719.chunk.css.map",
     "877.96bc563d.chunk.js.map": "/React-Site-Irina/static/js/877.96bc563d.chunk.js.map",
     "467.77888205.chunk.css.map": "/React-Site-Irina/static/css/467.77888205.chunk.css.map",
     "467.bc222bf7.chunk.js.map": "/React-Site-Irina/static/js/467.bc222bf7.chunk.js.map",
     "794.ec5d7944.chunk.js.map": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36b4a43c.css",
-    "static/js/main.a03f532d.js"
+    "static/css/main.04ddd213.css",
+    "static/js/main.a41efaa9.js"
   ]
 }
