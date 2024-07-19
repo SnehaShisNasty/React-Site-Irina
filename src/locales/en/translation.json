@@ -130,7 +130,8 @@
     }
   },
   "hero": {
-    "title": "AUDIT CONSULTING: Expert UK Accounting & Tax Services",
+    "title": "AUDIT CONSULTING",
+    "subtitle": "Expert UK Accounting & Tax Services",
     "getConsulting": "Get your first free consultation"
   },
   "modal": {
