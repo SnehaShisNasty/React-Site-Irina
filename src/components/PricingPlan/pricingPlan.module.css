@@ -2,6 +2,7 @@
   margin: 140px 0 80px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  max-width: 100%;
 }
 
 .container.visible {

@@ -10,29 +10,29 @@
     }
   },
   "services": {
-      "title":"Services",
-      "descriptionTitle":"What that service includes ?",
-      "price":"Price",
-      "learnMore":"Learn more",
-      "howItWorksTitle":"How it works ?",
-      "businessConsulting":{
-        "name":"Business Consulting",
-        "description":{
-          "1":"1 hour Zoom consultation that would provide comprehensive answers to your questions including but not limiting, on the possible benefits and costs of doing business in the UK in LTD format.",
-          "2":"Features of taxation and possible ways to increase efficiency.",
-          "3":"Requirements in relation to accounting and reporting."
-        }
-      },
-      "companyFormationService":{
-        "name":"Company formation service",
-        "description":{
-          "1":"Preparation of the Company Article.",
-          "2":"Registration at Companies House.",
-          "3":"Registration of all necessary schemes for full activity within the UK, including: registration as an employer, CIS, VAT, EORI.",
-          "4":"Setting up the accounting software."
-        }
-      },
-      "fullAccountingAndTaxSupport": {
+    "title": "Services",
+    "descriptionTitle": "What that service includes ?",
+    "price": "Price",
+    "learnMore": "Learn more",
+    "howItWorksTitle": "How it works ?",
+    "businessConsulting": {
+      "name": "Business Consulting",
+      "description": {
+        "1": "1 hour Zoom consultation that would provide comprehensive answers to your questions including but not limiting, on the possible benefits and costs of doing business in the UK in LTD format.",
+        "2": "Features of taxation and possible ways to increase efficiency.",
+        "3": "Requirements in relation to accounting and reporting."
+      }
+    },
+    "companyFormationService": {
+      "name": "Company formation service",
+      "description": {
+        "1": "Preparation of the Company Article.",
+        "2": "Registration at Companies House.",
+        "3": "Registration of all necessary schemes for full activity within the UK, including: registration as an employer, CIS, VAT, EORI.",
+        "4": "Setting up the accounting software."
+      }
+    },
+    "fullAccountingAndTaxSupport": {
       "name": "Full accounting and tax support",
       "description": {
         "1": "All current reports.",
@@ -63,71 +63,71 @@
         ]
       }
     },
-      "separateServicesVATReturnsAnnual":{
-        "name":"Separate services - VAT returns, Annual",
-        "description":{
-          "1":"VAT returns.",
-          "2":"Annual Accounts.",
-          "3":"Confirmation Statements.",
-          "4":"Corporation tax return (CT600).",
-          "5":"Monthly payroll."
-        }
-      },
-      "accountsCT600":{
-        "name":"Accounts, CT600",
-        "description":{
-          "1":"VAT returns.",
-          "2":"Annual Accounts.",
-          "3":"Confirmation Statements.",
-          "4":"Corporation tax return (CT600).",
-          "5":"Monthly payroll."
-        }
-      },
-      "consulting":{
-        "name":"Consulting",
-        "description":{
-          "1":"1 hour Zoom consultation to discuss your case and offer the practical solution."
-        }
-      },
-      "selfEmploymentRegistrationUTR":{
-        "name":"Self-employment registration (UTR)",
-        "description":{
-          "1":"Assessing the advantage of self-employment compared to other forms like limited company.",
-          "2":"Filling and submitting the registration application.",
-          "3":"20% CIS Registration.",
-          "4":"Advice in relation to accounting software and setting up the record keeping procedure.",
-          "5":"Constant support regarding accounting and tax issues."
-        }
-      } ,
-      "selfAssessmentTaxReturn":{
-        "name":"Self-Assessment Tax Return",
-        "description":{
-          "1":"Assessing your tax return in order to see if any tax savings can be made.",
-          "2":"Calculating your tax liability.",
-          "3":"Completing your tax return.",
-          "4":"File the return online.",
-          "5":"Liaise with you on the amounts to be paid and when they are due.",
-          "6":"Advice for the future years if there are any anomalies in the return"
-        }
-      },
-      "cisRegistration":{
-        "name":"20% CIS Registration",
-        "description":{
-          "1":"Assessing the needs of CIS registration.",
-          "2":"Filing and sending the application form.",
-          "3":"Confirming the registration status.",
-          "4":"Advice in relation to gross status.",
-          "5":"Constant support regarding accounting and tax issues."
-        }
-      } ,
-      "payeRefundRequest":{
-        "name":"PAYE Refund Request",
-        "description":{
-          "1":"Work out your tax, so to check that your employer deducted the right amount of tax from your pay.",
-          "2":"Preparing and filing an application for a refund.",
-          "3":"Support during the entire process until you receive your payment."
-        }
+    "separateServicesVATReturnsAnnual": {
+      "name": "Separate services - VAT returns,Annual",
+      "description": {
+        "1": "VAT returns.",
+        "2": "Annual Accounts.",
+        "3": "Confirmation Statements.",
+        "4": "Corporation tax return (CT600).",
+        "5": "Monthly payroll."
       }
+    },
+    "accountsCT600": {
+      "name": "Accounts, CT600",
+      "description": {
+        "1": "VAT returns.",
+        "2": "Annual Accounts.",
+        "3": "Confirmation Statements.",
+        "4": "Corporation tax return (CT600).",
+        "5": "Monthly payroll."
+      }
+    },
+    "consulting": {
+      "name": "Consulting",
+      "description": {
+        "1": "1 hour Zoom consultation to discuss your case and offer the practical solution."
+      }
+    },
+    "selfEmploymentRegistrationUTR": {
+      "name": "Self-employment registration (UTR)",
+      "description": {
+        "1": "Assessing the advantage of self-employment compared to other forms like limited company.",
+        "2": "Filling and submitting the registration application.",
+        "3": "20% CIS Registration.",
+        "4": "Advice in relation to accounting software and setting up the record keeping procedure.",
+        "5": "Constant support regarding accounting and tax issues."
+      }
+    },
+    "selfAssessmentTaxReturn": {
+      "name": "Self-Assessment Tax Return",
+      "description": {
+        "1": "Assessing your tax return in order to see if any tax savings can be made.",
+        "2": "Calculating your tax liability.",
+        "3": "Completing your tax return.",
+        "4": "File the return online.",
+        "5": "Liaise with you on the amounts to be paid and when they are due.",
+        "6": "Advice for the future years if there are any anomalies in the return"
+      }
+    },
+    "cisRegistration": {
+      "name": "20% CIS Registration",
+      "description": {
+        "1": "Assessing the needs of CIS registration.",
+        "2": "Filing and sending the application form.",
+        "3": "Confirming the registration status.",
+        "4": "Advice in relation to gross status.",
+        "5": "Constant support regarding accounting and tax issues."
+      }
+    },
+    "payeRefundRequest": {
+      "name": "PAYE Refund Request",
+      "description": {
+        "1": "Work out your tax, so to check that your employer deducted the right amount of tax from your pay.",
+        "2": "Preparing and filing an application for a refund.",
+        "3": "Support during the entire process until you receive your payment."
+      }
+    }
   },
   "hero": {
     "title": "AUDIT CONSULTING: Expert UK Accounting & Tax Services",

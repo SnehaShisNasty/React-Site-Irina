@@ -57,7 +57,7 @@ export const items = [
   },
   {
     id: 4,
-    name: 'separateServicesVATReturnsAnnualAccountsCT600',
+    name: 'separateServicesVATReturnsAnnual',
     type: 'corporate',
     address: 'separate-services-VAT-returns-annual',
     icon: 'vat',
