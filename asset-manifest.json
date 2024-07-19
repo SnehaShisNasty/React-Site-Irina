@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Site-Irina/static/css/main.04ddd213.css",
-    "main.js": "/React-Site-Irina/static/js/main.a41efaa9.js",
+    "main.js": "/React-Site-Irina/static/js/main.538cfb9c.js",
     "static/css/877.8fc9a719.chunk.css": "/React-Site-Irina/static/css/877.8fc9a719.chunk.css",
     "static/js/877.96bc563d.chunk.js": "/React-Site-Irina/static/js/877.96bc563d.chunk.js",
     "static/css/467.77888205.chunk.css": "/React-Site-Irina/static/css/467.77888205.chunk.css",
@@ -22,7 +22,7 @@
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "static/media/burger-menu.svg": "/React-Site-Irina/static/media/burger-menu.ba712e0903bbd659b2ea.svg",
     "main.04ddd213.css.map": "/React-Site-Irina/static/css/main.04ddd213.css.map",
-    "main.a41efaa9.js.map": "/React-Site-Irina/static/js/main.a41efaa9.js.map",
+    "main.538cfb9c.js.map": "/React-Site-Irina/static/js/main.538cfb9c.js.map",
     "877.8fc9a719.chunk.css.map": "/React-Site-Irina/static/css/877.8fc9a719.chunk.css.map",
     "877.96bc563d.chunk.js.map": "/React-Site-Irina/static/js/877.96bc563d.chunk.js.map",
     "467.77888205.chunk.css.map": "/React-Site-Irina/static/css/467.77888205.chunk.css.map",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.04ddd213.css",
-    "static/js/main.a41efaa9.js"
+    "static/js/main.538cfb9c.js"
   ]
 }
