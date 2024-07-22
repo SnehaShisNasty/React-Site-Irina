@@ -1,6 +1,6 @@
 .overlay {
   position: fixed;
-  width: 100%;
+  min-width: 360px;
   z-index: 999;
 }
 .header {
@@ -79,6 +79,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .overlay {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1440px) {
   .mobileButton {

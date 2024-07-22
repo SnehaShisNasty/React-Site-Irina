@@ -22,7 +22,7 @@
         "2": "Features of taxation and possible ways to increase efficiency.",
         "3": "Requirements in relation to accounting and reporting."
       },
-      "price":"£100"
+      "price": "Free"
     },
     "companyFormationService": {
       "name": "Company formation service",
@@ -32,7 +32,7 @@
         "3": "Registration of all necessary schemes for full activity within the UK, including: registration as an employer, CIS, VAT, EORI.",
         "4": "Setting up the accounting software."
       },
-      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
+      "price": "DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
     },
     "fullAccountingAndTaxSupport": {
       "name": "Full accounting and tax support",
@@ -64,10 +64,10 @@
           "Regular reviews, that we perform, allows to see whether we are on track and if not to make an amendment."
         ]
       },
-      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
+      "price": "DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
     },
     "separateServicesVATReturnsAnnual": {
-      "name": "Separate services - VAT returns,Annual",
+      "name": "VAT returns,Annual Accounts, CT600",
       "description": {
         "1": "VAT returns.",
         "2": "Annual Accounts.",
@@ -75,25 +75,14 @@
         "4": "Corporation tax return (CT600).",
         "5": "Monthly payroll."
       },
-      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
-    },
-    "accountsCT600": {
-      "name": "Accounts, CT600",
-      "description": {
-        "1": "VAT returns.",
-        "2": "Annual Accounts.",
-        "3": "Confirmation Statements.",
-        "4": "Corporation tax return (CT600).",
-        "5": "Monthly payroll."
-      },
-      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
+      "price": "DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
     },
     "consulting": {
       "name": "Consulting",
       "description": {
         "1": "1 hour Zoom consultation to discuss your case and offer the practical solution."
       },
-      "price":"£100"
+      "price": "Free"
     },
     "selfEmploymentRegistrationUTR": {
       "name": "Self-employment registration (UTR)",
@@ -167,8 +156,8 @@
     "benefits": "Our highly regarded accounting includes a dedicated accountant, unlimited phone, email and chat support, annual accountants and much more.",
     "showMore": "More info",
     "showLess": "Hide info",
-    "accreditationTitle":"Our Accreditations",
-    "accreditationText":"You can feel safe in the knowledge that we are experts in our field.Our accountants have a range of qualifications from the Association of Accounting Technicians (AAT), Association of Chartered Certified Accountants (ACCA) and the Institute of Accountants and Bookkeepers (IAB). We are also a HMRC registered Agent.We partner with accounting software providers Dext, Sage and Xero, to help you keep control of your figures 24/7, wherever you are."
+    "accreditationTitle": "Our Accreditations",
+    "accreditationText": "You can feel safe in the knowledge that we are experts in our field.Our accountants have a range of qualifications from the Association of Accounting Technicians (AAT), Association of Chartered Certified Accountants (ACCA) and the Institute of Accountants and Bookkeepers (IAB). We are also a HMRC registered Agent.We partner with accounting software providers Dext, Sage and Xero, to help you keep control of your figures 24/7, wherever you are."
   },
   "pricingPlan": {
     "title": "Flexible pricing plans for you and your business",
