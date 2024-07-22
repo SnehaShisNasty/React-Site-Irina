@@ -21,7 +21,8 @@
         "1": "1 hour Zoom consultation that would provide comprehensive answers to your questions including but not limiting, on the possible benefits and costs of doing business in the UK in LTD format.",
         "2": "Features of taxation and possible ways to increase efficiency.",
         "3": "Requirements in relation to accounting and reporting."
-      }
+      },
+      "price":"£100"
     },
     "companyFormationService": {
       "name": "Company formation service",
@@ -30,7 +31,8 @@
         "2": "Registration at Companies House.",
         "3": "Registration of all necessary schemes for full activity within the UK, including: registration as an employer, CIS, VAT, EORI.",
         "4": "Setting up the accounting software."
-      }
+      },
+      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
     },
     "fullAccountingAndTaxSupport": {
       "name": "Full accounting and tax support",
@@ -61,7 +63,8 @@
           "That analytics enable us to see the performance in almost real time and to compare it with the plan.",
           "Regular reviews, that we perform, allows to see whether we are on track and if not to make an amendment."
         ]
-      }
+      },
+      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
     },
     "separateServicesVATReturnsAnnual": {
       "name": "Separate services - VAT returns,Annual",
@@ -71,7 +74,8 @@
         "3": "Confirmation Statements.",
         "4": "Corporation tax return (CT600).",
         "5": "Monthly payroll."
-      }
+      },
+      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
     },
     "accountsCT600": {
       "name": "Accounts, CT600",
@@ -81,13 +85,15 @@
         "3": "Confirmation Statements.",
         "4": "Corporation tax return (CT600).",
         "5": "Monthly payroll."
-      }
+      },
+      "price":"DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING."
     },
     "consulting": {
       "name": "Consulting",
       "description": {
         "1": "1 hour Zoom consultation to discuss your case and offer the practical solution."
-      }
+      },
+      "price":"£100"
     },
     "selfEmploymentRegistrationUTR": {
       "name": "Self-employment registration (UTR)",
@@ -97,7 +103,8 @@
         "3": "20% CIS Registration.",
         "4": "Advice in relation to accounting software and setting up the record keeping procedure.",
         "5": "Constant support regarding accounting and tax issues."
-      }
+      },
+      "price": "£150"
     },
     "selfAssessmentTaxReturn": {
       "name": "Self-Assessment Tax Return",
@@ -108,7 +115,8 @@
         "4": "File the return online.",
         "5": "Liaise with you on the amounts to be paid and when they are due.",
         "6": "Advice for the future years if there are any anomalies in the return"
-      }
+      },
+      "price": "£150"
     },
     "cisRegistration": {
       "name": "20% CIS Registration",
@@ -118,7 +126,8 @@
         "3": "Confirming the registration status.",
         "4": "Advice in relation to gross status.",
         "5": "Constant support regarding accounting and tax issues."
-      }
+      },
+      "price": "£50"
     },
     "payeRefundRequest": {
       "name": "PAYE Refund Request",
@@ -126,7 +135,8 @@
         "1": "Work out your tax, so to check that your employer deducted the right amount of tax from your pay.",
         "2": "Preparing and filing an application for a refund.",
         "3": "Support during the entire process until you receive your payment."
-      }
+      },
+      "price": "£120"
     }
   },
   "hero": {
@@ -156,7 +166,9 @@
     "belief": "We believe that in today's complex financial and business world, everyone needs reliable, professional accountancy advice and help in managing their personal and business finances.",
     "benefits": "Our highly regarded accounting includes a dedicated accountant, unlimited phone, email and chat support, annual accountants and much more.",
     "showMore": "More info",
-    "showLess": "Hide info"
+    "showLess": "Hide info",
+    "accreditationTitle":"Our Accreditations",
+    "accreditationText":"You can feel safe in the knowledge that we are experts in our field.Our accountants have a range of qualifications from the Association of Accounting Technicians (AAT), Association of Chartered Certified Accountants (ACCA) and the Institute of Accountants and Bookkeepers (IAB). We are also a HMRC registered Agent.We partner with accounting software providers Dext, Sage and Xero, to help you keep control of your figures 24/7, wherever you are."
   },
   "pricingPlan": {
     "title": "Flexible pricing plans for you and your business",
