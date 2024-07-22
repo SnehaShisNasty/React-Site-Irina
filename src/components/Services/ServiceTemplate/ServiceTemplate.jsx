@@ -54,7 +54,7 @@ return (
           </ul>
         </div>
       )}
-      <p className={styles.price}>{t('services.price')}: {currentService.price}</p>
+       <p className={styles.price}>{t('services.price')}: {t(`services.${currentService.name}.price`)}</p>
       {/* <svg className={styles.iconSvg}>
         <use xlinkHref={`#${currentService.icon}`} className={styles.icon} />
       </svg> */}
