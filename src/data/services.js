@@ -1,18 +1,18 @@
 export const items = [
-  // {
-  //   id: 1,
-  //   name: 'businessConsulting',
-  //   type: 'corporate',
-  //   address: 'business-consulting',
-  //   icon: 'business-consulting',
-  //   description: {
-  //     1: '1 hour Zoom consultation that would provide comprehensive answers to your questions including but not limiting, on the possible benefits and costs of doing business in the UK in LTD format.',
-  //     2: 'Features of taxation and possible ways to increase efficiency',
-  //     3: 'Requirements in relation to accounting and reporting',
-  //   },
-  //   img: 'img',
-  //   price: '£100',
-  // },
+  {
+    id: 1,
+    name: 'businessConsulting',
+    type: 'corporate',
+    address: 'business-consulting',
+    icon: 'business-consulting',
+    description: {
+      1: '1 hour Zoom consultation that would provide comprehensive answers to your questions including but not limiting, on the possible benefits and costs of doing business in the UK in LTD format.',
+      2: 'Features of taxation and possible ways to increase efficiency',
+      3: 'Requirements in relation to accounting and reporting',
+    },
+    img: 'img',
+    price: '£100',
+  },
   {
     id: 2,
     name: 'companyFormationService',
@@ -72,35 +72,35 @@ export const items = [
     price:
       'DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING',
   },
-  // {
-  //   id: 5,
-  //   name: 'accountsCT600',
-  //   type: 'corporate',
-  //   address: 'accounts-CT600',
-  //   icon: 'accounts',
-  //   description: {
-  //     1: 'VAT returns.',
-  //     2: 'Annual Accounts.',
-  //     3: 'Confirmation Statements.',
-  //     4: 'Corporation tax return (CT600).',
-  //     5: 'Monthly payroll',
-  //   },
-  //   img: 'img',
-  //   price:
-  //     'DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING.',
-  // },
-  // {
-  //   id: 6,
-  //   name: 'consulting',
-  //   type: 'individual',
-  //   address: 'consulting',
-  //   icon: 'consulting',
-  //   description: {
-  //     1: '1 hour Zoom consultation to discuss your case and offer the practical solution.',
-  //   },
-  //   img: 'img',
-  //   price: '£100',
-  // },
+  {
+    id: 5,
+    name: 'accountsCT600',
+    type: 'corporate',
+    address: 'accounts-CT600',
+    icon: 'accounts',
+    description: {
+      1: 'VAT returns.',
+      2: 'Annual Accounts.',
+      3: 'Confirmation Statements.',
+      4: 'Corporation tax return (CT600).',
+      5: 'Monthly payroll',
+    },
+    img: 'img',
+    price:
+      'DEPENDING ON THE SPECIFIC SERVICE AND AVAILABILITY OF DATA NECESSARY FOR SENDING REPORTS. PLEASE CONTACT US FOR FINAL PRICING.',
+  },
+  {
+    id: 6,
+    name: 'consulting',
+    type: 'individual',
+    address: 'consulting',
+    icon: 'consulting',
+    description: {
+      1: '1 hour Zoom consultation to discuss your case and offer the practical solution.',
+    },
+    img: 'img',
+    price: '£100',
+  },
   {
     id: 7,
     name: 'selfEmploymentRegistrationUTR',
@@ -138,7 +138,7 @@ export const items = [
     id: 9,
     name: 'cisRegistration',
     type: 'individual',
-    address: '20%-CIS-registration',
+    address: '20percents-CIS-registration',
     icon: 'cis',
     description: {
       1: 'Assessing the needs of CIS registration.',

@@ -101,7 +101,7 @@
     top: 100%;
     left: 0;
     background-color: var(--white-900);
-    width: max-content;
+    width: 360px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 1000;
