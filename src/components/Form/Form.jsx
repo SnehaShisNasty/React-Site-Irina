@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import Notiflix from 'notiflix';
 import styles from './Form.module.css';
 import { sendForm } from 'api/telegram';
-const Form = ({ onSubmit, typeForm }) => {
+
+const Form = ({ onSubmit, typeForm, customStyles = {}, title }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -56,12 +57,12 @@ const Form = ({ onSubmit, typeForm }) => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={`${styles.form} ${styles['form--signup']}`}>
-        <p className={styles['form--heading']}>{t('modal.title')}</p>
+    <div className={`${styles.container} ${customStyles.container || ''}`}>
+      <div className={`${styles.form} ${styles['form--signup']} ${customStyles.form || ''}`}>
+        {title && <p className={`${styles['form--heading']} ${customStyles.title || ''}`}>{title}</p>}
         <form autoComplete="off" onSubmit={handleSubmit}>
-          <div className={styles.inputGroup}>
-            <label htmlFor="name" className={styles.label}>
+          <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
+            <label htmlFor="name" className={`${styles.label} ${customStyles.label || ''}`}>
               {t('modal.name')}
             </label>
             <input
@@ -71,11 +72,11 @@ const Form = ({ onSubmit, typeForm }) => {
               placeholder={t('modal.namePH')}
               value={formData.name}
               onChange={handleChange}
-              className={styles.input}
+              className={`${styles.input} ${customStyles.input || ''}`}
             />
           </div>
-          <div className={styles.inputGroup}>
-            <label htmlFor="email" className={styles.label}>
+          <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
+            <label htmlFor="email" className={`${styles.label} ${customStyles.label || ''}`}>
               {t('modal.email')}
             </label>
             <input
@@ -85,11 +86,11 @@ const Form = ({ onSubmit, typeForm }) => {
               placeholder={t('modal.emailPH')}
               value={formData.email}
               onChange={handleChange}
-              className={styles.input}
+              className={`${styles.input} ${customStyles.input || ''}`}
             />
           </div>
-          <div className={styles.inputGroup}>
-            <label htmlFor="phone" className={styles.label}>
+          <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
+            <label htmlFor="phone" className={`${styles.label} ${customStyles.label || ''}`}>
               {t('modal.phone')}
             </label>
             <input
@@ -99,11 +100,11 @@ const Form = ({ onSubmit, typeForm }) => {
               placeholder={t('modal.phonePH')}
               value={formData.phone}
               onChange={handleChange}
-              className={styles.input}
+              className={`${styles.input} ${customStyles.input || ''}`}
             />
           </div>
-          <div className={styles.inputGroup}>
-            <label htmlFor="message" className={styles.label}>
+          <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
+            <label htmlFor="message" className={`${styles.label} ${customStyles.label || ''}`}>
               {t('modal.message')}
             </label>
             <textarea
@@ -112,12 +113,12 @@ const Form = ({ onSubmit, typeForm }) => {
               placeholder={t('modal.messagePH')}
               value={formData.message}
               onChange={handleChange}
-              className={styles.input}
+              className={`${styles.input} ${customStyles.textarea || ''}`}
               rows={5}
             />
           </div>
-          <div className={styles.divButton}>
-            <button className={styles.button} type="submit">
+          <div className={`${styles.divButton} ${customStyles.divButton || ''}`}>
+            <button className={`${styles.button} ${customStyles.button || ''}`} type="submit">
               {t('modal.submit')}
             </button>
           </div>
