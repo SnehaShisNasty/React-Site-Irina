@@ -6,7 +6,8 @@
       "homePage": "Home Page",
       "individualServices": "Individual Services",
       "corporateServices": "Corporate Services",
-      "aboutUs": "About Us"
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us"
     }
   },
   "services": {
@@ -224,5 +225,13 @@
       { "name": "Instagram", "icon": "instagram" },
       { "name": "WhatsApp", "icon": "whatsapp" }
     ]
+  },
+  "contactUs":{
+    "title":"Contact us",
+    "subTitle": "We will be glad to answer your questions.",
+    "locationLabel": "We are based in:",
+    "telLabel": "Phone:",
+    "emailLabel": "Email:",
+    "formTitle": "Fill the feedback form"
   }
 }

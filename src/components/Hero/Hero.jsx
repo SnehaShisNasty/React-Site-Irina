@@ -19,7 +19,9 @@ const Hero = () => {
           {t('hero.getConsulting')}
         </button>
         <Modal show={showModal} handleClose={handleClose}>
-          <Form typeForm={'FreeConslt'} />
+          <Form
+            title={t('modal.title')}
+            typeForm={'FreeConslt'} />
         </Modal>
       </div>
     </div>

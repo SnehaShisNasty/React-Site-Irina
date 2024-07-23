@@ -1,6 +1,6 @@
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import info from '../../data/contactInfo';
+import contactInfo from 'helpers/contactInfoArray';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 import { scroller } from 'react-scroll';
@@ -11,11 +11,6 @@ const Footer = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
-
-  const openMap = address => {
-    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-    window.open(mapUrl, '_blank');
-  };
 
   const additionalLinks = [
     { path: '/', label: t('footer.homePage'), anchor: 'homePage' },
@@ -37,16 +32,6 @@ const Footer = () => {
     const service = items.find(item => item.name === name);
     return service ? { path: `service/${service.address}`, label: t(`services.${service.name}.name`) } : null;
   }).filter(link => link !== null);
-
-  const contactInfo = [
-    {
-      type: 'location',
-      value: info.location,
-      action: () => openMap(info.location),
-    },
-    { type: 'tel', value: info.tel, action: () => `tel:${info.tel}` },
-    { type: 'email', value: info.email, action: () => `mailto:${info.email}` },
-  ];
 
   const socialLinks = t('footer.socialLinks', { returnObjects: true });
 

@@ -6,7 +6,8 @@
       "homePage": "Головна",
       "individualServices": "Індивідуальні послуги",
       "corporateServices": "Корпоративні послуги",
-      "aboutUs": "Про нас"
+      "aboutUs": "Про нас",
+      "contactUs": "Зв'яжіться з нами"
     }
   },
   "services": {
@@ -230,5 +231,12 @@
       { "name": "Instagram", "icon": "instagram" },
       { "name": "WhatsApp", "icon": "whatsapp" }
     ]
+  },
+  "contactUs":{
+    "title":"Зв'яжіться з нами.",
+    "subTitle": "Ми будемо раді відповісти на ваші питання.",
+    "locationLabel": "Наше місцезнаходження:",
+    "telLabel": "Телефон:",
+    "emailLabel": "Пошта:"
   }
 }

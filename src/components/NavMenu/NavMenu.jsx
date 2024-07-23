@@ -88,6 +88,11 @@ const NavMenu = ({ toggleMenu, onHandleClick }) => {
           </ul>
         </li>
         <li className={styles.item}>
+          <NavLink className={styles.link} to="/contact-us" onClick={closeMenu}>
+            {t('header.navMenu.contactUs')}
+          </NavLink>
+        </li>
+        <li className={styles.item}>
           <NavLink className={styles.link} to="/about-us" onClick={closeMenu}>
             {t('header.navMenu.aboutUs')}
           </NavLink>
