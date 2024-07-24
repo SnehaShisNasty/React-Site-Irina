@@ -100,36 +100,11 @@
   background: var(--white-900);
 }
 
-.social {
+.socialDiv {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 20px;
+  justify-content: flex-end;
 }
 
-.iconSvg {
-  width: 24px;
-  height: 24px;
-}
-
-.icon {
-  fill: var(--gray-400);
-  stroke: var(--gray-400);
-}
-
-.icon,
-.iconSvg {
-  transition: all 300ms ease;
-}
-
-.linkSocial:hover .iconSvg {
-  transform: scale(1.1);
-}
-
-.linkSocial:hover .icon {
-  stroke: var(--primary-500);
-  fill: var(--primary-500);
-}
 @media (min-width: 768px) {
   .container {
     flex-direction: row;

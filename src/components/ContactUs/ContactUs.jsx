@@ -1,4 +1,5 @@
 import contactInfo from "helpers/contactInfoArray"
+import SocialLinks from "components/SocialLinks/SocialLinks"
 import { Form } from "components/Form/Form"
 import { useTranslation } from "react-i18next"
 import styles from "./contactUs.module.css"
@@ -8,7 +9,7 @@ const ContactUs = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.container}>
+      <div className={styles.titleContainer}>
         <h1 className={styles.title}>{t('contactUs.title')}</h1>
       </div>
       <h2 className={styles.subTitle}>{t('contactUs.subTitle')}</h2>
@@ -26,7 +27,7 @@ const ContactUs = () => {
                   </span>
                 ) : (
                   <span>
-                    <p>{t(`contactUs.${info.type}Label`)}</p>
+                    <p className={styles.labelInfo}>{t(`contactUs.${info.type}Label`)}</p>
                     <a href={info.action()} className={styles.link}>
                       {info.value}
                     </a>
@@ -35,10 +36,18 @@ const ContactUs = () => {
               </li>
             ))}
           </ul>
+          <div className={styles.socialDiv}>
+            <p className={styles.labelInfo}>{t(`contactUs.social`)}</p>
+            <div className={styles.socialLinksDiv}>
+              <SocialLinks customStyles={styles}/>
+            </div>
+          </div>
+
         </div>
         <div className={styles.formDiv}>
           <Form
             typeForm="contactUs"
+            showLabel={false}
             customStyles={{
               container: styles.formContainer,
               form: styles.form,

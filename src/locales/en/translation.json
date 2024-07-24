@@ -232,6 +232,7 @@
     "locationLabel": "We are based in:",
     "telLabel": "Phone:",
     "emailLabel": "Email:",
-    "formTitle": "Fill the feedback form"
+    "formTitle": "Fill the feedback form",
+    "social": "We are on social media:"
   }
 }
