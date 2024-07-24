@@ -4,7 +4,7 @@ import Notiflix from 'notiflix';
 import styles from './Form.module.css';
 import { sendForm } from 'api/telegram';
 
-const Form = ({ onSubmit, typeForm, customStyles = {}, title }) => {
+const Form = ({ onSubmit, typeForm, customStyles = {}, title, showLabel = true }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -62,9 +62,11 @@ const Form = ({ onSubmit, typeForm, customStyles = {}, title }) => {
         {title && <p className={`${styles['form--heading']} ${customStyles.title || ''}`}>{title}</p>}
         <form autoComplete="off" onSubmit={handleSubmit}>
           <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
-            <label htmlFor="name" className={`${styles.label} ${customStyles.label || ''}`}>
-              {t('modal.name')}
-            </label>
+            {showLabel && (
+              <label htmlFor="name" className={`${styles.label} ${customStyles.label || ''}`}>
+                {t('modal.name')}
+              </label>
+            )}
             <input
               type="text"
               id="name"
@@ -76,9 +78,11 @@ const Form = ({ onSubmit, typeForm, customStyles = {}, title }) => {
             />
           </div>
           <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
-            <label htmlFor="email" className={`${styles.label} ${customStyles.label || ''}`}>
-              {t('modal.email')}
-            </label>
+            {showLabel && (
+              <label htmlFor="email" className={`${styles.label} ${customStyles.label || ''}`}>
+                {t('modal.email')}
+              </label>
+            )}
             <input
               type="email"
               id="email"
@@ -90,9 +94,11 @@ const Form = ({ onSubmit, typeForm, customStyles = {}, title }) => {
             />
           </div>
           <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
-            <label htmlFor="phone" className={`${styles.label} ${customStyles.label || ''}`}>
-              {t('modal.phone')}
-            </label>
+            {showLabel && (
+              <label htmlFor="phone" className={`${styles.label} ${customStyles.label || ''}`}>
+                {t('modal.phone')}
+              </label>
+            )}
             <input
               type="text"
               id="phone"
@@ -104,9 +110,11 @@ const Form = ({ onSubmit, typeForm, customStyles = {}, title }) => {
             />
           </div>
           <div className={`${styles.inputGroup} ${customStyles.inputGroup || ''}`}>
-            <label htmlFor="message" className={`${styles.label} ${customStyles.label || ''}`}>
-              {t('modal.message')}
-            </label>
+            {showLabel && (
+              <label htmlFor="message" className={`${styles.label} ${customStyles.label || ''}`}>
+                {t('modal.message')}
+              </label>
+            )}
             <textarea
               id="message"
               name="message"

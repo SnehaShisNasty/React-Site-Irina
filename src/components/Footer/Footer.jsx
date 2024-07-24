@@ -1,5 +1,6 @@
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import SocialLinks from 'components/SocialLinks/SocialLinks';
 import contactInfo from 'helpers/contactInfoArray';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
@@ -105,17 +106,9 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <ul className={styles.social}>
-          {socialLinks.map((link, index) => (
-            <li key={index}>
-              <a href={link.url} className={styles.linkSocial}>
-                <svg className={styles.iconSvg}>
-                  <use href={`${sprite}#${link.icon}`} className={styles.icon} />
-                </svg>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className={styles.socialDiv}>
+          <SocialLinks/>
+        </div>
       </div>
     </div>
   );
