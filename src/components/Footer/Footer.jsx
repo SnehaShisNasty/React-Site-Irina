@@ -5,7 +5,7 @@ import contactInfo from 'helpers/contactInfoArray';
 import { items } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 import { scroller } from 'react-scroll';
-import sprite from '../../img/symbol-defs.svg';
+// import sprite from '../../img/symbol-defs.svg';
 import styles from './footer.module.css';
 
 const Footer = () => {
@@ -34,7 +34,7 @@ const Footer = () => {
     return service ? { path: `service/${service.address}`, label: t(`services.${service.name}.name`) } : null;
   }).filter(link => link !== null);
 
-  const socialLinks = t('footer.socialLinks', { returnObjects: true });
+  // const socialLinks = t('footer.socialLinks', { returnObjects: true });
 
   const handleLinkClick = (path, anchor) => (event) => {
     event.preventDefault();
