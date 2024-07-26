@@ -1,0 +1,33 @@
+.container {
+  padding-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.rightWrapper {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 9.5em;
+}
+.leftWrapper {
+  background-color: antiquewhite;
+  border-radius: 4px;
+  max-width: 900px;
+}
+.text {
+  text-align: center;
+  margin-bottom: 40px;
+}
