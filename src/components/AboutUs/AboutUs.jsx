@@ -8,19 +8,19 @@ const AboutUs = () => {
     <div className={styles.container}>
       <div className={styles.div}>
         <div className={styles.rightWrapper}>
-          <h1 className={styles.title}>About Us</h1>
+          <h1 className={styles.title}>About us</h1>
           <div className={styles.centerWrapper}>
-            <div>
-              <h2>Qualifications</h2>
-              <p>
+            <div className={styles.box}>
+              <h2 className={styles.subtitle}>Qualifications</h2>
+              <p className={styles.text}>
                 Fully AAT qualified and studying towards ACCA. Also, I have an
                 accountant's license and the right to officially represent the
                 interests of clients before HMRC.
               </p>
             </div>
-            <div>
-              <h2>Experience</h2>
-              <p>
+            <div className={styles.box}>
+              <h2 className={styles.subtitle}>Experience</h2>
+              <p className={styles.text}>
                 I have over 12 years' of experience in accountancy and internal
                 audit. I've worked with sole traders, partnerships and limited
                 companies.
