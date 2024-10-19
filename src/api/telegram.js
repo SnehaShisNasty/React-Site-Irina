@@ -8,8 +8,8 @@ const telegramInstance = axios.create({
 
 export const sendForm = async (data, type) => {
   let message = `Aplication\n`;
-  message += `  Type: ${data.type} \n`;
-  message += `  Name: ${data.name} \n`;
+  message += `Type: ${data.type} \n`;
+  message += `Name: ${data.name} \n`;
   message += `Email: ${data.email} \n`;
   message += `Number: ${data.number} \n`;
   if (data.comment) {
