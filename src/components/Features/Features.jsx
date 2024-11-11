@@ -48,16 +48,20 @@ const Features = () => {
           </li>
         ))}
       </ul>
-      <h2 className={styles.accreditation}>{t('features.accreditationTitle')}</h2>
-        <p className={styles.accreditationText}>{t('features.accreditationText')}</p>
       <button className={styles.btn} onClick={handleToggleShowMore}>
         {showMore ? t('features.showLess') : t('features.showMore')}
       </button>
+      <h2 className={styles.accreditation}>{t('features.accreditationTitle')}</h2>
+        <p className={styles.accreditationText}>{t('features.accreditationText')}</p>
+      
       <div>
         <ul className={styles.logoContainer}>
           {images.map((image, index) => (
             <li key={index} className={styles.logo_item}>
+             
               <img src={image.src} alt={image.alt} className={styles.logoImg} />
+            
+             
             </li>
           ))}
         </ul>

@@ -90,7 +90,7 @@
 
 .ribbon {
   opacity: 0;
-  position: absolute;
+  position: hidden;
   top: 20px;
   right: -55px;
   width: 180px;
@@ -126,6 +126,7 @@
   }
 
   .ribbon {
+    position: absolute;
     opacity: 1;
     right: -24px;
     top: 24px; /* Подстраиваем положение ленты для средних экранов */
@@ -152,9 +153,10 @@
   }
 
   .ribbon {
+    position: absolute;
     opacity: 1;
     right: -50px;
-    top: 30px; /* Подстраиваем положение ленты для больших экранов */
+    top: 30px; 
     width: 200px; /* Увеличиваем размер ленты для больших экранов */
   }
 }
