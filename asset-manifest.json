@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/React-Site-Irina/static/css/main.e5d2c577.css",
-    "main.js": "/React-Site-Irina/static/js/main.0bc4d6bc.js",
-    "static/css/877.f2863c75.chunk.css": "/React-Site-Irina/static/css/877.f2863c75.chunk.css",
-    "static/js/877.793247f6.chunk.js": "/React-Site-Irina/static/js/877.793247f6.chunk.js",
+    "main.css": "/React-Site-Irina/static/css/main.ca0956a5.css",
+    "main.js": "/React-Site-Irina/static/js/main.e0e3144b.js",
+    "static/css/877.38148fe2.chunk.css": "/React-Site-Irina/static/css/877.38148fe2.chunk.css",
+    "static/js/877.afdca26d.chunk.js": "/React-Site-Irina/static/js/877.afdca26d.chunk.js",
     "static/css/461.048d0969.chunk.css": "/React-Site-Irina/static/css/461.048d0969.chunk.css",
     "static/js/461.14e56f24.chunk.js": "/React-Site-Irina/static/js/461.14e56f24.chunk.js",
     "static/css/275.d167ad04.chunk.css": "/React-Site-Irina/static/css/275.d167ad04.chunk.css",
@@ -25,10 +25,10 @@
     "index.html": "/React-Site-Irina/index.html",
     "static/media/search.svg": "/React-Site-Irina/static/media/search.dfa95514bf72c88cb754.svg",
     "static/media/burger-menu.svg": "/React-Site-Irina/static/media/burger-menu.ba712e0903bbd659b2ea.svg",
-    "main.e5d2c577.css.map": "/React-Site-Irina/static/css/main.e5d2c577.css.map",
-    "main.0bc4d6bc.js.map": "/React-Site-Irina/static/js/main.0bc4d6bc.js.map",
-    "877.f2863c75.chunk.css.map": "/React-Site-Irina/static/css/877.f2863c75.chunk.css.map",
-    "877.793247f6.chunk.js.map": "/React-Site-Irina/static/js/877.793247f6.chunk.js.map",
+    "main.ca0956a5.css.map": "/React-Site-Irina/static/css/main.ca0956a5.css.map",
+    "main.e0e3144b.js.map": "/React-Site-Irina/static/js/main.e0e3144b.js.map",
+    "877.38148fe2.chunk.css.map": "/React-Site-Irina/static/css/877.38148fe2.chunk.css.map",
+    "877.afdca26d.chunk.js.map": "/React-Site-Irina/static/js/877.afdca26d.chunk.js.map",
     "461.048d0969.chunk.css.map": "/React-Site-Irina/static/css/461.048d0969.chunk.css.map",
     "461.14e56f24.chunk.js.map": "/React-Site-Irina/static/js/461.14e56f24.chunk.js.map",
     "275.d167ad04.chunk.css.map": "/React-Site-Irina/static/css/275.d167ad04.chunk.css.map",
@@ -38,7 +38,7 @@
     "794.ec5d7944.chunk.js.map": "/React-Site-Irina/static/js/794.ec5d7944.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5d2c577.css",
-    "static/js/main.0bc4d6bc.js"
+    "static/css/main.ca0956a5.css",
+    "static/js/main.e0e3144b.js"
   ]
 }
